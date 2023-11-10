@@ -34,7 +34,7 @@ intro: >
 
   With us, you will enter the world of fascinating corners of Southeast Asia, where you will experience true local culture and experience unforgettable adventures.
 hero:
-  image: _astro/home-hero.jpg
+  image: _astro/398946897_745338867625662_869359894766944567_n.jpg
   title: We create your Unforgettable Trips
   subtitle: We will organize a holiday for you in Vietnam, Cambodia and Laos. Just
     how you like it. On your terms.
