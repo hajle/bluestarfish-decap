@@ -1,9 +1,10 @@
 ---
-title: Wietnam
+title: Vietnam
 sortOrder: 1
-cover: "../../../assets/images/vietnam-hero.jpg"
-image: "../../../assets/images/dest-vietnam.jpg"
-description: Wietnam, leżący na wschodnich wybrzeżach kontynentu azjatyckiego, to kraj pełen kontrastów, bogatej historii i niesamowitych krajobrazów.
+cover: ../../../assets/images/vietnam-hero.jpg
+image: ../../../assets/images/dest-vietnam.jpg
+description: Wietnam, leżący na wschodnich wybrzeżach kontynentu azjatyckiego,
+  to kraj pełen kontrastów, bogatej historii i niesamowitych krajobrazów.
 ---
 
 Przez lata Wietnam rozwijał się w cieniu swoich większych sąsiadów, ale dzisiaj zdecydowanie wysuwa się na światło dzienne jako jedno z najbardziej fascynujących miejsc w południowo-wschodniej Azji. Z niezwykłą mieszanką tradycyjnej kultury i nowoczesności, Wietnam oferuje podróżnikom bogate doświadczenia.
