@@ -1,11 +1,11 @@
 ---
 title: Kambodża
 sortOrder: 2
-cover: "../../assets/images/cambodia-hero.jpg"
-image: "../../assets/images/dest-cambodia.jpg"
-description: Kambodża, magiczna i tajemnicza, to kraj o fascynującej historii, mistycznym uroku i przepięknych krajobrazach.
+cover: ../../assets/images/cambodia-hero.jpg
+image: ../../assets/images/dest-cambodia.jpg
+description: Kambodża, magiczna i tajemnicza, to kraj o fascynującej historii,
+  mistycznym uroku i przepięknych krajobrazach.
 ---
-
 Kambodża to kraj pełen kontrastów, od świątyń majestatycznych Angkor Wat, przez zabytkowe uliczki Phnom Penh, po malownicze wybrzeże w Sihanoukville. Bogata historia i kultura Kambodży, w połączeniu z jej dziką przyrodą, czynią ten kraj idealnym miejscem dla każdego podróżnika.
 
 &nbsp;
@@ -16,7 +16,7 @@ Dlaczego warto odwiedzić Kambodżę?
 
 Legendarny kompleks świątynny, który jest świadectwem potęgi i wspaniałości imperium Khmerów.
 
-![Angko Wat](../../assets/images/cambodia-angkor-wat.jpg)
+![Angkor Wat](../../assets/images/cambodia-angkor-wat.jpg)
 
 ## Stolica Phnom Penh
 
