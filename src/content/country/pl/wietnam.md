@@ -16,7 +16,7 @@ Dlaczego warto odwiedzić Wietnam?
 
 Kryształowo czyste wody, wapienne skały i spokojne wioski rybackie sprawiają, że jest to jedno z najpiękniejszych miejsc na świecie.
 
-![Zatoka Ha-Long](../../assets/images/vietnam-ha-long.jpg)
+![Zatoka Ha-Long](../../../assets/images/vietnam-ha-long.jpg)
 
 ## Kuchnia wietnamska
 

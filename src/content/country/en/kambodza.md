@@ -16,7 +16,7 @@ Dlaczego warto odwiedzić Kambodżę?
 
 Legendarny kompleks świątynny, który jest świadectwem potęgi i wspaniałości imperium Khmerów.
 
-![Angkor Wat](../../assets/images/cambodia-angkor-wat.jpg)
+![Angkor Wat](../../../assets/images/cambodia-angkor-wat.jpg)
 
 ## Stolica Phnom Penh
 
