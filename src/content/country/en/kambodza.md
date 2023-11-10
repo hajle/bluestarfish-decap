@@ -3,33 +3,33 @@ title: Cambodia
 sortOrder: 2
 cover: ../../../assets/images/cambodia-hero.jpg
 image: ../../../assets/images/dest-cambodia.jpg
-description: Kambodża, magiczna i tajemnicza, to kraj o fascynującej historii,
-  mistycznym uroku i przepięknych krajobrazach.
+description: Cambodia, magical and mysterious, is a country with a fascinating
+  history, mystical charm and beautiful landscapes.
 ---
-Kambodża to kraj pełen kontrastów, od świątyń majestatycznych Angkor Wat, przez zabytkowe uliczki Phnom Penh, po malownicze wybrzeże w Sihanoukville. Bogata historia i kultura Kambodży, w połączeniu z jej dziką przyrodą, czynią ten kraj idealnym miejscem dla każdego podróżnika.
+Cambodia is a country full of contrasts, from the majestic temples of Angkor Wat, through the historic streets of Phnom Penh, to the picturesque coast in Sihanoukville. Cambodia's rich history and culture, combined with its wildlife, make the country an ideal destination for any traveler.
 
 &nbsp;
 
-Dlaczego warto odwiedzić Kambodżę?
+Why is it worth visiting Cambodia?
 
-## Świątynie Angkoru
+## Temples of Angkor
 
-Legendarny kompleks świątynny, który jest świadectwem potęgi i wspaniałości imperium Khmerów.
+A legendary temple complex that is a testament to the power and splendor of the Khmer Empire.
 
 ![Angkor Wat](../../../assets/images/cambodia-angkor-wat.jpg)
 
-## Stolica Phnom Penh
+## The capital of Phnom Penh
 
-Miejsce, gdzie historia spotyka się z nowoczesnością, oferując podróżnikom fascynujący wgląd w kambodżańskie życie miejskie.
+A place where history meets modernity, offering travelers a fascinating insight into Cambodian urban life.
 
-## Rajskie wyspy Koh Rong i Koh Rong Samloem
+## The paradise islands of Koh Rong and Koh Rong Samloem
 
-Nieskazitelne białe plaże, turkusowe wody i koralowe rafy czekają na miłośników słonecznych kąpieli.
+Pristine white beaches, turquoise waters and coral reefs await sunbathers.
 
-## Tonle Sap i pływające wsie
+## Tonle Sap and floating villages
 
-Odkryj życie lokalnych rybaków i zobacz, jak przystosowali się do zmieniającego się poziomu wody w największym jeziorze w południowo-wschodniej Azji.
+Discover the lives of local fishermen and see how they have adapted to the changing water levels in the largest lake in Southeast Asia.
 
-## Kambodżańska kuchnia
+## Cambodian cuisine
 
-Smaki takie jak amok czy kuy teav pokazują bogactwo kulinarnych tradycji tego kraju
+Flavors such as amok and kuy teav show the richness of the country's culinary traditions
