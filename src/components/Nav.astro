@@ -2,6 +2,7 @@
 import navLinks from "../utils/nav-links";
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = "/" + pathname.slice(1);
+import { languages } from '../i18n/ui';
 ---
 
 <ul class="lg:flex items-center gap-6 hidden">
@@ -19,4 +20,9 @@ const currentPath = "/" + pathname.slice(1);
       </li>
     ))
   }
+  {Object.entries(languages).map(([lang, label]) => (
+    <li>
+      <a href={`/${lang}/`}>{label}</a>
+    </li>
+  ))}
 </ul>
