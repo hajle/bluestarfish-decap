@@ -48,7 +48,7 @@ collections:
           - {label: "Welcome", name: "welcome", widget: "string"}
           - {
               label: "Hero",
-              name: "section",
+              name: "hero",
               widget: "object",
               fields:
                 [
