@@ -1,19 +1,27 @@
 const navLinks = [
   {
-    title: "O nas",
-    url: "/o-nas",
+    pltitle: "O nas",
+    plurl: "/o-nas",
+    entitle: "About Us",
+    enurl: "/about-us",
   },
   {
-    title: "Kraje",
-    url: "/kraje",
+    pltitle: "Kraje",
+    plurl: "/kraje",
+    entitle: "Countries",
+    enurl: "/countries",
   },
   {
-    title: "Rodzaje wycieczek",
-    url: "/rodzaje-wycieczek",
+    pltitle: "Rodzaje wycieczek",
+    plurl: "/rodzaje-wycieczek",
+    entitle: "Trip types",
+    enurl: "/trips-types",
   },
   {
-    title: "Kontakt",
-    url: "/kontakt",
+    pltitle: "Kontakt",
+    plurl: "/kontakt",
+    entitle: "Contact",
+    enurl: "/contact",
   },
 ];
 

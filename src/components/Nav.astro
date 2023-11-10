@@ -2,24 +2,30 @@
 import navLinks from "../utils/nav-links";
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = "/" + pathname.slice(1);
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 import { languages } from '../i18n/ui';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <ul class="lg:flex items-center gap-6 hidden">
-  {
+  <li>
+    <a href={`/${lang}/${t('slug.about')}`}>{t('nav.about')}</a>
+  </li>
+  <!-- {
     navLinks.map((link) => (
       <li>
         <a
-          href={link.url}
+          href={lang}{link.url}
           class={`font-medium tracking-wide drop-shadow-sm ${
-            currentPath.indexOf(link.url) > -1 ? "text-rose-500" : ""
+            currentPath.indexOf({link.url}) > -1 ? "text-rose-500" : ""
           }`}
         >
-          {link.title}
+          {link.{`${lang}${title}`}}
         </a>
       </li>
     ))
-  }
+  } -->
   {Object.entries(languages).map(([lang, label]) => (
     <li>
       <a href={`/${lang}/`}>{label}</a>
