@@ -1,0 +1,48 @@
+---
+import Hero from "../components/Hero.astro";
+import Wrapper from "../components/Wrapper.astro";
+import Layout from "../layouts/Layout.astro";
+import image from "../assets/images/home-hero.jpg";
+import Destinations from "../components/Destinations.astro";
+import Skills from "../components/Skills.astro";
+import ContactUs from "../components/ContactUs.astro";
+import Chat from "../components/Chat.astro";
+import chatImg from "../images/chat-green.svg";
+---
+
+<Layout title="Witamy w ">
+  <main>
+    <Hero
+      image={image}
+      height="min-h-screen"
+      bottom="bottom-1/2 translate-y-1/2"
+      title="Tworzymy Twoje Niezapomniane Podróże"
+      desc="Zorganizujemy dla Ciebie wakacje w Wietnamie, Kambodży i Laosie. Tak jak lubisz. Na Twoich warunkach."
+    />
+    <Wrapper>
+      <div
+        class="mt-16 lg:mt-24 lg:w-2/3 lg:mx-auto text-center flex flex-col gap-8"
+      >
+        <p>
+          Jesteśmy pasjonatami podróży i pragniemy podzielić się z Tobą naszą
+          miłością do Wietnamu, Kambodży i Laosu.
+        </p>
+        <p>
+          Nasza butikowa agencja podróży oferuje wycieczki, które są w pełni
+          dostosowane do Twoich potrzeb, przekraczając standardy tego co jest
+          dostępne w masowych biurach podróży.
+        </p>
+        <p>
+          Razem z nami wkroczysz w świat fascynujących zakątków Azji
+          Południowo-Wschodniej, gdzie doświadczysz prawdziwej, lokalnej kultury
+          i przeżyjesz niezapomniane przygody.
+        </p>
+        <Chat image={chatImg.src} classes="w-56" />
+      </div>
+
+      <Destinations />
+      <Skills />
+      <ContactUs />
+    </Wrapper>
+  </main>
+</Layout>

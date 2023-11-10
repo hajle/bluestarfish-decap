@@ -1,0 +1,45 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import { fade } from "astro:transitions";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.jsx";
+import Nav from "../components/Nav.astro";
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/700.css";
+import "../styles/app.css";
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Zorganizujemy dla Ciebie wakacje w Wietnamie, Kambodży i Laosie."
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} Blue Starfish Travel Boutique</title>
+    <ViewTransitions />
+  </head>
+  <body class="subpixel-antialiased bg-white text-gray-950 font-normal text-lg">
+    <div class="grid grid-flow-row auto-rows-[auto_1fr_auto] h-screen">
+      <Header client:idle><Nav /></Header>
+      <div transition:animate={fade({ duration: "0.5s" })}><slot /></div>
+      <Footer />
+    </div>
+    <style is:global>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </body>
+</html>

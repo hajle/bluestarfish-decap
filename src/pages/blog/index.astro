@@ -1,0 +1,48 @@
+---
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/Hero.astro";
+import Wrapper from "../../components/Wrapper.astro";
+import image from "../../assets/images/about-hero.jpg";
+import ContactUs from "../../components/ContactUs.astro";
+const allBlogPosts = await getCollection("blog");
+---
+
+<Layout title="Blog - ">
+  <main>
+    <Hero
+      image={image}
+      height="h-[300px] md:h-[550px]"
+      bottom="bottom-1/2 translate-y-1/2"
+      title="Blog"
+      desc="Hej tu znajdziesz nasze fascynujące posty o podrózach"
+    />
+    <Wrapper>
+      <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-16 mt-16">
+        {
+          allBlogPosts.map((post) => (
+            <li class="flex flex-col gap-4">
+              <a href={`/blog/${post.slug}`}>
+                <Image
+                  src={post.data.cover}
+                  alt={post.data.title}
+                  width={600}
+                  height={600}
+                  class="hover:brightness-90 transition duration-300 rounded-lg"
+                />
+              </a>
+              <h2 class="text-3xl font-semibold">{post.data.title}</h2>
+              <div class="text-sm pl-2">{post.data.date.toDateString()}</div>
+              <div class="max-w-[500px] pl-2">{post.data.description}</div>
+              <a href={`/blog/${post.slug}`} class="text-rose-500 pl-2">
+                Przeczytaj wpis
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <ContactUs />
+    </Wrapper>
+  </main>
+</Layout>

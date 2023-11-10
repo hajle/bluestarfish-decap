@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+import Wrapper from "./Wrapper.astro";
+import Chat from "./Chat.astro";
+import chatImg from "../images/chat-white.svg";
+
+interface Props {
+  image: ImageMetadata;
+  height: string;
+  title: string;
+  desc?: string;
+  bottom: string;
+  chat?: boolean;
+}
+
+const { image, height, title, desc, bottom, chat = true } = Astro.props;
+---
+
+<div class={`relative mx-auto ${height}`}>
+  <Image
+    src={image}
+    alt={title}
+    class={`object-cover w-full brightness-90 ${height}`}
+  />
+
+  <div class={`absolute inset-x-0 ${bottom}`}>
+    <Wrapper>
+      <div
+        class="flex flex-col gap-8 text-white text-center w-full max-w-4xl mb-8 mx-auto"
+      >
+        <h1
+          class="font-semibold break-words drop-shadow-xl text-3xl md:text-4xl lg:text-5xl"
+        >
+          {title}
+        </h1>
+        {
+          desc && (
+            <p class="text-xl md:text-xl lg:text-2xl drop-shadow-xl">{desc}</p>
+          )
+        }
+        {chat && <Chat image={chatImg.src} classes="w-56" />}
+      </div>
+    </Wrapper>
+  </div>
+</div>

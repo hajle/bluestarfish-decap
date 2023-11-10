@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+const allCountries = (await getCollection("country")).sort(
+  (a, b) => a.data.sortOrder - b.data.sortOrder
+);
+---
+
+<div
+  class="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-4 sm:gap-x-4 lg:gap-x-8 mt-16 lg:mt-24"
+>
+  {
+    allCountries.map((country) => (
+      <a
+        href={`/kraje/${country.slug}`}
+        class="relative hover:-translate-y-2 hover:brightness-90 transition duration-300"
+      >
+        <Image
+          src={country.data.image}
+          alt={country.data.title}
+          class="rounded-lg"
+        />
+        <h3 class="absolute bottom-4 left-4 text-white text-3xl font-semibold drop-shadow">
+          {country.data.title}
+        </h3>
+      </a>
+    ))
+  }
+</div>

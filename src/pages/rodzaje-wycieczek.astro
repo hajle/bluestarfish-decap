@@ -1,0 +1,88 @@
+---
+import { Image } from "astro:assets";
+import Hero from "../components/Hero.astro";
+import Wrapper from "../components/Wrapper.astro";
+import Layout from "../layouts/Layout.astro";
+import ContactUs from "../components/ContactUs.astro";
+import heroImage from "../assets/images/trips-hero.jpg";
+import familyImage from "../assets/images/family.jpg";
+import groupImage from "../assets/images/group.jpg";
+import honeyImage from "../assets/images/honeymoon.jpg";
+import incentiveImage from "../assets/images/incentive.jpg";
+import soloImage from "../assets/images/solo.jpg";
+
+const tripTypes = [
+  {
+    id: 1,
+    title: "Wycieczki z przyjaciółmi",
+    text: "Wakacje z przyjaciółmi to gwarancja doskonałej zabawy. Niekiedy problemem może być pogodzenie terminów, różnych preferencji i budżetów poszczególnych uczestników. Planowanie takiej wycieczki ze znajomymi może się zamienić w kolejny projekt do realizacji, a przecież nie o to chodzi w wypoczynku. Z chęcią przejmiemy wszystkie żmudne etapy planowania i realizacji wycieczki tak aby Ty i Twoi przyjaciele skupili się tylko na relaksie",
+    image: groupImage,
+  },
+  {
+    id: 2,
+    title: "Wycieczki rodzinne",
+    text: "Spędzanie wczasów z najbliższymi to jest doskonała okoliczność na pogłebienie więzi rodzinnych, wyrwanie się od rutyny i stworzenie wspomnień na resztę życia. Dostosowanie programu wycieczki do wszystkich uczestników, może stanowić jednak wyzwanie. Doskonale rozumiemy te wyzwania, bo sami mieszkamy i podróżujemy z naszymi rodzinami  po regionie. Korzystając z naszych doświadczeń będziecie pewni że Wasza wycieczka będzie pełna tylko przyjemnych niespodzianek",
+    image: familyImage,
+  },
+  {
+    id: 3,
+    title: "Podróże solo",
+    text: "Chcesz zagłębić się w nieodkryte zakątki Wietnamu, Kambodży czy Laosu we własnym rytmie? Nasze wycieczki dla podróżujących solo skupiają się na dostarczaniu autentycznych doświadczeń. Przygotowaliśmy dla Ciebie trasy, które pozwolą Ci nie tylko odkryć piękno regionu, ale także spotkać inspirujących ludzi i nawiązać z nimi trwałe więzi podczas Twojego wyjazdu.",
+    image: soloImage,
+  },
+  {
+    id: 4,
+    title: "Podróże poślubne",
+    text: "Rozpocznijcie wspólną przygodę życia w egzotycznych krajobrazach Azji Południowo-Wschodniej. Nasze propozycje podróży poślubnych składają się z intymnych momentów, oszałamiających widoków oraz szczególnych doświadczeń. Odkrywając razem te unikalne miejsca, wzbogacicie Waszą więź i zbierzecie bezcenne wspomnienia na dalsze lata.",
+    image: honeyImage,
+  },
+  {
+    id: 5,
+    title: "Wyjazdy firmowe",
+    text: "Chcesz podziękować swojemu zespołowi w wyjątkowy sposób lub szukasz inspiracji do kolejnych wyzwań? Oferujemy wyjazdy firmowe, które łączą w sobie profesjonalne podejście z niezapomnianymi chwilami. Dzięki nam Twoja ekipa będzie miała okazję do zacieśnienia więzi, wymiany doświadczeń i zaczerpnięcia świeżej energii w niesamowitych miejscach.",
+    image: incentiveImage,
+  },
+];
+---
+
+<Layout title="Rodzaje wycieczek - ">
+  <main>
+    <Hero
+      image={heroImage}
+      height="h-[300px] md:h-[550px]"
+      title="Rodzaje wycieczek"
+      bottom="bottom-1/2 translate-y-1/2"
+      chat={false}
+    />
+    <Wrapper>
+      <div class="mt-16 lg:mt-24 flex flex-col gap-16">
+        {
+          tripTypes.map((type) => (
+            <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8 lg:gap-12">
+              <div
+                class={`flex-1 ${
+                  (type.id === 2 && "md:order-2") ||
+                  (type.id === 4 && "md:order-2")
+                }`}
+              >
+                <Image src={type.image} alt={type.title} class="rounded-lg" />
+              </div>
+              <div
+                class={`flex-1 ${
+                  (type.id === 2 && "md:order-1") ||
+                  (type.id === 4 && "md:order-1")
+                }`}
+              >
+                <div class="flex flex-col gap-4 md:px-8 lg:px-16">
+                  <h3 class="text-2xl font-semibold">{type.title}</h3>
+                  <p>{type.text}</p>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+      <ContactUs />
+    </Wrapper>
+  </main>
+</Layout>

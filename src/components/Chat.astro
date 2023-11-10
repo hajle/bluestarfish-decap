@@ -1,0 +1,19 @@
+---
+interface Props {
+  image: string;
+  classes: string;
+}
+
+const { image, classes } = Astro.props;
+---
+
+<div class="flex justify-center">
+  <a
+    aria-label="Chat on WhatsApp"
+    href="https://wa.me/84368318072"
+    target="_blank"
+    class="w-fit"
+  >
+    <img alt="Chat on WhatsApp" src={image} class={classes} />
+  </a>
+</div>

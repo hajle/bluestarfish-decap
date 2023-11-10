@@ -1,0 +1,78 @@
+---
+import { Image } from "astro:assets";
+import Hero from "../components/Hero.astro";
+import Layout from "../layouts/Layout.astro";
+import image from "../assets/images/calendar-hero.jpg";
+import winterImg from "../assets/images/calendar-winter.jpg";
+import springImg from "../assets/images/calendar-spring.jpg";
+import summerImg from "../assets/images/calendar-summer.jpg";
+import autumnImg from "../assets/images/calendar-autumn.jpg";
+import Wrapper from "../components/Wrapper.astro";
+import ContactUs from "../components/ContactUs.astro";
+
+const text = [
+  {
+    id: 1,
+    title: "Zima",
+    text: "Zimą w centralnej i południowej części Wietnamu panują idealne warunki do zwiedzania – jest przyjemnie ciepło, ale nie upalnie, co czyni zwiedzanie bardziej komfortowym. W Laosie zimowe miesiące to czas, gdy przyroda prezentuje się w pełnej krasie, a temperatury są bardziej umiarkowane. Natomiast Kambodża, mimo że zimą przyciąga wielu turystów, oferuje przyjemniejszy klimat, dzięki czemu odkrywanie ruin Angkor Wat jest bardziej przyjemne.",
+    image: winterImg,
+  },
+  {
+    id: 2,
+    title: "Wiosna",
+    text: "Gdy natura budzi się do życia, jest to doskonały czas na zwiedzanie Kambodży. Na wiosnę krajobraz staje się zielony i bujny, a wiele pól i ogrodów rozkwita w pełnym blasku. Odwiedź majestatyczne zabytki, takie jak Świątynie Angkoru w Siem Reap, gdzie poczujesz ducha starożytnych cywilizacji.",
+    image: springImg,
+  },
+  {
+    id: 3,
+    title: "Lato",
+    text: "Podczas letnich miesięcy zanurz się w urokach Laosu. Odświeżające rzeki i wodospady Laosu oferują niezapomniane chwile relaksu i orzeźwienia. Ciesząc się pięknem natury, poczujesz spokój i harmonię tego urokliwego kraju.",
+    image: summerImg,
+  },
+  {
+    id: 4,
+    title: "Jesień",
+    text: "Jesień w Wietnamie to czas festiwali i uroczystości. Wybierz się wówczas do miasta Hanoi, aby uczestniczyć w Tết Trung Thu, tradycyjnym Festiwalu Światła Księżyca, który przyciąga rodzinne atmosfery i radosne wystawy.",
+    image: autumnImg,
+  },
+];
+---
+
+<Layout title="Kalendarz podróży - ">
+  <main>
+    <Hero
+      image={image}
+      title="Kalendarz podróży"
+      height="h-[300px] md:h-[550px]"
+      bottom="bottom-1/2 translate-y-1/2"
+    />
+    <Wrapper>
+      <div class="mt-16 lg:mt-24 flex flex-col gap-16">
+        {
+          text.map((i) => (
+            <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8 lg:gap-12">
+              <div
+                class={`flex-1 ${
+                  (i.id === 2 && "md:order-2") || (i.id === 4 && "md:order-2")
+                }`}
+              >
+                <Image src={i.image} alt={i.title} class="rounded-lg" />
+              </div>
+              <div
+                class={`flex-1 ${
+                  (i.id === 2 && "md:order-1") || (i.id === 4 && "md:order-1")
+                }`}
+              >
+                <div class="flex flex-col gap-4 md:px-8 lg:px-16">
+                  <h3 class="text-2xl font-semibold">{i.title}</h3>
+                  <p>{i.text}</p>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+      <ContactUs />
+    </Wrapper>
+  </main>
+</Layout>
