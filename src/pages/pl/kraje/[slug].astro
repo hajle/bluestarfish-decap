@@ -1,0 +1,43 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+import Hero from "../../../components/Hero.astro";
+import Wrapper from "../../../components/Wrapper.astro";
+import ContactUs from "../../../components/ContactUs.astro";
+
+export async function getStaticPaths() {
+  const allCountries = await getCollection("country");
+
+  return allCountries.map((country) => ({
+    params: { slug: country.slug },
+    props: {
+      country,
+    },
+  }));
+}
+
+interface Props {
+  country: CollectionEntry<"country">;
+}
+
+const { country } = Astro.props;
+const { Content } = await country.render();
+---
+
+<Layout title={`${country.data.title} - `}>
+  <main>
+    <Hero
+      image={country.data.cover}
+      height="h-[300px] md:h-[550px]"
+      bottom="bottom-1/2 translate-y-1/2"
+      title={country.data.title}
+      chat={false}
+    />
+    <Wrapper>
+      <div class="mt-16 lg:mt-24 prose lg:prose-lg mx-auto max-w-[800px]">
+        <Content />
+      </div>
+      <ContactUs />
+    </Wrapper>
+  </main>
+</Layout>
