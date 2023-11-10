@@ -52,9 +52,9 @@ collections:
               widget: "object",
               fields:
                 [
-                  {label: "Title", name: "title", widget: "string"}
-                  {label: "Subtitle", name: "subtitle", widget: "string"}
-                  {label: "Featured Image", name: "image", widget: "image"}
+                  {label: "Title", name: "title", widget: "string"},
+                  {label: "Subtitle", name: "subtitle", widget: "string"},
+                  {label: "Featured Image", name: "image", widget: "image"},
                 ]
             }
           - {label: "Intro", name: "intro", widget: "text"}
