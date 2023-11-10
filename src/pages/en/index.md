@@ -4,6 +4,7 @@ welcome: Welcome in
 title: We create your Unforgettable Trips
 subtitle: We will organize a holiday for you in Vietnam, Cambodia and Laos. Just how you like it. On your terms.
 image: ../../assets/images/home-hero.jpg
+intro:
 ---
 We are passionate about traveling and want to share our love for Vietnam, Cambodia and Laos with you.
 
