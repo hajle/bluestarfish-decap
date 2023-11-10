@@ -19,6 +19,8 @@ const allCountries = (await getCollection("country")).sort(
           src={country.data.image}
           alt={country.data.title}
           class="rounded-lg"
+          width={700}
+          height={700}
         />
         <h3 class="absolute bottom-4 left-4 text-white text-3xl font-semibold drop-shadow">
           {country.data.title}
