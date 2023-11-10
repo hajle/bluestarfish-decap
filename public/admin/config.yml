@@ -7,6 +7,8 @@ publish_mode: editorial_workflow
 media_folder: "src/assets/images"
 public_folder: "_astro"
 
+locale: 'pl'
+
 collections:
   - name: "countries" # Used in routes, e.g., /admin/collections/blog
     label: "Countries" # Used in the UI
