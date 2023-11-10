@@ -19,8 +19,6 @@ const { image, height, title, desc, bottom, chat = true } = Astro.props;
 <div class={`relative mx-auto ${height}`}>
   <Image
     src={image}
-    width={500}
-    height={500}
     alt={title}
     class={`object-cover w-full brightness-90 ${height}`}
   />
