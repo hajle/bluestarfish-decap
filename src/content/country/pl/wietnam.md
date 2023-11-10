@@ -1,8 +1,8 @@
 ---
 title: Wietnam
 sortOrder: 1
-cover: "../../assets/images/vietnam-hero.jpg"
-image: "../../assets/images/dest-vietnam.jpg"
+cover: "../../../assets/images/vietnam-hero.jpg"
+image: "../../../assets/images/dest-vietnam.jpg"
 description: Wietnam, leżący na wschodnich wybrzeżach kontynentu azjatyckiego, to kraj pełen kontrastów, bogatej historii i niesamowitych krajobrazów.
 ---
 

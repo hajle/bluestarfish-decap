@@ -1,8 +1,8 @@
 ---
 title: Kambodża
 sortOrder: 2
-cover: ../../assets/images/cambodia-hero.jpg
-image: ../../assets/images/dest-cambodia.jpg
+cover: ../../../assets/images/cambodia-hero.jpg
+image: ../../../assets/images/dest-cambodia.jpg
 description: Kambodża, magiczna i tajemnicza, to kraj o fascynującej historii,
   mistycznym uroku i przepięknych krajobrazach.
 ---
