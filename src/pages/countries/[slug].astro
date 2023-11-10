@@ -8,19 +8,18 @@ import ContactUs from "../../components/ContactUs.astro";
 export async function getStaticPaths() {
   const allCountries = await getCollection("country");
 
-  return allCountries.map((country) => ({
-    params: { slug: country.slug },
-    props: {
-      country,
-    },
-  }));
+  const paths = allCountries.map(country => {
+    const [lang, ...slug] = country.slug.split('/');
+    return { params: { lang, slug: slug.join('/') || undefined }, props: country }
+  })
+
+  return paths;
 }
 
-interface Props {
-  country: CollectionEntry<"country">;
-}
 
-const { country } = Astro.props;
+
+const { lang, slug } = Astro.params;
+const country  = Astro.props;
 const { Content } = await country.render();
 ---
 
