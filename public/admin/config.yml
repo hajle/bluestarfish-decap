@@ -46,8 +46,16 @@ collections:
         name: "home"
         fields:
           - {label: "Welcome", name: "welcome", widget: "string"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Subtitle", name: "subtitle", widget: "string"}
-          - {label: "Featured Image", name: "image", widget: "image"}
+          - {
+              label: "Hero",
+              name: "section",
+              widget: "object",
+              fields:
+                [
+                  {label: "Title", name: "title", widget: "string"}
+                  {label: "Subtitle", name: "subtitle", widget: "string"}
+                  {label: "Featured Image", name: "image", widget: "image"}
+                ]
+            }
           - {label: "Intro", name: "intro", widget: "text"}
           - {label: "Body", name: "body", widget: "markdown"}
