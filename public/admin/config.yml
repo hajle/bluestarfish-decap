@@ -7,8 +7,6 @@ publish_mode: editorial_workflow
 media_folder: "src/assets/images"
 public_folder: "_astro"
 
-locale: 'pl'
-
 collections:
   - name: "countries-en" # Used in routes, e.g., /admin/collections/blog
     label: "Countries EN" # Used in the UI
@@ -46,16 +44,14 @@ collections:
         name: "home"
         fields:
           - {label: "Welcome", name: "welcome", widget: "string"}
-          - {
-              label: "Hero",
-              name: "hero",
-              widget: "object",
-              fields:
-                [
-                  {label: "Title", name: "title", widget: "string"},
-                  {label: "Subtitle", name: "subtitle", widget: "string"},
-                  {label: "Featured Image", name: "image", widget: "image"},
-                ]
-            }
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Featured Image", name: "image", widget: "image"}
           - {label: "Intro", name: "intro", widget: "text"}
+          - label: Locations
+            name: locations
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Address, name: address, widget: string}
           - {label: "Body", name: "body", widget: "markdown"}
