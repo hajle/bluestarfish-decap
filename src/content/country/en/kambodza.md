@@ -1,5 +1,5 @@
 ---
-title: Kambodża
+title: Cambodia
 sortOrder: 2
 cover: ../../../assets/images/cambodia-hero.jpg
 image: ../../../assets/images/dest-cambodia.jpg
