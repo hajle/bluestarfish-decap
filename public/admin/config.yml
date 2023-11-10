@@ -46,4 +46,5 @@ collections:
           - {label: "Welcome", name: "welcome", widget: "string"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Featured Image", name: "image", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
