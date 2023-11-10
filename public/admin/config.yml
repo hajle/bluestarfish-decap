@@ -36,3 +36,14 @@ collections:
       - {label: "Featured Image", name: "image", widget: "image"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages-en"
+    label: "Pages EN"
+    files:
+      - file: "src/pages/en/index.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: "Welcome", name: "welcome", widget: "string"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}

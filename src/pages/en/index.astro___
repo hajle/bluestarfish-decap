@@ -15,26 +15,21 @@ import chatImg from "../../images/chat-green.svg";
       image={image}
       height="min-h-screen"
       bottom="bottom-1/2 translate-y-1/2"
-      title="Tworzymy Twoje Niezapomniane Podróże"
-      desc="Zorganizujemy dla Ciebie wakacje w Wietnamie, Kambodży i Laosie. Tak jak lubisz. Na Twoich warunkach."
+      title="We create your Unforgettable Trips"
+      desc="We will organize a holiday for you in Vietnam, Cambodia and Laos. Just how you like it. On your terms."
     />
     <Wrapper>
       <div
         class="mt-16 lg:mt-24 lg:w-2/3 lg:mx-auto text-center flex flex-col gap-8"
       >
         <p>
-          Jesteśmy pasjonatami podróży i pragniemy podzielić się z Tobą naszą
-          miłością do Wietnamu, Kambodży i Laosu.
+          We are passionate about traveling and want to share our love for Vietnam, Cambodia and Laos with you.
         </p>
         <p>
-          Nasza butikowa agencja podróży oferuje wycieczki, które są w pełni
-          dostosowane do Twoich potrzeb, przekraczając standardy tego co jest
-          dostępne w masowych biurach podróży.
+          Our boutique travel agency offers trips that are fully tailored to your needs, exceeding the standards of what is available in mass travel agencies.
         </p>
         <p>
-          Razem z nami wkroczysz w świat fascynujących zakątków Azji
-          Południowo-Wschodniej, gdzie doświadczysz prawdziwej, lokalnej kultury
-          i przeżyjesz niezapomniane przygody.
+          With us, you will enter the world of fascinating corners of Southeast Asia, where you will experience true local culture and experience unforgettable adventures.
         </p>
         <Chat image={chatImg.src} classes="w-56" />
       </div>

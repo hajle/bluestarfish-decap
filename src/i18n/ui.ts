@@ -11,7 +11,7 @@ export const ui = {
     'nav.countries': 'Countries',
     'nav.trips': 'Trips types',
     'nav.contact': 'Contact',
-    'slug.about': 'about',
+    'slug.about': 'about-us',
     'slug.countries': 'countries',
     'slug.trips': 'trips-types',
     'slug.contact': 'contact',

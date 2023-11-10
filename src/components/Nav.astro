@@ -10,7 +10,24 @@ const t = useTranslations(lang);
 
 <ul class="lg:flex items-center gap-6 hidden">
   <li>
-    <a href={`/${lang}/${t('slug.about')}`}>{t('nav.about')}</a>
+    <a href={`/${lang}/${t('slug.about')}`} class={`font-medium tracking-wide drop-shadow-sm ${
+            currentPath.indexOf(`/${lang}/${t('slug.about')}`) > -1 ? "text-rose-500" : ""
+          }`}>{t('nav.about')}</a>
+  </li>
+   <li>
+    <a href={`/${lang}/${t('slug.countries')}`} class={`font-medium tracking-wide drop-shadow-sm ${
+            currentPath.indexOf(`/${lang}/${t('slug.countries')}`) > -1 ? "text-rose-500" : ""
+          }`}>{t('nav.countries')}</a>
+  </li>
+  <li>
+    <a href={`/${lang}/${t('slug.trips')}`} class={`font-medium tracking-wide drop-shadow-sm ${
+            currentPath.indexOf(`/${lang}/${t('slug.trips')}`) > -1 ? "text-rose-500" : ""
+          }`}>{t('nav.trips')}</a>
+  </li>
+  <li>
+    <a href={`/${lang}/${t('slug.contact')}`} class={`font-medium tracking-wide drop-shadow-sm ${
+            currentPath.indexOf(`/${lang}/${t('slug.contact')}`) > -1 ? "text-rose-500" : ""
+          }`}>{t('nav.contact')}</a>
   </li>
   <!-- {
     navLinks.map((link) => (

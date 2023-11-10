@@ -1,0 +1,49 @@
+---
+import Hero from "../components/Hero.astro";
+import Wrapper from "../components/Wrapper.astro";
+import Layout from "../layouts/Layout.astro";
+import image from "../assets/images/home-hero.jpg";
+import Destinations from "../components/Destinations.astro";
+import Skills from "../components/Skills.astro";
+import ContactUs from "../components/ContactUs.astro";
+import Chat from "../components/Chat.astro";
+import chatImg from "../images/chat-green.svg";
+const {frontmatter} = Astro.props;
+---
+
+<Layout title={frontmatter.welcome}>
+  <main>
+    <Hero
+      image={image}
+      height="min-h-screen"
+      bottom="bottom-1/2 translate-y-1/2"
+      title={frontmatter.title}
+      desc={frontmatter.subtitle}
+    />
+    <Wrapper>
+      <div
+        class="mt-16 lg:mt-24 lg:w-2/3 lg:mx-auto text-center flex flex-col gap-8"
+      >
+        <p>
+          We are passionate about traveling and want to share our love for
+          Vietnam, Cambodia and Laos with you.
+        </p>
+        <p>
+          Our boutique travel agency offers trips that are fully tailored to
+          your needs, exceeding the standards of what is available in mass
+          travel agencies.
+        </p>
+        <p>
+          With us, you will enter the world of fascinating corners of Southeast
+          Asia, where you will experience true local culture and experience
+          unforgettable adventures.
+        </p>
+        <Chat image={chatImg.src} classes="w-56" />
+      </div>
+
+      <Destinations />
+      <Skills />
+      <ContactUs />
+    </Wrapper>
+  </main>
+</Layout>
