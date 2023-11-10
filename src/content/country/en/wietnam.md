@@ -34,4 +34,4 @@ Nowoczesność splata się tu z tradycją, a życie miejskie pulsuje z energią.
 
 Bujne zielone tarasy ryżowe i tradycyjne społeczności etniczne oferują odskocznię od miejskiego zgiełku.
 
-![Pola ryżowe](../../assets/images/vietnam-rice-fields.jpg)
+![Pola ryżowe](../../../assets/images/vietnam-rice-fields.jpg)
