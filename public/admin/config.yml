@@ -10,10 +10,10 @@ public_folder: "_astro"
 collections:
   - name: "countries-en" # Used in routes, e.g., /admin/collections/blog
     label: "Countries EN" # Used in the UI
-    folder: "src/content/country" # The path to the folder where the documents are stored
+    label_singular: "Country EN"
+    folder: "src/content/country/en" # The path to the folder where the documents are stored
     create: false # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    filter: { field: "language", value: "en" }
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Title", name: "title", widget: "string" }
@@ -24,10 +24,10 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "countries-pl" # Used in routes, e.g., /admin/collections/blog
     label: "Countries PL" # Used in the UI
-    folder: "src/content/country" # The path to the folder where the documents are stored
+    label_singular: "Country PL"
+    folder: "src/content/country/pl" # The path to the folder where the documents are stored
     create: false # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    filter: { field: "language", value: "pl" }
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Title", name: "title", widget: "string" }
