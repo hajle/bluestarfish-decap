@@ -1,7 +1,7 @@
 ---
 welcome: Welcome in
 hero:
-  image: ../../assets/images/home-hero.jpg
+  image: _astro/vietnam-hero.jpg
   alt: Hello
   title: We create your Unforgettable Trips
   subtitle:
