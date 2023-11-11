@@ -74,12 +74,6 @@ collections:
         fields:
           - { label: "SEO title", name: "seoTitle", widget: "string" }
           - { label: "SEO Description", name: "seoDescription", widget: "text" }
-          - {
-              label: "Hero",
-              name: "hero",
-              widget: "object",
-              fields: [{ label: "Title", name: "title", widget: "string" }],
-            }
           - { label: "Intro", name: "intro", widget: "text" }
           - { label: "Body", name: "body", widget: "markdown", required: false }
   - name: "pages-pl"
@@ -120,11 +114,5 @@ collections:
           fields:
             - { label: "SEO title", name: "seoTitle", widget: "string" }
             - { label: "SEO Description", name: "seoDescription", widget: "text" }
-            - {
-                label: "Hero",
-                name: "hero",
-                widget: "object",
-                fields: [{ label: "Title", name: "title", widget: "string" }],
-              }
             - { label: "Intro", name: "intro", widget: "text" }
             - { label: "Body", name: "body", widget: "markdown", required: false }
