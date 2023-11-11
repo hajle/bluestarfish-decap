@@ -2,8 +2,7 @@
 welcome: Welcome in
 hero:
   title: We create your Unforgettable Trips
-  subtitle:
-    We will organize a holiday for you in Vietnam, Cambodia and Laos. Just
+  subtitle: We will organize a holiday for you in Vietnam, Cambodia and Laos. Just
     how you like it. On your terms.
 intro: >
   We are passionate about traveling and want to share our love for Vietnam,
@@ -16,8 +15,7 @@ intro: >
   With us, you will enter the world of fascinating corners of Southeast Asia, where you will experience true local culture and experience unforgettable adventures.
 skills:
   - title: Trips tailored to your needs
-    text:
-      Our boutique company focuses on an individual approach. We will listen to
+    text: Our boutique company focuses on an individual approach. We will listen to
       your dreams and needs and propose a trip perfectly tailored to you. We are
       open to suggestions and ready to adapt to meet your expectations.
   - title: Unique experiences
@@ -26,8 +24,7 @@ skills:
       local communities, discover lesser-known corners and experience moments
       that stand out from other market offers.
   - title: Decent price
-    text:
-      As a boutique agency, we do not have high fixed costs, so we can adapt to
+    text: As a boutique agency, we do not have high fixed costs, so we can adapt to
       your budget, offering the best quality at an attractive price. Ask us for
       a proposal - it's free!
   - title: Sustainable tourism
@@ -37,9 +34,8 @@ skills:
       experiences and help local communities thrive.
 layout: ../../layouts/Homepage.astro
 ---
+## Dlaczego my?
 
-We are passionate about traveling and want to share our love for Vietnam, Cambodia and Laos with you.
+Nie oferujemy szablonowych podróży. Tworzymy wycieczki skrojone dokładnie pod Ciebie, dostosowane do Twoich zainteresowań i preferencji. U nas zyskasz pełną elastyczność - podróżujesz w swoim tempie, a my dopasowujemy program do Twoich potrzeb, a nie odwrotnie.
 
-Our boutique travel agency offers trips that are fully tailored to your needs, exceeding the standards of what is available in mass travel agencies.
-
-With us, you will enter the world of fascinating corners of Southeast Asia, where you will experience true local culture and experience unforgettable adventures.a
+Co więcej, gwarantujemy atrakcyjne ceny. Jako butikowa agencja nie obciążamy się zbędnymi kosztami, co przekłada się na konkurencyjne oferty dla Ciebie. Sprawdź nas! Zapytanie nic Cię nie kosztuje.
