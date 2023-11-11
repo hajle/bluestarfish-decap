@@ -9,11 +9,11 @@ export const ui = {
   en: {
     'nav.about': 'About Us',
     'nav.countries': 'Countries',
-    'nav.trips': 'Trips types',
+    'nav.trips': 'Types of trips',
     'nav.contact': 'Contact',
     'slug.about': 'about-us',
     'slug.countries': 'countries',
-    'slug.trips': 'trips-types',
+    'slug.trips': 'types-of-trips',
     'slug.contact': 'contact',
   },
   pl: {
