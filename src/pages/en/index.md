@@ -1,5 +1,21 @@
 ---
 welcome: Welcome in
+hero:
+  image: _astro/vietnam-hero.jpg
+  alt: Hello
+  title: We create your Unforgettable Trips
+  subtitle:
+    We will organize a holiday for you in Vietnam, Cambodia and Laos. Just
+    how you like it. On your terms.
+intro: >
+  We are passionate about traveling and want to share our love for Vietnam,
+  Cambodia and Laos with you.
+
+
+  Our boutique travel agency offers trips that are fully tailored to your needs, exceeding the standards of what is available in mass travel agencies.
+
+
+  With us, you will enter the world of fascinating corners of Southeast Asia, where you will experience true local culture and experience unforgettable adventures.
 skills:
   - title: Trips tailored to your needs
     text:
@@ -22,21 +38,6 @@ skills:
       large tourist corporations. By choosing us, you invest in authentic
       experiences and help local communities thrive.
 layout: ../../layouts/Homepage.astro
-intro: >
-  We are passionate about traveling and want to share our love for Vietnam,
-  Cambodia and Laos with you.
-
-
-  Our boutique travel agency offers trips that are fully tailored to your needs, exceeding the standards of what is available in mass travel agencies.
-
-
-  With us, you will enter the world of fascinating corners of Southeast Asia, where you will experience true local culture and experience unforgettable adventures.
-hero:
-  image: _astro/vietnam-hero.jpg
-  title: We create your Unforgettable Trips
-  subtitle:
-    We will organize a holiday for you in Vietnam, Cambodia and Laos. Just
-    how you like it. On your terms.
 ---
 
 We are passionate about traveling and want to share our love for Vietnam, Cambodia and Laos with you.
