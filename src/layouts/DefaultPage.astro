@@ -8,6 +8,7 @@ import Chat from "../components/Chat.astro";
 import chatImg from "../images/chat-green.svg";
 const {frontmatter} = Astro.props;
 const intro = frontmatter.intro.split(`\n\n`).map((paragraph: any) => `<p>${paragraph}</p>`).join(``)
+const htmlSlot = await Astro.slots.render('default');
 ---
 
 <Layout title={frontmatter.seoTitle} description={frontmatter.seoDescription}>
@@ -25,11 +26,11 @@ const intro = frontmatter.intro.split(`\n\n`).map((paragraph: any) => `<p>${para
       >
       </div>
       <Chat image={chatImg.src} classes="w-56 mt-16" />
-      <div class="mt-16 lg:mt-24 flex flex-col gap-16 lg:gap-24">
+      {htmlSlot && <div class="mt-16 lg:mt-24">
         <div class="flex flex-col gap-8 text-center md:w-2/3 md:mx-auto">
           <slot />  
         </div>
-      </div>
+      </div>}
       <ContactUs />
     </Wrapper>
   </main>

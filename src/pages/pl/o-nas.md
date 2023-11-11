@@ -1,9 +1,6 @@
 ---
 seoTitle: O nas
 seoDescription: We will organize a holiday for you in Vietnam, Cambodia and Laos.
-hero:
-  title: O nas
-  subtitle: null
 intro: >
   Założyliśmy Blue Starfish Travel Boutique, zainspirowani urokiem Azji Południowo - Wschodniej. Nie chcemy organizować wycieczek masowych, chcemy, aby każda z podróży była niepowtarzalnym przeżyciem dla naszych klientów.
 
