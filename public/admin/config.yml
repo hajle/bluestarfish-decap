@@ -62,3 +62,29 @@ collections:
               - { label: title, name: title, widget: string }
               - { label: Text, name: text, widget: text }
           - { label: "Body", name: "body", widget: "markdown" }
+  - name: "pages-pl"
+    label: "Pages PL"
+    files:
+      - file: "src/pages/pl/index.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - { label: "Welcome", name: "welcome", widget: "string" }
+          - {
+              label: "Hero",
+              name: "hero",
+              widget: "object",
+              fields:
+                [
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Subtitle", name: "subtitle", widget: "string" },
+                ],
+            }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - label: Skills
+            name: skills
+            widget: list
+            fields:
+              - { label: title, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+          - { label: "Body", name: "body", widget: "markdown" }
