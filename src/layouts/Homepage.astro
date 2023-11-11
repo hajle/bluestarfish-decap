@@ -28,6 +28,7 @@ const intro = frontmatter.intro.split(`\n\n`).map((paragraph: any) => `<p>${para
       </div>
       <Chat image={chatImg.src} classes="w-56 mt-16" />
       <Destinations />
+      <slot />
       <Skills />
       <ContactUs />
     </Wrapper>
