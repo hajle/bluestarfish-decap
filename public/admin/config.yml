@@ -76,6 +76,12 @@ collections:
           - { label: "SEO Description", name: "seoDescription", widget: "text" }
           - { label: "Intro", name: "intro", widget: "text" }
           - { label: "Body", name: "body", widget: "markdown", required: false }
+          - {
+              label: "Has country widget",
+              name: "countriesWidget",
+              widget: "boolean",
+              default: false,
+            }
   - name: "pages-pl"
     label: "Pages PL"
     files:

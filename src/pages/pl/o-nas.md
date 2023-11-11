@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/DefaultPage.astro
 seoTitle: O nas
 seoDescription: We will organize a holiday for you in Vietnam, Cambodia and Laos.
 intro: >
@@ -8,6 +9,5 @@ intro: >
 
 
   Chcemy promować ten region i wspierać lokalne społeczności. Wierzymy, że dzięki temu zagwarantujemy Wam autentyczne i niezapomniane chwile w tej części Azji.
-layout: ../../layouts/DefaultPage.astro
-countriesWidget: true
+countriesWidget: false
 ---

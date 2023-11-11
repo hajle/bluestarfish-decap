@@ -22,10 +22,10 @@ const htmlSlot = await Astro.slots.render('default');
       chat={false}
     />
     <Wrapper>
-      <div
+      {intro && <div
         class="mt-16 lg:mt-24 lg:w-2/3 lg:mx-auto text-center flex flex-col gap-8" set:html={intro}
       >
-      </div>
+      </div>}
       <Chat image={chatImg.src} classes="w-56 mt-16" />
       {frontmatter.countriesWidget && <Destinations />}
       {htmlSlot && <div class="mt-16 lg:mt-24">
