@@ -52,10 +52,15 @@ collections:
               fields:
                 [
                   { label: "Title", name: "title", widget: "string" },
-                  { label: "Subtitle", name: "subtitle", widget: "string" },
+                  {
+                    label: "Subtitle",
+                    name: "subtitle",
+                    widget: "string",
+                    required: false,
+                  },
                 ],
             }
-          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Intro", name: "intro", widget: "text", required: false }
           - label: Skills
             name: skills
             widget: list
@@ -74,11 +79,16 @@ collections:
               fields:
                 [
                   { label: "Title", name: "title", widget: "string" },
-                  { label: "Subtitle", name: "subtitle", widget: "string" },
+                  {
+                    label: "Subtitle",
+                    name: "subtitle",
+                    widget: "string",
+                    required: false,
+                  },
                 ],
             }
           - { label: "Intro", name: "intro", widget: "text" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
   - name: "pages-pl"
     label: "Pages PL"
     files:

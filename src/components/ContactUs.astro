@@ -6,8 +6,9 @@ interface Props {
   biuttonTextPl?: string;
 }
 
-import { getLangFromUrl } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const { textPl = "Skontaktuj się z nami", textEn = "Contact Us", biuttonTextPl="Napisz do nas", buttonTextEn="Write to Us"  } = Astro.props;
 ---
@@ -16,7 +17,7 @@ const { textPl = "Skontaktuj się z nami", textEn = "Contact Us", biuttonTextPl=
   class="flex flex-col gap-8 items-center mt-16 lg:mt-24 border-t-[1px] border-gray-200 pt-16"
 >
   <div class="text-xl text-center">{lang === "en" ? textEn : textPl}</div><a
-    href={lang === "en" ? "/en/contact" : "/pl/kontakt"}
+    href={`/${lang}/${t('slug.contact')}`}
     class="bg-rose-500 hover:bg-emerald-500 transition-colors px-4 py-2 rounded-lg text-white"
     >{lang === "en" ? buttonTextEn : biuttonTextPl}</a
   >
