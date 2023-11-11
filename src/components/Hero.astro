@@ -20,6 +20,8 @@ const { image, height, title, desc, bottom, chat = true } = Astro.props;
   <Image
     src={image}
     alt={title}
+    width={2000}
+    height={2000}
     class={`object-cover w-full brightness-90 ${height}`}
   />
 
