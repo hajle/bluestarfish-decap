@@ -1,9 +1,11 @@
 ---
 layout: ../../../layouts/DefaultPage.astro
 seoTitle: Kraje
-seoDescription: We will organize a holiday for you in Vietnam, Cambodia and Laos.
+seoDescription: Zorganizujemy dla Ciebie wakacje w Wietnamie, Kambodży i Laosie.
 intro: >
-  Wietnam, Kambodża i Laos - to trzy kraje o bogatej przeszłości, niezwykłych kulturach i oszałamiających krajobrazach, które skupiają w sobie esencję południowo-wschodniej Azji. 
+  Wietnam, Kambodża i Laos - to trzy kraje o bogatej przeszłości, niezwykłych
+  kulturach i oszałamiających krajobrazach, które skupiają w sobie esencję
+  południowo-wschodniej Azji. 
 
 
   Wybierając te miejsca jako obszar naszych działań, chcemy dać podróżującym możliwość doświadczenia autentycznej atmosfery regionu. Wietnam z jego dynamicznymi miastami, bujnymi deltami rzek i długimi wybrzeżami; Kambodża, będąca domem dla majestatycznych ruin Angkoru i jej bogatej historii; oraz Laos z jego niezrównanym spokojem, górskimi pejzażami i serdecznymi mieszkańcami. 
