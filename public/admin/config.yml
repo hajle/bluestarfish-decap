@@ -96,6 +96,26 @@ collections:
               widget: "boolean",
               default: true,
             }
+      - file: "src/pages/en/contact.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { label: "SEO title", name: "seoTitle", widget: "string" }
+          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
+          - {
+              label: "Has countries widget",
+              name: "countriesWidget",
+              widget: "boolean",
+              default: false,
+            }
+          - {
+              label: "Has contact form",
+              name: "contactWidget",
+              widget: "boolean",
+              default: true,
+            }
   - name: "pages-pl"
     label: "Pages PL"
     files:
@@ -137,7 +157,7 @@ collections:
           - { label: "Intro", name: "intro", widget: "text" }
           - { label: "Body", name: "body", widget: "markdown", required: false }
           - {
-              label: "Has country widget",
+              label: "Has countries widget",
               name: "countriesWidget",
               widget: "boolean",
               default: false,
@@ -153,6 +173,26 @@ collections:
           - {
               label: "Has country widget",
               name: "countriesWidget",
+              widget: "boolean",
+              default: true,
+            }
+      - file: "src/pages/pl/kontakt.md"
+        label: "Kontakt"
+        name: "kontakt"
+        fields:
+          - { label: "SEO title", name: "seoTitle", widget: "string" }
+          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
+          - {
+              label: "Has countries widget",
+              name: "countriesWidget",
+              widget: "boolean",
+              default: true,
+            }
+          - {
+              label: "Has contact form",
+              name: "contactWidget",
               widget: "boolean",
               default: true,
             }
