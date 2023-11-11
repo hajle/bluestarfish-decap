@@ -11,7 +11,6 @@ const allCountries = await getCollection('country', ({ id }) => {
 const sortedCountries = allCountries.sort(
   (a, b) => a.data.sortOrder - b.data.sortOrder
 );
-console.log(sortedCountries);
 ---
 
 <div

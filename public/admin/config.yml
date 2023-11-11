@@ -112,7 +112,7 @@ collections:
             }
           - {
               label: "Has contact form",
-              name: "contactWidget",
+              name: "contactForm",
               widget: "boolean",
               default: true,
             }
@@ -192,7 +192,7 @@ collections:
             }
           - {
               label: "Has contact form",
-              name: "contactWidget",
+              name: "contactForm",
               widget: "boolean",
               default: true,
             }

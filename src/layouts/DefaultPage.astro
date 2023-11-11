@@ -7,6 +7,7 @@ import ContactUs from "../components/ContactUs.astro";
 import Chat from "../components/Chat.astro";
 import chatImg from "../images/chat-green.svg";
 import Destinations from "../components/Destinations.astro";
+import ContactForm from "../components/ContactForm";
 const {frontmatter} = Astro.props;
 const intro = frontmatter.intro.split(`\n\n`).map((paragraph: any) => `<p>${paragraph}</p>`).join(``)
 const htmlSlot = await Astro.slots.render('default');
@@ -33,7 +34,7 @@ const htmlSlot = await Astro.slots.render('default');
           <slot />  
         </div>
       </div>}
-      <ContactUs />
+      {frontmatter.contactForm ? <ContactForm client:only /> : <ContactUs />}      
     </Wrapper>
   </main>
 </Layout>
