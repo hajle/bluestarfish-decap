@@ -7,8 +7,11 @@ const lang = getLangFromUrl(Astro.url);
 //   (a, b) => a.data.sortOrder - b.data.sortOrder
 // ); -->
 const allCountries = await getCollection('country', ({ id }) => {
-  return id.startsWith("en/");
+  return id.startsWith(lang);
 });
+const sortedCountries = allCountries.sort(
+  (a, b) => a.data.sortOrder - b.data.sortOrder
+);
 ---
 
 <div
