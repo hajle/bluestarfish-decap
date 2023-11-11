@@ -82,6 +82,20 @@ collections:
               widget: "boolean",
               default: false,
             }
+      - file: "src/pages/en/countries/index.md"
+        label: "Countries"
+        name: "countries"
+        fields:
+          - { label: "SEO title", name: "seoTitle", widget: "string" }
+          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
+          - {
+              label: "Has country widget",
+              name: "countriesWidget",
+              widget: "boolean",
+              default: true,
+            }
   - name: "pages-pl"
     label: "Pages PL"
     files:
@@ -127,4 +141,18 @@ collections:
               name: "countriesWidget",
               widget: "boolean",
               default: false,
+            }
+      - file: "src/pages/pl/kraje/index.md"
+        label: "Kraje"
+        name: "kraje"
+        fields:
+          - { label: "SEO title", name: "seoTitle", widget: "string" }
+          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
+          - {
+              label: "Has country widget",
+              name: "countriesWidget",
+              widget: "boolean",
+              default: true,
             }
