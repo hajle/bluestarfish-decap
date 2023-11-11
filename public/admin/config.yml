@@ -78,6 +78,8 @@ collections:
               widget: "object",
               fields:
                 [
+                  { label: "SEO title", name: "seoTitle", widget: "string" }
+                  { label: "SEO Description", name: "seoDescription", widget: "text" }
                   { label: "Title", name: "title", widget: "string" },
                   {
                     label: "Subtitle",
@@ -96,7 +98,8 @@ collections:
         label: "Home Page"
         name: "home"
         fields:
-          - { label: "Welcome", name: "welcome", widget: "string" }
+          - { label: "SEO title", name: "seoTitle", widget: "string" }
+          - { label: "SEO Description", name: "seoDescription", widget: "text" }
           - {
               label: "Hero",
               name: "hero",
@@ -104,7 +107,12 @@ collections:
               fields:
                 [
                   { label: "Title", name: "title", widget: "string" },
-                  { label: "Subtitle", name: "subtitle", widget: "string" },
+                  {
+                    label: "Subtitle",
+                    name: "subtitle",
+                    widget: "string",
+                    required: false,
+                  },
                 ],
             }
           - { label: "Intro", name: "intro", widget: "text" }
