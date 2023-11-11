@@ -109,10 +109,10 @@ collections:
               - { label: Text, name: text, widget: text }
           - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/pl/o-nas.md"
-          label: "O nas"
-          name: "aboutus"
-          fields:
-            - { label: "SEO title", name: "seoTitle", widget: "string" }
-            - { label: "SEO Description", name: "seoDescription", widget: "text" }
-            - { label: "Intro", name: "intro", widget: "text" }
-            - { label: "Body", name: "body", widget: "markdown", required: false }
+        label: "O nas"
+        name: "aboutus"
+        fields:
+          - { label: "SEO title", name: "seoTitle", widget: "string" }
+          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
