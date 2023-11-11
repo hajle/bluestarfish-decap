@@ -2,12 +2,14 @@
 import { Image } from "astro:assets";
 import Wrapper from "./Wrapper.astro";
 import logo from "../../public/logo-white.svg";
-import navLinks from "../utils/nav-links";
 import Chat from "./Chat.astro";
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = "/" + pathname.slice(1);
 const currentYear = new Date().getFullYear();
 import chatImg from "../images/chat-white.svg";
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <footer class="py-12 bg-black text-white mt-16">
@@ -34,20 +36,26 @@ import chatImg from "../images/chat-white.svg";
           &copy; {currentYear} Blue Starfish TB, Ltd.
         </div>
         <ul class="flex flex-wrap items-center gap-4">
-          {
-            navLinks.map((link) => (
-              <li>
-                <a
-                  href={link.url}
-                  class={
-                    currentPath.indexOf(link.url) > -1 ? "text-rose-500" : ""
-                  }
-                >
-                  {link.title}
-                </a>
-              </li>
-            ))
-          }
+          <li>
+    <a href={`/${lang}/${t('slug.about')}`} class={`font-medium tracking-wide drop-shadow-sm ${
+            currentPath.indexOf(`/${lang}/${t('slug.about')}`) > -1 ? "text-rose-500" : ""
+          }`}>{t('nav.about')}</a>
+  </li>
+   <li>
+    <a href={`/${lang}/${t('slug.countries')}`} class={`font-medium tracking-wide drop-shadow-sm ${
+            currentPath.indexOf(`/${lang}/${t('slug.countries')}`) > -1 ? "text-rose-500" : ""
+          }`}>{t('nav.countries')}</a>
+  </li>
+  <li>
+    <a href={`/${lang}/${t('slug.trips')}`} class={`font-medium tracking-wide drop-shadow-sm ${
+            currentPath.indexOf(`/${lang}/${t('slug.trips')}`) > -1 ? "text-rose-500" : ""
+          }`}>{t('nav.trips')}</a>
+  </li>
+  <li>
+    <a href={`/${lang}/${t('slug.contact')}`} class={`font-medium tracking-wide drop-shadow-sm ${
+            currentPath.indexOf(`/${lang}/${t('slug.contact')}`) > -1 ? "text-rose-500" : ""
+          }`}>{t('nav.contact')}</a>
+  </li>
         </ul>
       </div>
     </div>

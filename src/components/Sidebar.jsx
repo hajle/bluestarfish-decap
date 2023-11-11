@@ -1,8 +1,13 @@
 import { useEffect } from "react";
 import menuIconClose from "../images/menu-close.svg";
-import navLinks from "../utils/nav-links";
+import {getLangFromUrl, useTranslations} from "../i18n/utils";
+import { languages } from '../i18n/ui';
 
 const Sidebar = ({ open = false, setOpen }) => {
+  const url = {pathname: window.location.pathname};
+  const currentPath = "/" + url.pathname.slice(1);
+  const lang = getLangFromUrl(url);
+  const t = useTranslations(lang);
   useEffect(() => {
     open
       ? document.body.classList.add("overflow-hidden")
@@ -26,15 +31,30 @@ const Sidebar = ({ open = false, setOpen }) => {
           </div>
           <div className="mt-8 mb-16">
             <ul className="flex flex-col gap-4">
-              {navLinks.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.url}
-                    className="text-xl hover:text-rose-500 transition"
-                  >
-                    {link.title}
-                  </a>
-                </li>
+              <li>
+    <a href={`/${lang}/${t('slug.about')}`} className={`font-medium tracking-wide drop-shadow-sm ${
+            currentPath.indexOf(`/${lang}/${t('slug.about')}`) > -1 ? "text-rose-500" : ""
+          }`}>{t('nav.about')}</a>
+              </li>
+              <li>
+                <a href={`/${lang}/${t('slug.countries')}`} className={`font-medium tracking-wide drop-shadow-sm ${
+                        currentPath.indexOf(`/${lang}/${t('slug.countries')}`) > -1 ? "text-rose-500" : ""
+                      }`}>{t('nav.countries')}</a>
+              </li>
+              <li>
+                <a href={`/${lang}/${t('slug.trips')}`} className={`font-medium tracking-wide drop-shadow-sm ${
+                        currentPath.indexOf(`/${lang}/${t('slug.trips')}`) > -1 ? "text-rose-500" : ""
+                      }`}>{t('nav.trips')}</a>
+              </li>
+              <li>
+                <a href={`/${lang}/${t('slug.contact')}`} className={`font-medium tracking-wide drop-shadow-sm ${
+                        currentPath.indexOf(`/${lang}/${t('slug.contact')}`) > -1 ? "text-rose-500" : ""
+                      }`}>{t('nav.contact')}</a>
+              </li>
+              {Object.entries(languages).map(([lang, label]) => (
+              <li>
+                <a href={`/${lang}/`}>{label}</a>
+              </li>
               ))}
             </ul>
           </div>

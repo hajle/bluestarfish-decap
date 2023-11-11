@@ -9,7 +9,7 @@ export const ui = {
   en: {
     'nav.about': 'About Us',
     'nav.countries': 'Countries',
-    'nav.trips': 'Types of trips',
+    'nav.trips': 'Types of Trips',
     'nav.contact': 'Contact',
     'slug.about': 'about-us',
     'slug.countries': 'countries',

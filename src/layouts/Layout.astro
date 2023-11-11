@@ -37,7 +37,7 @@ const lang = getLangFromUrl(Astro.url);
   </head>
   <body class="subpixel-antialiased bg-white text-gray-950 font-normal text-lg">
     <div class="grid grid-flow-row auto-rows-[auto_1fr_auto] h-screen">
-      <Header client:idle><Nav /></Header>
+      <Header client:only><Nav /></Header>
       <div transition:animate={fade({ duration: "0.5s" })}><slot /></div>
       <Footer />
     </div>
