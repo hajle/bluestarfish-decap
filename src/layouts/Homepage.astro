@@ -32,7 +32,7 @@ const intro = frontmatter.intro.split(`\n\n`).map((paragraph: any) => `<p>${para
   <div class="flex flex-col gap-8 text-center md:w-2/3 md:mx-auto">
     <slot />
   </div>
-      <Skills />
+      <Skills skills={frontmatter.skills} />
       <ContactUs />
     </Wrapper>
   </main>
