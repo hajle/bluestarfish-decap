@@ -86,7 +86,7 @@ collections:
     label: "Pages PL"
     files:
       - file: "src/pages/pl/index.md"
-        label: "Home Page"
+        label: "Strona główna"
         name: "home"
         fields:
           - { label: "SEO title", name: "seoTitle", widget: "string" }
@@ -114,3 +114,17 @@ collections:
               - { label: title, name: title, widget: string }
               - { label: Text, name: text, widget: text }
           - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/en/about-us.md"
+          label: "O nas"
+          name: "aboutus"
+          fields:
+            - { label: "SEO title", name: "seoTitle", widget: "string" }
+            - { label: "SEO Description", name: "seoDescription", widget: "text" }
+            - {
+                label: "Hero",
+                name: "hero",
+                widget: "object",
+                fields: [{ label: "Title", name: "title", widget: "string" }],
+              }
+            - { label: "Intro", name: "intro", widget: "text" }
+            - { label: "Body", name: "body", widget: "markdown", required: false }
