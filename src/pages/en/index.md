@@ -34,8 +34,8 @@ skills:
       experiences and help local communities thrive.
 layout: ../../layouts/Homepage.astro
 ---
-## Dlaczego my?
+## Why us?
 
-Nie oferujemy szablonowych podróży. Tworzymy wycieczki skrojone dokładnie pod Ciebie, dostosowane do Twoich zainteresowań i preferencji. U nas zyskasz pełną elastyczność - podróżujesz w swoim tempie, a my dopasowujemy program do Twoich potrzeb, a nie odwrotnie.
+We do not offer standard trips. We create trips tailored exactly to you, tailored to your interests and preferences. With us you will gain full flexibility - you travel at your own pace and we adapt the program to your needs, not the other way around.
 
-Co więcej, gwarantujemy atrakcyjne ceny. Jako butikowa agencja nie obciążamy się zbędnymi kosztami, co przekłada się na konkurencyjne oferty dla Ciebie. Sprawdź nas! Zapytanie nic Cię nie kosztuje.
+What's more, we guarantee attractive prices. As a boutique agency, we do not burden ourselves with unnecessary costs, which translates into competitive offers for you. Check us out! The inquiry costs you nothing.
