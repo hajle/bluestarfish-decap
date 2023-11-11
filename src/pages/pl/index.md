@@ -1,5 +1,5 @@
 ---
-welcome: Witamy w
+welcome: Witamy
 hero:
   title: Tworzymy Twoje Niezapomniane Podróże
   subtitle: Zorganizujemy dla Ciebie wakacje w Wietnamie, Kambodży i Laosie. Tak jak lubisz. Na Twoich warunkach.

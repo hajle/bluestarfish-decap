@@ -11,9 +11,10 @@ import "@fontsource/poppins/700.css";
 import "../styles/app.css";
 interface Props {
   title: string;
+  description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 
 import { getLangFromUrl } from '../i18n/utils';
 
@@ -26,12 +27,12 @@ const lang = getLangFromUrl(Astro.url);
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Zorganizujemy dla Ciebie wakacje w Wietnamie, Kambodży i Laosie."
+      content={description}
     />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title} Blue Starfish Travel Boutique</title>
+    <title>{title} - Blue Starfish Travel Boutique</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <ViewTransitions />
   </head>

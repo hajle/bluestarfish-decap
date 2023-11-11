@@ -43,7 +43,8 @@ collections:
         label: "Home Page"
         name: "home"
         fields:
-          - { label: "Welcome", name: "welcome", widget: "string" }
+          - { label: "SEO title", name: "seoTitle", widget: "string" }
+          - { label: "SEO Description", name: "seoDescription", widget: "text" }
           - {
               label: "Hero",
               name: "hero",
@@ -61,6 +62,22 @@ collections:
             fields:
               - { label: title, name: title, widget: string }
               - { label: Text, name: text, widget: text }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/en/about-us.md"
+        label: "About Us"
+        name: "aboutus"
+        fields:
+          - {
+              label: "Hero",
+              name: "hero",
+              widget: "object",
+              fields:
+                [
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Subtitle", name: "subtitle", widget: "string" },
+                ],
+            }
+          - { label: "Intro", name: "intro", widget: "text" }
           - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages-pl"
     label: "Pages PL"
