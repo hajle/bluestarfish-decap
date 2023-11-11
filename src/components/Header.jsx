@@ -1,11 +1,16 @@
 import { useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
+import { getLangFromUrl } from "../i18n/utils";
 import menuIcon from "../images/menu-open.svg";
 import menuIconWhite from "../images/menu-open-white.svg";
 import logo from "../images/logo.svg";
 import logoWhite from "../images/logo-white.svg";
 
 const Header = ({ children }) => {
+  const url = { pathname: window.location.pathname };
+  const currentPath = "/" + url.pathname.slice(1);
+  const lang = getLangFromUrl(url);
+
   const [open, setOpen] = useState(false);
   const [colorChange, setColorChange] = useState(false);
 
@@ -31,7 +36,7 @@ const Header = ({ children }) => {
             !colorChange && "text-white"
           }`}
         >
-          <a href="/">
+          <a href={`/${lang}`}>
             <img
               src={colorChange ? logo.src : logoWhite.src}
               alt="Logo"

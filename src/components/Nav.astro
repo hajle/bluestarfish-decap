@@ -28,9 +28,9 @@ const t = useTranslations(lang);
             currentPath.indexOf(`/${lang}/${t('slug.contact')}`) > -1 ? "text-rose-500" : ""
           }`}>{t('nav.contact')}</a>
   </li>
-  {Object.entries(languages).map(([lang, label]) => (
-    <li>
-      <a href={`/${lang}/`}>{label}</a>
+  {Object.entries(languages).map(([language, label]) => (
+    <li class={language === lang ? "hidden" : "ml-16"}>
+      <a href={`/${language}`}>{label}</a>
     </li>
   ))}
 </ul>
