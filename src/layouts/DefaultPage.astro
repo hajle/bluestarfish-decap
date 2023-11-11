@@ -14,10 +14,10 @@ const intro = frontmatter.intro.split(`\n\n`).map((paragraph: any) => `<p>${para
   <main>
     <Hero
       image={image}
-      height="min-h-screen"
+      height="h-[300px] md:h-[550px]"
       bottom="bottom-1/2 translate-y-1/2"
       title={frontmatter.hero.title}
-      desc={frontmatter.hero.subtitle}
+      chat={false}
     />
     <Wrapper>
       <div
