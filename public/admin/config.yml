@@ -72,14 +72,14 @@ collections:
         label: "About Us"
         name: "aboutus"
         fields:
+          - { label: "SEO title", name: "seoTitle", widget: "string" }
+          - { label: "SEO Description", name: "seoDescription", widget: "text" }
           - {
               label: "Hero",
               name: "hero",
               widget: "object",
               fields:
                 [
-                  { label: "SEO title", name: "seoTitle", widget: "string" }
-                  { label: "SEO Description", name: "seoDescription", widget: "text" }
                   { label: "Title", name: "title", widget: "string" },
                   {
                     label: "Subtitle",
