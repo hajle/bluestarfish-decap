@@ -12,8 +12,8 @@ collections:
     label: "Countries EN" # Used in the UI
     label_singular: "Country EN"
     folder: "src/content/country/en" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Title", name: "title", widget: "string" }
@@ -26,7 +26,7 @@ collections:
     label: "Countries PL" # Used in the UI
     label_singular: "Country PL"
     folder: "src/content/country/pl" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
+    create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }

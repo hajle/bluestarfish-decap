@@ -1,9 +1,14 @@
 ---
 import { getCollection } from "astro:content";
 import { Image } from "astro:assets";
-const allCountries = (await getCollection("country")).sort(
-  (a, b) => a.data.sortOrder - b.data.sortOrder
-);
+import { getLangFromUrl } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+// <!-- const allCountries = (await getCollection("country", ({id}))).sort(
+//   (a, b) => a.data.sortOrder - b.data.sortOrder
+// ); -->
+const allCountries = await getCollection('country', ({ id }) => {
+  return id.startsWith("en/");
+});
 ---
 
 <div
