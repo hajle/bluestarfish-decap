@@ -20,6 +20,8 @@ A legendary temple complex that is a testament to the power and splendor of the 
 
 ## The capital of Phnom Penh
 
+![Angkor Wat](_astro/cambodia-angkor-wat.jpg)
+
 A place where history meets modernity, offering travelers a fascinating insight into Cambodian urban life.
 
 ## The paradise islands of Koh Rong and Koh Rong Samloem
