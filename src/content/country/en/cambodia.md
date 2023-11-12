@@ -1,13 +1,17 @@
 ---
-seoTitle: Cambodia
-seoDesc: Cambodia, magical and mysterious, is a country with a fascinating history, mystical charm and beautiful landscapes.
-sortOrder: 2
 title: Cambodia
-cover: ../../../assets/images/about-hero.jpg
+sortOrder: 2
+cover: ../../../assets/images/cambodia-hero.jpg
 image: ../../../assets/images/dest-cambodia.jpg
-intro: Cambodia, magical and mysterious, is a country with a fascinating history, mystical charm and beautiful landscapes.
+description: Cambodia, magical and mysterious, is a country with a fascinating
+  history, mystical charm and beautiful landscapes.
+seo:
+  seosubtitle: Cambodia, magical and mysterious, is a country with a fascinating
+    history, mystical charm and beautiful landscapes.
+  seotitle: Cambodia
+intro: Cambodia, magical and mysterious, is a country with a fascinating
+  history, mystical charm and beautiful landscapes.
 ---
-
 Cambodia is a country full of contrasts, from the majestic temples of Angkor Wat, through the historic streets of Phnom Penh, to the picturesque coast in Sihanoukville. Cambodia's rich history and culture, combined with its wildlife, make the country an ideal destination for any traveler.
 
 &nbsp;
