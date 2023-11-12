@@ -1,7 +1,7 @@
 ---
 title: Cambodia
 sortOrder: 2
-cover: ../../../assets/images/cambodia-hero.jpg
+cover: ../../../assets/images/about-hero.jpg
 image: ../../../assets/images/dest-cambodia.jpg
 description: Cambodia, magical and mysterious, is a country with a fascinating
   history, mystical charm and beautiful landscapes.
