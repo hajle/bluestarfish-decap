@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/DefaultPage.astro
-seoTitle: Kontakt
-seoDescription: Zorganizujemy dla Ciebie wakacje w Wietnamie, Kambodży i Laosie.
+seo:
+  seoTitle: Kontakt
+  seoDescription: Zorganizujemy dla Ciebie wakacje w Wietnamie, Kambodży i Laosie.
 intro: >
   Masz pytania dotyczące podróży do Azji Południowo Wschodniej? Z chęcią podzielimy się naszą wiedzą.
 

@@ -59,13 +59,22 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages-en"
     label: "Pages EN"
+    public_folder: "../../assets/images"
     files:
       - file: "src/pages/en/index.md"
         label: "Home Page"
         name: "home"
         fields:
-          - { label: "SEO title", name: "seoTitle", widget: "string" }
-          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - {
+              label: "SEO",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "SEO Title", name: "seoTitle", widget: "string" },
+                  { label: "SEO Description", name: "seoDesc", widget: "text" },
+                ],
+            }
           - {
               label: "Hero",
               name: "hero",
@@ -74,11 +83,12 @@ collections:
                 [
                   { label: "Title", name: "title", widget: "string" },
                   {
-                    label: "Subtitle",
+                    label: "Hero Subtitle",
                     name: "subtitle",
-                    widget: "string",
+                    widget: "text",
                     required: false,
                   },
+                  { label: "Hero Image", name: "image", widget: "image" },
                 ],
             }
           - { label: "Intro", name: "intro", widget: "text", required: false }
@@ -93,8 +103,26 @@ collections:
         label: "About Us"
         name: "aboutus"
         fields:
-          - { label: "SEO title", name: "seoTitle", widget: "string" }
-          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - {
+              label: "SEO",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "SEO Title", name: "seoTitle", widget: "string" },
+                  { label: "SEO Description", name: "seoDesc", widget: "text" },
+                ],
+            }
+          - {
+              label: "Hero",
+              name: "hero",
+              widget: "object",
+              fields:
+                [
+                  { label: "Hero Title", name: "title", widget: "string" },
+                  { label: "Hero Image", name: "image", widget: "image" },
+                ],
+            }
           - { label: "Intro", name: "intro", widget: "text" }
           - { label: "Body", name: "body", widget: "markdown", required: false }
           - {
@@ -107,8 +135,26 @@ collections:
         label: "Countries"
         name: "countries"
         fields:
-          - { label: "SEO title", name: "seoTitle", widget: "string" }
-          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - {
+              label: "SEO",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "SEO Title", name: "seoTitle", widget: "string" },
+                  { label: "SEO Description", name: "seoDesc", widget: "text" },
+                ],
+            }
+          - {
+              label: "Hero",
+              name: "hero",
+              widget: "object",
+              fields:
+                [
+                  { label: "Hero Title", name: "title", widget: "string" },
+                  { label: "Hero Image", name: "image", widget: "image" },
+                ],
+            }
           - { label: "Intro", name: "intro", widget: "text" }
           - { label: "Body", name: "body", widget: "markdown", required: false }
           - {
@@ -121,8 +167,26 @@ collections:
         label: "Contact"
         name: "contact"
         fields:
-          - { label: "SEO title", name: "seoTitle", widget: "string" }
-          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - {
+              label: "SEO",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "SEO Title", name: "seoTitle", widget: "string" },
+                  { label: "SEO Description", name: "seoDesc", widget: "text" },
+                ],
+            }
+          - {
+              label: "Hero",
+              name: "hero",
+              widget: "object",
+              fields:
+                [
+                  { label: "Hero Title", name: "title", widget: "string" },
+                  { label: "Hero Image", name: "image", widget: "image" },
+                ],
+            }
           - { label: "Intro", name: "intro", widget: "text" }
           - { label: "Body", name: "body", widget: "markdown", required: false }
           - {
@@ -139,26 +203,36 @@ collections:
             }
   - name: "pages-pl"
     label: "Pages PL"
+    public_folder: "../../assets/images"
     files:
       - file: "src/pages/pl/index.md"
         label: "Strona główna"
         name: "home"
         fields:
-          - { label: "SEO title", name: "seoTitle", widget: "string" }
-          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - {
+              label: "SEO",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "SEO Title", name: "seoTitle", widget: "string" },
+                  { label: "SEO Description", name: "seoDesc", widget: "text" },
+                ],
+            }
           - {
               label: "Hero",
               name: "hero",
               widget: "object",
               fields:
                 [
-                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Hero Title", name: "title", widget: "string" },
                   {
-                    label: "Subtitle",
+                    label: "Hero Subtitle",
                     name: "subtitle",
-                    widget: "string",
+                    widget: "text",
                     required: false,
                   },
+                  { label: "Hero Image", name: "image", widget: "image" },
                 ],
             }
           - { label: "Intro", name: "intro", widget: "text" }
@@ -173,12 +247,30 @@ collections:
         label: "O nas"
         name: "aboutus"
         fields:
-          - { label: "SEO title", name: "seoTitle", widget: "string" }
-          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - {
+              label: "SEO",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "SEO Title", name: "seoTitle", widget: "string" },
+                  { label: "SEO Description", name: "seoDesc", widget: "text" },
+                ],
+            }
+          - {
+              label: "Hero",
+              name: "hero",
+              widget: "object",
+              fields:
+                [
+                  { label: "Hero Title", name: "title", widget: "string" },
+                  { label: "Hero Image", name: "image", widget: "image" },
+                ],
+            }
           - { label: "Intro", name: "intro", widget: "text" }
           - { label: "Body", name: "body", widget: "markdown", required: false }
           - {
-              label: "Has countries widget",
+              label: "Has country widget",
               name: "countriesWidget",
               widget: "boolean",
               default: false,
@@ -187,8 +279,26 @@ collections:
         label: "Kraje"
         name: "kraje"
         fields:
-          - { label: "SEO title", name: "seoTitle", widget: "string" }
-          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - {
+              label: "SEO",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "SEO Title", name: "seoTitle", widget: "string" },
+                  { label: "SEO Description", name: "seoDesc", widget: "text" },
+                ],
+            }
+          - {
+              label: "Hero",
+              name: "hero",
+              widget: "object",
+              fields:
+                [
+                  { label: "Hero Title", name: "title", widget: "string" },
+                  { label: "Hero Image", name: "image", widget: "image" },
+                ],
+            }
           - { label: "Intro", name: "intro", widget: "text" }
           - { label: "Body", name: "body", widget: "markdown", required: false }
           - {
@@ -201,8 +311,26 @@ collections:
         label: "Kontakt"
         name: "kontakt"
         fields:
-          - { label: "SEO title", name: "seoTitle", widget: "string" }
-          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - {
+              label: "SEO",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "SEO Title", name: "seoTitle", widget: "string" },
+                  { label: "SEO Description", name: "seoDesc", widget: "text" },
+                ],
+            }
+          - {
+              label: "Hero",
+              name: "hero",
+              widget: "object",
+              fields:
+                [
+                  { label: "Hero Title", name: "title", widget: "string" },
+                  { label: "Hero Image", name: "image", widget: "image" },
+                ],
+            }
           - { label: "Intro", name: "intro", widget: "text" }
           - { label: "Body", name: "body", widget: "markdown", required: false }
           - {

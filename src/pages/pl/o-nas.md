@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/DefaultPage.astro
-seoTitle: O nas
-seoDescription: Zorganizujemy dla Ciebie wakacje w Wietnamie, Kambodży i Laosie.
+seo:
+  seoTitle: O nas
+  seoDescription: Zorganizujemy dla Ciebie wakacje w Wietnamie, Kambodży i Laosie.
 intro: >
   Założyliśmy Blue Starfish Travel Boutique, zainspirowani urokiem Azji
   Południowo - Wschodniej. Nie chcemy organizować wycieczek masowych, chcemy,

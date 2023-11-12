@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/DefaultPage.astro
-seoTitle: About Us
-seoDescription: We will organize a holiday for you in Vietnam, Cambodia and Laos.
+seo:
+  seoTitle: About Us
+  seoDescription: We will organize a holiday for you in Vietnam, Cambodia and Laos.
 intro: >
   We founded Blue Starfish Travel Boutique, inspired by the charm of Southeast
   Asia. We do not want to organize mass trips, we want each trip to be a unique

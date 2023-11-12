@@ -1,8 +1,11 @@
 ---
 welcome: Witamy
+seo:
+  seoTitle: Tworzymy Twoje Niezapomniane Podróże
+  seoDesc: Zorganizujemy dla Ciebie wakacje w Wietnamie, Kambodży i Laosie. Tak jak lubisz. Na Twoich warunkach.
 hero:
-  title: Tworzymy Twoje Niezapomniane Podróże
-  subtitle: Zorganizujemy dla Ciebie wakacje w Wietnamie, Kambodży i Laosie. Tak jak lubisz. Na Twoich warunkach.
+  title: We create your Unforgettable Trips
+  subtitle: Lolo
 intro: >
   Jesteśmy pasjonatami podróży i pragniemy podzielić się z Tobą naszą miłością do Wietnamu, Kambodży i Laosu.
 

@@ -12,7 +12,7 @@ const {frontmatter} = Astro.props;
 const intro = frontmatter.intro.split(`\n\n`).map((paragraph: any) => `<p>${paragraph}</p>`).join(``)
 ---
 
-<Layout title={frontmatter.welcome}>
+<Layout title={frontmatter.seo.seoTitle} description={frontmatter.seo.seoDesc}>
   <main>
     <Hero
       image={image}

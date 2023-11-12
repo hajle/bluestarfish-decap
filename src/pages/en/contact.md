@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/DefaultPage.astro
-seoTitle: Contact
-seoDescription: We will organize a holiday for you in Vietnam, Cambodia and Laos.
+seo:
+  seoTitle: Contact
+  seoDescription: We will organize a holiday for you in Vietnam, Cambodia and Laos.
 intro: >
   Have questions about traveling to Southeast Asia? We will be happy to share our knowledge.
 

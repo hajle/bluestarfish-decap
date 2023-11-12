@@ -1,7 +1,8 @@
 ---
 layout: ../../../layouts/DefaultPage.astro
-seoTitle: Countries
-seoDescription: We will organize a holiday for you in Vietnam, Cambodia and Laos.
+seo:
+  seoTitle: Countries
+  seoDescription: We will organize a holiday for you in Vietnam, Cambodia and Laos.
 intro: >
   Vietnam, Cambodia and Laos - these are three countries with a rich past, extraordinary cultures and stunning landscapes that capture the essence of Southeast Asia.
 

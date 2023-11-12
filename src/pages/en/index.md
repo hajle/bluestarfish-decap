@@ -1,9 +1,13 @@
 ---
 welcome: Welcome
+seo:
+  seoTitle: We create your Unforgettable Trips
+  seoDesc:
+    We will organize a holiday for you in Vietnam, Cambodia and Laos. Just
+    how you like it. On your terms.
 hero:
   title: We create your Unforgettable Trips
-  subtitle: We will organize a holiday for you in Vietnam, Cambodia and Laos. Just
-    how you like it. On your terms.
+  subtitle: Lolo
 intro: >
   We are passionate about traveling and want to share our love for Vietnam,
   Cambodia and Laos with you.
@@ -15,7 +19,8 @@ intro: >
   With us, you will enter the world of fascinating corners of Southeast Asia, where you will experience true local culture and experience unforgettable adventures.
 skills:
   - title: Trips tailored to your needs
-    text: Our boutique company focuses on an individual approach. We will listen to
+    text:
+      Our boutique company focuses on an individual approach. We will listen to
       your dreams and needs and propose a trip perfectly tailored to you. We are
       open to suggestions and ready to adapt to meet your expectations.
   - title: Unique experiences
@@ -24,7 +29,8 @@ skills:
       local communities, discover lesser-known corners and experience moments
       that stand out from other market offers.
   - title: Decent price
-    text: As a boutique agency, we do not have high fixed costs, so we can adapt to
+    text:
+      As a boutique agency, we do not have high fixed costs, so we can adapt to
       your budget, offering the best quality at an attractive price. Ask us for
       a proposal - it's free!
   - title: Sustainable tourism
@@ -33,8 +39,6 @@ skills:
       large tourist corporations. By choosing us, you invest in authentic
       experiences and help local communities thrive.
 layout: ../../layouts/Homepage.astro
-seoTitle: Welcome
-seoDescription: We will organize a holiday for you in Vietnam, Cambodia and Laos.
 ---
 
 ## Why us?
