@@ -1,14 +1,16 @@
 ---
 seo:
   seoTitle: Laos
-  seoDesc: Laos, położony na odsłoniętym terenie w sercu Azji Południowo-Wschodniej, to kraj, który zachwyca swoim niezwykłym urokiem i duchem.
-sortOrder: 3
+  seoDesc: Laos, położony na odsłoniętym terenie w sercu Azji
+    Południowo-Wschodniej, to kraj, który zachwyca swoim niezwykłym urokiem i
+    duchem.
 title: Laos
-cover: "../../../assets/images/laos-hero.jpg"
-image: "../../../assets/images/dest-laos.jpg"
-intro: Laos, położony na odsłoniętym terenie w sercu Azji Południowo-Wschodniej, to kraj, który zachwyca swoim niezwykłym urokiem i duchem.
+sortOrder: 3
+cover: ../../../assets/images/laos-hero.jpg
+image: ../../../assets/images/dest-laos.jpg
+intro: Laos, położony na odsłoniętym terenie w sercu Azji Południowo-Wschodniej,
+  to kraj, który zachwyca swoim niezwykłym urokiem i duchem.
 ---
-
 Laos to kraj nieco mniej znany niż jego sąsiedzi, ale równie fascynujący i pełen nieodkrytych skarbów. Ukryte wśród gór i gęstych lasów świątynie, spokojne miasteczka nad rzeką Mekong i autentyczna kultura czynią go miejscem, gdzie można prawdziwie doświadczyć ducha południowo-wschodniej Azji.
 
 &nbsp;
@@ -16,6 +18,10 @@ Laos to kraj nieco mniej znany niż jego sąsiedzi, ale równie fascynujący i p
 Dlaczego warto odwiedzić Laos?
 
 ## Luang Prabang
+
+
+
+![Laos](../../../assets/images/cambodia-angkor-wat.jpg)
 
 Dawniej stolica królewska, dzisiaj jest to urokliwe miasteczko pełne buddyjskich świątyń, francuskich kolonialnych budynków i wspaniałych wodospadów.
 
