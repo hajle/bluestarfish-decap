@@ -13,13 +13,13 @@ const intro = frontmatter.intro.split(`\n\n`).map((paragraph: any) => `<p>${para
 const htmlSlot = await Astro.slots.render('default');
 ---
 
-<Layout title={frontmatter.seoTitle} description={frontmatter.seoDescription}>
+<Layout title={frontmatter.seo.seoTitle} description={frontmatter.seo.seoDesc}>
   <main>
     <Hero
       image={image}
       height="h-[300px] md:h-[550px]"
       bottom="bottom-1/2 translate-y-1/2"
-      title={frontmatter.seoTitle}
+      title={frontmatter.hero.title}
       chat={false}
     />
     <Wrapper>
@@ -30,7 +30,7 @@ const htmlSlot = await Astro.slots.render('default');
       <Chat image={chatImg.src} classes="w-56 mt-16" />
       {frontmatter.countriesWidget && <Destinations />}
       {htmlSlot && <div class="mt-16 lg:mt-24">
-        <div class="flex flex-col gap-8 text-center md:w-2/3 md:mx-auto">
+        <div class="flex flex-col gap-8 text-center w-full md:max-w-2/3 lg:max-w-xl md:mx-auto">
           <slot />  
         </div>
       </div>}

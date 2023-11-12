@@ -131,7 +131,7 @@ collections:
               widget: "boolean",
               default: false,
             }
-      - file: "src/pages/en/countries/index.md"
+      - file: "src/pages/en/countries.md"
         label: "Countries"
         name: "countries"
         fields:
@@ -275,7 +275,7 @@ collections:
               widget: "boolean",
               default: false,
             }
-      - file: "src/pages/pl/kraje/index.md"
+      - file: "src/pages/pl/kraje.md"
         label: "Kraje"
         name: "kraje"
         fields:
@@ -337,7 +337,7 @@ collections:
               label: "Has countries widget",
               name: "countriesWidget",
               widget: "boolean",
-              default: true,
+              default: false,
             }
           - {
               label: "Has contact form",
