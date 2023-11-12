@@ -13,31 +13,49 @@ collections:
     folder: "src/content/country/en" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}"
-    # media_folder: "../../../assets/images"
     public_folder: "../../../assets/images"
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - {
+          label: "SEO",
+          name: "seo",
+          widget: "object",
+          fields:
+            [
+              { label: "SEO Title", name: "seotitle", widget: "string" },
+              { label: "SEO Subtitle", name: "seosubtitle", widget: "text" },
+            ],
+        }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Sort order", name: "sortOrder", widget: "number" }
-      - { label: "Cover Image", name: "cover", widget: "image" }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Hero Image", name: "cover", widget: "image" }
+      - { label: "Widget Image", name: "image", widget: "image" }
+      - { label: "Intro", name: "intro", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "countries-pl" # Used in routes, e.g., /admin/collections/blog
     label: "Countries PL" # Used in the UI
     label_singular: "Country PL"
     folder: "src/content/country/pl" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    # media_folder: "../../../assets/images"
     public_folder: "../../../assets/images"
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - {
+          label: "SEO",
+          name: "seo",
+          widget: "object",
+          fields:
+            [
+              { label: "SEO Title", name: "seotitle", widget: "string" },
+              { label: "SEO Subtitle", name: "seosubtitle", widget: "text" },
+            ],
+        }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Sort order", name: "sortOrder", widget: "number" }
-      - { label: "Cover Image", name: "cover", widget: "image" }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Hero Image", name: "cover", widget: "image" }
+      - { label: "Widget Image", name: "image", widget: "image" }
+      - { label: "Intro", name: "intro", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages-en"
     label: "Pages EN"

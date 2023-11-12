@@ -1,33 +1,35 @@
 ---
-title: Laos
+seoTitle: Laos
+seoDesc: Laos, located in an exposed area in the heart of Southeast Asia, is a country that delights with its   extraordinary charm and spirit.
 sortOrder: 3
+title: Laos
 cover: "../../../assets/images/laos-hero.jpg"
 image: "../../../assets/images/dest-laos.jpg"
-description: Laos, położony na odsłoniętym terenie w sercu Azji Południowo-Wschodniej, to kraj, który zachwyca swoim niezwykłym urokiem i duchem.
+intro: Laos, located in an exposed area in the heart of Southeast Asia, is a country that delights with its extraordinary charm and spirit.
 ---
 
-Laos to kraj nieco mniej znany niż jego sąsiedzi, ale równie fascynujący i pełen nieodkrytych skarbów. Ukryte wśród gór i gęstych lasów świątynie, spokojne miasteczka nad rzeką Mekong i autentyczna kultura czynią go miejscem, gdzie można prawdziwie doświadczyć ducha południowo-wschodniej Azji.
+Laos is a country slightly less known than its neighbors, but equally fascinating and full of undiscovered treasures. Temples hidden among the mountains and dense forests, quiet towns on the Mekong River and authentic culture make it a place where you can truly experience the spirit of Southeast Asia.
 
 &nbsp;
 
-Dlaczego warto odwiedzić Laos?
+Why is it worth visiting Laos?
 
 ## Luang Prabang
 
-Dawniej stolica królewska, dzisiaj jest to urokliwe miasteczko pełne buddyjskich świątyń, francuskich kolonialnych budynków i wspaniałych wodospadów.
+Formerly the royal capital, today it is a charming town full of Buddhist temples, French colonial buildings and magnificent waterfalls.
 
-## Rzeka Mekong
+## Mekong River
 
-Żyła kraju, wzdłuż której rozciągają się malownicze wioski i majestatyczne krajobrazy.
+The vein of the country, along which there are picturesque villages and majestic landscapes.
 
-## Jaskinie w Vang Vieng
+## Vang Vieng Caves
 
-Impresyjne formacje skalne i podziemne rzeki czekają na śmiałków gotowych na podziemne przygody.
+Impressive rock formations and underground rivers await daredevils ready for underground adventures.
 
-## Plaże Si Phan Don
+## Si Phan Don beaches
 
-Znane także jako "Cztery Tysiące Wysp" to miejsce, gdzie czas zdaje się płynąć wolniej, a życie koncentruje się wokół rzeki.
+Also known as the "Four Thousand Islands", it is a place where time seems to pass slower and life centers around the river.
 
-## Kuchnia laotańska
+## Laotian cuisine
 
-Łącząca w sobie wpływy sąsiednich krajów, ale z zachowaniem własnej unikatowej tożsamości – larb, sticky rice czy tam mak hoong to tylko niektóre z lokalnych specjałów.
+Combining influences from neighboring countries, but maintaining its own unique identity - larb, sticky rice and mak hoong are just some of the local specialties.

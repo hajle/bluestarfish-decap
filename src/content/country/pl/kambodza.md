@@ -1,11 +1,15 @@
 ---
-title: Kambodża
+seoTitle: Kambodża
+seoDesc: Kambodża, magiczna i tajemnicza, to kraj o fascynującej historii,
+  mistycznym uroku i przepięknych krajobrazach.
 sortOrder: 2
+title: Kambodża
 cover: ../../../assets/images/cambodia-hero.jpg
 image: ../../../assets/images/dest-cambodia.jpg
-description: Kambodża, magiczna i tajemnicza, to kraj o fascynującej historii,
+intro: Kambodża, magiczna i tajemnicza, to kraj o fascynującej historii,
   mistycznym uroku i przepięknych krajobrazach.
 ---
+
 Kambodża to kraj pełen kontrastów, od świątyń majestatycznych Angkor Wat, przez zabytkowe uliczki Phnom Penh, po malownicze wybrzeże w Sihanoukville. Bogata historia i kultura Kambodży, w połączeniu z jej dziką przyrodą, czynią ten kraj idealnym miejscem dla każdego podróżnika.
 
 &nbsp;

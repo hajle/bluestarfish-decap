@@ -1,38 +1,41 @@
 ---
-title: Vietnam
+seoTitle: Vietnam
+seoDesc: Vietnam, located on the eastern shores of the Asian continent,
+  it is a country full of contrasts, rich history and amazing landscapes.
 sortOrder: 1
+title: Vietnam
 cover: ../../../assets/images/vietnam-hero.jpg
 image: ../../../assets/images/dest-vietnam.jpg
-description: Wietnam, leżący na wschodnich wybrzeżach kontynentu azjatyckiego,
-  to kraj pełen kontrastów, bogatej historii i niesamowitych krajobrazów.
+intro: Vietnam, located on the eastern shores of the Asian continent,
+  it is a country full of contrasts, rich history and amazing landscapes.
 ---
 
-Przez lata Wietnam rozwijał się w cieniu swoich większych sąsiadów, ale dzisiaj zdecydowanie wysuwa się na światło dzienne jako jedno z najbardziej fascynujących miejsc w południowo-wschodniej Azji. Z niezwykłą mieszanką tradycyjnej kultury i nowoczesności, Wietnam oferuje podróżnikom bogate doświadczenia.
+For years, Vietnam has developed in the shadow of its larger neighbors, but today it is definitely coming to light as one of the most fascinating places in Southeast Asia. With a unique blend of traditional culture and modernity, Vietnam offers travelers a rich experience.
 
 &nbsp;
 
-Dlaczego warto odwiedzić Wietnam?
+Why is it worth visiting Vietnam?
 
-## Zatoka Ha Long
+## Ha Long Bay
 
-Kryształowo czyste wody, wapienne skały i spokojne wioski rybackie sprawiają, że jest to jedno z najpiękniejszych miejsc na świecie.
+Crystal clear waters, limestone cliffs and peaceful fishing villages make it one of the most beautiful places in the world.
 
 ![Zatoka Ha-Long](../../../assets/images/vietnam-ha-long.jpg)
 
-## Kuchnia wietnamska
+## Vietnamese cuisine
 
-Od smażonych pierożków, przez pho, po kawę z jajkiem – kulinarni entuzjaści będą w siódmym niebie.
+From fried dumplings, through pho, to coffee with eggs - culinary enthusiasts will be in seventh heaven.
 
-## Historyczne miasta Hoi An i Hue
+## The historic cities of Hoi An and Hue
 
-Barwne uliczki, tradycyjne latarnie i historyczne pałace sprawiają, że czas zdaje się tu płynąć wolniej.
+Colorful streets, traditional lanterns and historic palaces make time seem to pass slower here.
 
-## Dynamiczne Ho Chi Minh i Hanoi
+## Dynamic Ho Chi Minh and Hanoi
 
-Nowoczesność splata się tu z tradycją, a życie miejskie pulsuje z energią.
+Modernity intertwines with tradition here, and city life pulsates with energy.
 
-## Tereny wiejskie i górzyste regiony Sapa
+## Sapa's rural and mountainous regions
 
-Bujne zielone tarasy ryżowe i tradycyjne społeczności etniczne oferują odskocznię od miejskiego zgiełku.
+Lush green rice terraces and traditional ethnic communities offer a break from the hustle and bustle of the city.
 
-![Pola ryżowe](../../../assets/images/vietnam-rice-fields.jpg)
+![Rice fields](../../../assets/images/vietnam-rice-fields.jpg)
