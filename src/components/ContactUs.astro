@@ -3,14 +3,14 @@ interface Props {
   textEn?: string;
   textPl?: string;
   buttonTextEn?: string;
-  biuttonTextPl?: string;
+  buttonTextPl?: string;
 }
 
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const { textPl = "Skontaktuj się z nami", textEn = "Contact Us", biuttonTextPl="Napisz do nas", buttonTextEn="Write to Us"  } = Astro.props;
+const { textPl = "Skontaktuj się z nami", textEn = "Contact Us", buttonTextPl="Napisz do nas", buttonTextEn="Write to Us"  } = Astro.props;
 ---
 
 <div
@@ -19,6 +19,6 @@ const { textPl = "Skontaktuj się z nami", textEn = "Contact Us", biuttonTextPl=
   <div class="text-xl text-center">{lang === "en" ? textEn : textPl}</div><a
     href={`/${lang}/${t('slug.contact')}`}
     class="bg-rose-500 hover:bg-emerald-500 transition-colors px-4 py-2 rounded-lg text-white"
-    >{lang === "en" ? buttonTextEn : biuttonTextPl}</a
+    >{lang === "en" ? buttonTextEn : buttonTextPl}</a
   >
 </div>
