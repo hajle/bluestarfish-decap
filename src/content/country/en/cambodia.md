@@ -20,7 +20,7 @@ A legendary temple complex that is a testament to the power and splendor of the 
 
 ## The capital of Phnom Penh
 
-![Angkor Wat](_astro/group.jpg)
+![Angkor Wat](src/assets/images/cambodia-angkor-wat.jpg)
 
 A place where history meets modernity, offering travelers a fascinating insight into Cambodian urban life.
 
