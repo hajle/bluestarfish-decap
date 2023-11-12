@@ -1,7 +1,8 @@
 ---
-seoTitle: Kambodża
-seoDesc: Kambodża, magiczna i tajemnicza, to kraj o fascynującej historii,
-  mistycznym uroku i przepięknych krajobrazach.
+seo:
+  seoTitle: Kambodża
+  seoDesc: Kambodża, magiczna i tajemnicza, to kraj o fascynującej historii,
+    mistycznym uroku i przepięknych krajobrazach.
 sortOrder: 2
 title: Kambodża
 cover: ../../../assets/images/cambodia-hero.jpg

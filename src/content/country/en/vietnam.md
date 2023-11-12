@@ -1,7 +1,8 @@
 ---
-seoTitle: Vietnam
-seoDesc: Vietnam, located on the eastern shores of the Asian continent,
-  it is a country full of contrasts, rich history and amazing landscapes.
+seo:
+  seoTitle: Vietnam
+  seoDesc: Vietnam, located on the eastern shores of the Asian continent,
+    it is a country full of contrasts, rich history and amazing landscapes.
 sortOrder: 1
 title: Vietnam
 cover: ../../../assets/images/vietnam-hero.jpg

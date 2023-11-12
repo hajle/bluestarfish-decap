@@ -1,6 +1,7 @@
 ---
-seoTitle: Wietnam
-seoDesc: Wietnam, leżący na wschodnich wybrzeżach kontynentu azjatyckiego, to kraj pełen kontrastów, bogatej historii i niesamowitych krajobrazów.
+seo:
+  seoTitle: Wietnam
+  seoDesc: Wietnam, leżący na wschodnich wybrzeżach kontynentu azjatyckiego, to kraj pełen kontrastów, bogatej historii i niesamowitych krajobrazów.
 sortOrder: 1
 title: Wietnam
 cover: "../../../assets/images/vietnam-hero.jpg"

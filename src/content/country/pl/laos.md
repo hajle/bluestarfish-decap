@@ -1,6 +1,7 @@
 ---
-seoTitle: Laos
-seoDesc: Laos, położony na odsłoniętym terenie w sercu Azji Południowo-Wschodniej, to kraj, który zachwyca swoim niezwykłym urokiem i duchem.
+seo:
+  seoTitle: Laos
+  seoDesc: Laos, położony na odsłoniętym terenie w sercu Azji Południowo-Wschodniej, to kraj, który zachwyca swoim niezwykłym urokiem i duchem.
 sortOrder: 3
 title: Laos
 cover: "../../../assets/images/laos-hero.jpg"

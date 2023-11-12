@@ -1,6 +1,7 @@
 ---
-seoTitle: Laos
-seoDesc: Laos, located in an exposed area in the heart of Southeast Asia, is a country that delights with its   extraordinary charm and spirit.
+seo:
+  seoTitle: Laos
+  seoDesc: Laos, located in an exposed area in the heart of Southeast Asia, is a country that delights with its   extraordinary charm and spirit.
 sortOrder: 3
 title: Laos
 cover: "../../../assets/images/laos-hero.jpg"
