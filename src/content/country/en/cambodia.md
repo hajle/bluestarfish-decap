@@ -12,7 +12,6 @@ seo:
 intro: Cambodia, magical and mysterious, is a country with a fascinating
   history, mystical charm and beautiful landscapes.
 ---
-
 Cambodia is a country full of contrasts, from the majestic temples of Angkor Wat, through the historic streets of Phnom Penh, to the picturesque coast in Sihanoukville. Cambodia's rich history and culture, combined with its wildlife, make the country an ideal destination for any traveler.
 
 &nbsp;
@@ -26,8 +25,6 @@ A legendary temple complex that is a testament to the power and splendor of the 
 ![Angkor Wat](../../../assets/images/cambodia-angkor-wat.jpg)
 
 ## The capital of Phnom Penh
-
-![Angkor Wat](../../../assets/images/honeymoon.jpg)
 
 A place where history meets modernity, offering travelers a fascinating insight into Cambodian urban life.
 
