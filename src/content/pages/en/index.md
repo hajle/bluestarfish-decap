@@ -40,7 +40,7 @@ skills:
       large tourist corporations. By choosing us, you invest in authentic
       experiences and help local communities thrive.
 countriesWidget: true
-chatWidget: false
+chatWidget: true
 ---
 
 ## Why us?
