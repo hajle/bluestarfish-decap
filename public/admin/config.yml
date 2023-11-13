@@ -309,6 +309,7 @@ collections:
                 }
       - name: "widgets"
         label: "Custom Widgets"
+        file: "src/data/settings.json"
         fields:
           - name: "skills_en"
             label: "Skills English"
