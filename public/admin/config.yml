@@ -3,8 +3,8 @@ backend:
   branch: main
 
 publish_mode: editorial_workflow
-
 media_folder: "/src/assets/images"
+logo_url: https://bluestarfishtravel.com/_astro/logo.50778641.svg
 
 collections:
   - name: "countries-en" # Used in routes, e.g., /admin/collections/blog
