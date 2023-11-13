@@ -8,7 +8,7 @@ seo:
 hero:
   title: We create your Unforgettable Trips
   subtitle: We will organize a holiday for you in Vietnam, Cambodia and Laos. Just how you like it. On your terms.
-  image: ../../assets/images/home-hero.jpg
+  image: ../../../assets/images/home-hero.jpg
 intro: >
   We are passionate about traveling and want to share our love for Vietnam,
   Cambodia and Laos with you.
@@ -39,7 +39,8 @@ skills:
       communities, we promote the development of the region without supporting
       large tourist corporations. By choosing us, you invest in authentic
       experiences and help local communities thrive.
-layout: ../../layouts/Homepage.astro
+countriesWidget: true
+chatWidget: false
 ---
 
 ## Why us?

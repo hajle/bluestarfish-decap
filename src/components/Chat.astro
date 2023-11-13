@@ -2,12 +2,13 @@
 interface Props {
   image: string;
   classes: string;
+  margin?: string;
 }
 
-const { image, classes } = Astro.props;
+const { image, classes, margin } = Astro.props;
 ---
 
-<div class="flex justify-center">
+<div class={`flex justify-center ${margin}`}>
   <a
     aria-label="Chat on WhatsApp"
     href="https://wa.me/84368318072"

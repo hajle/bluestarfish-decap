@@ -8,8 +8,8 @@ media_folder: "/src/assets/images"
 
 collections:
   - name: "countries-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Countries EN" # Used in the UI
-    label_singular: "Country EN"
+    label: "Countries" # Used in the UI
+    label_singular: "Country"
     folder: "src/content/country/en" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}"
@@ -33,8 +33,8 @@ collections:
       - { label: "Intro", name: "intro", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "countries-pl" # Used in routes, e.g., /admin/collections/blog
-    label: "Countries PL" # Used in the UI
-    label_singular: "Country PL"
+    label: "Kraje" # Used in the UI
+    label_singular: "Kraj"
     folder: "src/content/country/pl" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     public_folder: "../../../assets/images"
@@ -57,291 +57,113 @@ collections:
       - { label: "Widget Image", name: "image", widget: "image" }
       - { label: "Intro", name: "intro", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "pages-en"
-    label: "Pages EN"
-    public_folder: "../../assets/images"
-    files:
-      - file: "src/pages/en/index.md"
-        label: "Home Page"
-        name: "home"
-        fields:
-          - {
-              label: "SEO",
-              name: "seo",
-              widget: "object",
-              fields:
-                [
-                  { label: "SEO Title", name: "seoTitle", widget: "string" },
-                  { label: "SEO Description", name: "seoDesc", widget: "text" },
-                ],
-            }
-          - {
-              label: "Hero",
-              name: "hero",
-              widget: "object",
-              fields:
-                [
-                  { label: "Title", name: "title", widget: "string" },
-                  {
-                    label: "Hero Subtitle",
-                    name: "subtitle",
-                    widget: "text",
-                    required: false,
-                  },
-                  { label: "Hero Image", name: "image", widget: "image" },
-                ],
-            }
-          - { label: "Intro", name: "intro", widget: "text", required: false }
-          - label: Skills
-            name: skills
-            widget: list
-            fields:
-              - { label: title, name: title, widget: string }
-              - { label: Text, name: text, widget: text }
-          - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/en/about-us.md"
-        label: "About Us"
-        name: "aboutus"
-        fields:
-          - {
-              label: "SEO",
-              name: "seo",
-              widget: "object",
-              fields:
-                [
-                  { label: "SEO Title", name: "seoTitle", widget: "string" },
-                  { label: "SEO Description", name: "seoDesc", widget: "text" },
-                ],
-            }
-          - {
-              label: "Hero",
-              name: "hero",
-              widget: "object",
-              fields:
-                [
-                  { label: "Hero Title", name: "title", widget: "string" },
-                  { label: "Hero Image", name: "image", widget: "image" },
-                ],
-            }
-          - { label: "Intro", name: "intro", widget: "text" }
-          - { label: "Body", name: "body", widget: "markdown", required: false }
-          - {
-              label: "Has country widget",
-              name: "countriesWidget",
-              widget: "boolean",
-              default: false,
-            }
-      - file: "src/pages/en/countries.md"
-        label: "Countries"
-        name: "countries"
-        fields:
-          - {
-              label: "SEO",
-              name: "seo",
-              widget: "object",
-              fields:
-                [
-                  { label: "SEO Title", name: "seoTitle", widget: "string" },
-                  { label: "SEO Description", name: "seoDesc", widget: "text" },
-                ],
-            }
-          - {
-              label: "Hero",
-              name: "hero",
-              widget: "object",
-              fields:
-                [
-                  { label: "Hero Title", name: "title", widget: "string" },
-                  { label: "Hero Image", name: "image", widget: "image" },
-                ],
-            }
-          - { label: "Intro", name: "intro", widget: "text" }
-          - { label: "Body", name: "body", widget: "markdown", required: false }
-          - {
-              label: "Has country widget",
-              name: "countriesWidget",
-              widget: "boolean",
-              default: true,
-            }
-      - file: "src/pages/en/contact.md"
-        label: "Contact"
-        name: "contact"
-        fields:
-          - {
-              label: "SEO",
-              name: "seo",
-              widget: "object",
-              fields:
-                [
-                  { label: "SEO Title", name: "seoTitle", widget: "string" },
-                  { label: "SEO Description", name: "seoDesc", widget: "text" },
-                ],
-            }
-          - {
-              label: "Hero",
-              name: "hero",
-              widget: "object",
-              fields:
-                [
-                  { label: "Hero Title", name: "title", widget: "string" },
-                  { label: "Hero Image", name: "image", widget: "image" },
-                ],
-            }
-          - { label: "Intro", name: "intro", widget: "text" }
-          - { label: "Body", name: "body", widget: "markdown", required: false }
-          - {
-              label: "Has countries widget",
-              name: "countriesWidget",
-              widget: "boolean",
-              default: false,
-            }
-          - {
-              label: "Has contact form",
-              name: "contactForm",
-              widget: "boolean",
-              default: true,
-            }
-  - name: "pages-pl"
-    label: "Pages PL"
-    public_folder: "../../assets/images"
-    files:
-      - file: "src/pages/pl/index.md"
-        label: "Strona główna"
-        name: "home"
-        fields:
-          - {
-              label: "SEO",
-              name: "seo",
-              widget: "object",
-              fields:
-                [
-                  { label: "SEO Title", name: "seoTitle", widget: "string" },
-                  { label: "SEO Description", name: "seoDesc", widget: "text" },
-                ],
-            }
-          - {
-              label: "Hero",
-              name: "hero",
-              widget: "object",
-              fields:
-                [
-                  { label: "Hero Title", name: "title", widget: "string" },
-                  {
-                    label: "Hero Subtitle",
-                    name: "subtitle",
-                    widget: "text",
-                    required: false,
-                  },
-                  { label: "Hero Image", name: "image", widget: "image" },
-                ],
-            }
-          - { label: "Intro", name: "intro", widget: "text" }
-          - label: Skills
-            name: skills
-            widget: list
-            fields:
-              - { label: title, name: title, widget: string }
-              - { label: Text, name: text, widget: text }
-          - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/pl/o-nas.md"
-        label: "O nas"
-        name: "aboutus"
-        fields:
-          - {
-              label: "SEO",
-              name: "seo",
-              widget: "object",
-              fields:
-                [
-                  { label: "SEO Title", name: "seoTitle", widget: "string" },
-                  { label: "SEO Description", name: "seoDesc", widget: "text" },
-                ],
-            }
-          - {
-              label: "Hero",
-              name: "hero",
-              widget: "object",
-              fields:
-                [
-                  { label: "Hero Title", name: "title", widget: "string" },
-                  { label: "Hero Image", name: "image", widget: "image" },
-                ],
-            }
-          - { label: "Intro", name: "intro", widget: "text" }
-          - { label: "Body", name: "body", widget: "markdown", required: false }
-          - {
-              label: "Has country widget",
-              name: "countriesWidget",
-              widget: "boolean",
-              default: false,
-            }
-      - file: "src/pages/pl/kraje.md"
-        label: "Kraje"
-        name: "kraje"
-        fields:
-          - {
-              label: "SEO",
-              name: "seo",
-              widget: "object",
-              fields:
-                [
-                  { label: "SEO Title", name: "seoTitle", widget: "string" },
-                  { label: "SEO Description", name: "seoDesc", widget: "text" },
-                ],
-            }
-          - {
-              label: "Hero",
-              name: "hero",
-              widget: "object",
-              fields:
-                [
-                  { label: "Hero Title", name: "title", widget: "string" },
-                  { label: "Hero Image", name: "image", widget: "image" },
-                ],
-            }
-          - { label: "Intro", name: "intro", widget: "text" }
-          - { label: "Body", name: "body", widget: "markdown", required: false }
-          - {
-              label: "Has country widget",
-              name: "countriesWidget",
-              widget: "boolean",
-              default: true,
-            }
-      - file: "src/pages/pl/kontakt.md"
-        label: "Kontakt"
-        name: "kontakt"
-        fields:
-          - {
-              label: "SEO",
-              name: "seo",
-              widget: "object",
-              fields:
-                [
-                  { label: "SEO Title", name: "seoTitle", widget: "string" },
-                  { label: "SEO Description", name: "seoDesc", widget: "text" },
-                ],
-            }
-          - {
-              label: "Hero",
-              name: "hero",
-              widget: "object",
-              fields:
-                [
-                  { label: "Hero Title", name: "title", widget: "string" },
-                  { label: "Hero Image", name: "image", widget: "image" },
-                ],
-            }
-          - { label: "Intro", name: "intro", widget: "text" }
-          - { label: "Body", name: "body", widget: "markdown", required: false }
-          - {
-              label: "Has countries widget",
-              name: "countriesWidget",
-              widget: "boolean",
-              default: false,
-            }
-          - {
-              label: "Has contact form",
-              name: "contactForm",
-              widget: "boolean",
-              default: true,
-            }
+  - name: "pages-en" # Used in routes, e.g., /admin/collections/blog
+    label: "Pages" # Used in the UI
+    label_singular: "Page"
+    folder: "src/content/pages/en" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    public_folder: "../../../assets/images"
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - {
+          label: "SEO",
+          name: "seo",
+          widget: "object",
+          fields:
+            [
+              { label: "SEO Title", name: "seoTitle", widget: "string" },
+              { label: "SEO Description", name: "seoDesc", widget: "text" },
+            ],
+        }
+      - {
+          label: "Hero",
+          name: "hero",
+          widget: "object",
+          fields:
+            [
+              { label: "Title", name: "title", widget: "string" },
+              {
+                label: "Subtitle",
+                name: "subtitle",
+                widget: "string",
+                required: false,
+              },
+              { label: "Image", name: "image", widget: "image" },
+            ],
+        }
+      - { label: "Intro", name: "intro", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Countries Widget",
+          name: "countriesWidget",
+          widget: "boolean",
+          default: false,
+        }
+      - {
+          label: "Whatsapp Chat Widget",
+          name: "chatWidget",
+          widget: "boolean",
+          default: false,
+        }
+      - {
+          label: "Contact Form Widget",
+          name: "contactForm",
+          widget: "boolean",
+          default: false,
+        }
+  - name: "pages-pl" # Used in routes, e.g., /admin/collections/blog
+    label: "Strony" # Used in the UI
+    label_singular: "Strona"
+    folder: "src/content/pages/pl" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    public_folder: "../../../assets/images"
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - {
+          label: "SEO",
+          name: "seo",
+          widget: "object",
+          fields:
+            [
+              { label: "SEO Title", name: "seoTitle", widget: "string" },
+              { label: "SEO Description", name: "seoDesc", widget: "text" },
+            ],
+        }
+      - {
+          label: "Hero",
+          name: "hero",
+          widget: "object",
+          fields:
+            [
+              { label: "Title", name: "title", widget: "string" },
+              {
+                label: "Subtitle",
+                name: "subtitle",
+                widget: "string",
+                required: false,
+              },
+              { label: "Image", name: "image", widget: "image" },
+            ],
+        }
+      - { label: "Intro", name: "intro", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Countries Widget",
+          name: "countriesWidget",
+          widget: "boolean",
+          default: false,
+        }
+      - {
+          label: "Whatsapp Chat Widget",
+          name: "chatWidget",
+          widget: "boolean",
+          default: false,
+        }
+      - {
+          label: "Contact Form Widget",
+          name: "contactForm",
+          widget: "boolean",
+          default: false,
+        }

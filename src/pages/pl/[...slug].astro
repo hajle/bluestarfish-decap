@@ -1,0 +1,76 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/Hero.astro";
+import Wrapper from "../../components/Wrapper.astro";
+import ContactUs from "../../components/ContactUs.astro";
+import Chat from "../../components/Chat.astro";
+import chatImg from "../../images/chat-green.svg";
+import Destinations from "../../components/Destinations.astro";
+import ContactForm from "../../components/ContactForm";
+
+export async function getStaticPaths() {
+  const allPages = await getCollection("pages", ({ id }) => {
+    return id.startsWith("pl/");
+  });
+
+  const paths = allPages.map((page) => {
+    const [lang, ...slug] = page.slug.split("/");
+    return {
+      params: { lang, slug: slug.join("/") || undefined },
+      props: page,
+    };
+  });
+
+  return paths;
+}
+const page = Astro.props;
+const { Content } = await page.render();
+const intro =
+  page.data.intro &&
+  page.data.intro
+    .split(`\n\n`)
+    .map((paragraph: any) => `<p>${paragraph}</p>`)
+    .join(``);
+---
+
+<Layout title={page.data.seo.seoTitle} description={page.data.seo.seoDesc}>
+  <main>
+    <Hero
+      image={page.data.hero.image}
+      height={page.id === "pl/index.md"
+        ? "min-h-screen"
+        : "h-[300px] md:h-[550px]"}
+      bottom="bottom-1/2 translate-y-1/2"
+      title={page.data.hero.title}
+      desc={page.data.hero.subtitle}
+      chat={page.id === "pl/index.md" ? true : false}
+    />
+    <Wrapper>
+      {
+        intro && (
+          <div
+            class="mt-16 lg:mt-24 lg:w-2/3 lg:mx-auto text-center flex flex-col gap-8"
+            set:html={intro}
+          />
+        )
+      }
+      {
+        page.data.chatWidget && (
+          <Chat image={chatImg.src} classes="w-56" margin="mt-16" />
+        )
+      }
+      {page.data.countriesWidget && <Destinations />}
+      {
+        page.body && (
+          <div class="mt-16 lg:mt-24">
+            <div class="text-center w-full lg:w-2/3 lg:mx-auto prose lg:prose-lg">
+              <Content />
+            </div>
+          </div>
+        )
+      }
+      {page.data.contactForm ? <ContactForm client:only /> : <ContactUs />}
+    </Wrapper>
+  </main>
+</Layout>

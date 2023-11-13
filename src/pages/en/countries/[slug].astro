@@ -6,24 +6,28 @@ import Wrapper from "../../../components/Wrapper.astro";
 import ContactUs from "../../../components/ContactUs.astro";
 
 export async function getStaticPaths() {
-  const allCountries = await getCollection("country");
+  const allCountries = await getCollection("country", ({ id }) => {
+    return id.startsWith("en/");
+  });
 
-  const paths = allCountries.map(country => {
-    const [lang, ...slug] = country.slug.split('/');
-    return { params: { lang, slug: slug.join('/') || undefined }, props: country }
-  })
+  const paths = allCountries.map((country) => {
+    const [lang, ...slug] = country.slug.split("/");
+    return {
+      params: { lang, slug: slug.join("/") || undefined },
+      props: country,
+    };
+  });
 
   return paths;
 }
-
-
-
-const { lang, slug } = Astro.params;
-const country  = Astro.props;
+const country = Astro.props;
 const { Content } = await country.render();
 ---
 
-<Layout title={`${country.data.title} - `}>
+<Layout
+  title={country.data.seo.seoTitle}
+  description={country.data.seo.seoDesc}
+>
   <main>
     <Hero
       image={country.data.cover}
@@ -33,9 +37,13 @@ const { Content } = await country.render();
       chat={false}
     />
     <Wrapper>
-      <div class="mt-16 lg:mt-24 prose lg:prose-lg mx-auto max-w-[800px]">
-        <Content />
-      </div>
+      {
+        country.body && (
+          <div class="mt-16 lg:mt-24 prose lg:prose-lg mx-auto max-w-[800px]">
+            <Content />
+          </div>
+        )
+      }
       <ContactUs />
     </Wrapper>
   </main>

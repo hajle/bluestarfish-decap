@@ -13,7 +13,7 @@ interface Props {
   chat?: boolean;
 }
 
-const { image, height, title, desc, bottom, chat = true } = Astro.props;
+const { image, height, title, desc, bottom, chat = false } = Astro.props;
 ---
 
 <div class={`relative mx-auto ${height}`}>
