@@ -307,3 +307,20 @@ collections:
                   name: form.error,
                   widget: string,
                 }
+      - name: "widgets"
+        label: "Custom Widgets"
+        fields:
+          - name: "skills_en"
+            label: "Skills English"
+            label_singular: "Skill EN"
+            widget: list
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+          - name: "skills_pl"
+            label: "Skills Polish"
+            label_singular: "Skill PL"
+            widget: list
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
