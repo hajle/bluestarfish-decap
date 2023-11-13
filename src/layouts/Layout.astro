@@ -4,6 +4,7 @@ import { fade } from "astro:transitions";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.jsx";
 import Nav from "../components/Nav.astro";
+import settings from "../data/settings.json";
 import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/500.css";
 import "@fontsource/poppins/600.css";
@@ -16,7 +17,7 @@ interface Props {
 
 const { title, description } = Astro.props;
 
-import { getLangFromUrl } from '../i18n/utils';
+import { getLangFromUrl } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 ---
@@ -25,15 +26,13 @@ const lang = getLangFromUrl(Astro.url);
 <html lang={lang}>
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content={description}
-    />
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title} - Blue Starfish Travel Boutique</title>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <title>{title} - {settings.site_title}</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
     <ViewTransitions />
   </head>
   <body class="subpixel-antialiased bg-white text-gray-950 font-normal text-lg">

@@ -7,7 +7,8 @@ const pathname = new URL(Astro.request.url).pathname;
 const currentPath = "/" + pathname.slice(1);
 const currentYear = new Date().getFullYear();
 import chatImg from "../images/chat-white.svg";
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import settings from "../data/settings.json";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
@@ -20,12 +21,12 @@ const t = useTranslations(lang);
         <Chat image={chatImg.src} classes="w-48" />
         <div class="flex gap-8 md:gap-16 flex-wrap">
           <div class="flex flex-col">
-            <h4>Blue Starfish TB, Ltd.</h4>
-            <p>94 Xuân Thủy, Phường Thảo Điền, Thành phố Thủ Đức</p>
-            <p>Thành phố Hồ Chí Minh, Việt Nam</p>
+            <h4>{settings.info.name}</h4>
+            <p>{settings.info.address}</p>
+            <p>{settings.info.city}</p>
           </div>
           <div class="flex flex-col">
-            <p>T. +84 368 318 072</p><p>info@bluestarfish.travel</p>
+            <p>T. {settings.info.phone}</p><p>{settings.info.email}</p>
           </div>
         </div>
       </div>
@@ -37,25 +38,45 @@ const t = useTranslations(lang);
         </div>
         <ul class="flex flex-wrap items-center gap-4">
           <li>
-    <a href={`/${lang}/${t('slug.about')}`} class={`font-medium tracking-wide drop-shadow-sm ${
-            currentPath.indexOf(`/${lang}/${t('slug.about')}`) > -1 ? "text-rose-500" : ""
-          }`}>{t('nav.about')}</a>
-  </li>
-   <li>
-    <a href={`/${lang}/${t('slug.countries')}`} class={`font-medium tracking-wide drop-shadow-sm ${
-            currentPath.indexOf(`/${lang}/${t('slug.countries')}`) > -1 ? "text-rose-500" : ""
-          }`}>{t('nav.countries')}</a>
-  </li>
-  <li>
-    <a href={`/${lang}/${t('slug.trips')}`} class={`font-medium tracking-wide drop-shadow-sm ${
-            currentPath.indexOf(`/${lang}/${t('slug.trips')}`) > -1 ? "text-rose-500" : ""
-          }`}>{t('nav.trips')}</a>
-  </li>
-  <li>
-    <a href={`/${lang}/${t('slug.contact')}`} class={`font-medium tracking-wide drop-shadow-sm ${
-            currentPath.indexOf(`/${lang}/${t('slug.contact')}`) > -1 ? "text-rose-500" : ""
-          }`}>{t('nav.contact')}</a>
-  </li>
+            <a
+              href={`/${lang}/${t("slug.about")}`}
+              class={`font-medium tracking-wide drop-shadow-sm ${
+                currentPath.indexOf(`/${lang}/${t("slug.about")}`) > -1
+                  ? "text-rose-500"
+                  : ""
+              }`}>{t("nav.about")}</a
+            >
+          </li>
+          <li>
+            <a
+              href={`/${lang}/${t("slug.countries")}`}
+              class={`font-medium tracking-wide drop-shadow-sm ${
+                currentPath.indexOf(`/${lang}/${t("slug.countries")}`) > -1
+                  ? "text-rose-500"
+                  : ""
+              }`}>{t("nav.countries")}</a
+            >
+          </li>
+          <li>
+            <a
+              href={`/${lang}/${t("slug.trips")}`}
+              class={`font-medium tracking-wide drop-shadow-sm ${
+                currentPath.indexOf(`/${lang}/${t("slug.trips")}`) > -1
+                  ? "text-rose-500"
+                  : ""
+              }`}>{t("nav.trips")}</a
+            >
+          </li>
+          <li>
+            <a
+              href={`/${lang}/${t("slug.contact")}`}
+              class={`font-medium tracking-wide drop-shadow-sm ${
+                currentPath.indexOf(`/${lang}/${t("slug.contact")}`) > -1
+                  ? "text-rose-500"
+                  : ""
+              }`}>{t("nav.contact")}</a
+            >
+          </li>
         </ul>
       </div>
     </div>
