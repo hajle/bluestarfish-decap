@@ -33,32 +33,7 @@ collections:
       - { label: "Widget Image", name: "image", widget: "image" }
       - { label: "Intro", name: "intro", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "countries-pl" # Used in routes, e.g., /admin/collections/blog
-    label: "Kraje po polsku" # Used in the UI
-    label_singular: "Kraj"
-    folder: "src/content/country/pl" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    public_folder: "../../../assets/images"
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    editor:
-      preview: false
-    fields: # The fields for each document, usually in front matter
-      - {
-          label: "SEO",
-          name: "seo",
-          widget: "object",
-          fields:
-            [
-              { label: "SEO Title", name: "seoTitle", widget: "string" },
-              { label: "SEO Description", name: "seoDesc", widget: "text" },
-            ],
-        }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Sort order", name: "sortOrder", widget: "number" }
-      - { label: "Hero Image", name: "cover", widget: "image" }
-      - { label: "Widget Image", name: "image", widget: "image" }
-      - { label: "Intro", name: "intro", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "pages-en" # Used in routes, e.g., /admin/collections/blog
     label: "Pages in English" # Used in the UI
     label_singular: "Page"
@@ -116,6 +91,34 @@ collections:
           widget: "boolean",
           default: false,
         }
+
+  - name: "countries-pl" # Used in routes, e.g., /admin/collections/blog
+    label: "Kraje po polsku" # Used in the UI
+    label_singular: "Kraj"
+    folder: "src/content/country/pl" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    public_folder: "../../../assets/images"
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false
+    fields: # The fields for each document, usually in front matter
+      - {
+          label: "SEO",
+          name: "seo",
+          widget: "object",
+          fields:
+            [
+              { label: "SEO Title", name: "seoTitle", widget: "string" },
+              { label: "SEO Description", name: "seoDesc", widget: "text" },
+            ],
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sort order", name: "sortOrder", widget: "number" }
+      - { label: "Hero Image", name: "cover", widget: "image" }
+      - { label: "Widget Image", name: "image", widget: "image" }
+      - { label: "Intro", name: "intro", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "pages-pl" # Used in routes, e.g., /admin/collections/blog
     label: "Strony po polsku" # Used in the UI
     label_singular: "Strona"
