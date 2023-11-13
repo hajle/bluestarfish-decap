@@ -6,5 +6,39 @@
     "city": "Thành phố Hồ Chí Minh, Việt Nam",
     "phone": "+84 368 318 072",
     "email": "info@bluestarfish.travel"
+  },
+  "en": {
+    "form.reply": "Thank you for contacting us! We will respond to your message soon.",
+    "nav.about": "About Us",
+    "nav.trips": "Types of Trips",
+    "nav.countries": "Countries",
+    "slug.about": "about-us",
+    "slug.trips": "types-of-trips",
+    "form.sending": "Sending...",
+    "slug.countries": "countries",
+    "form.email": "Email address",
+    "form.name": "Name",
+    "nav.contact": "Contact",
+    "form.button": "Send message",
+    "form.message": "Message",
+    "slug.contact": "contact",
+    "form.error": "Error sending message."
+  },
+  "pl": {
+    "form.reply": "Dziękujemy za kontakt! Wkrótce odpowiemy na Twoją wiadomość.",
+    "nav.about": "O nas",
+    "nav.trips": "Rodzaje wycieczek",
+    "nav.countries": "Kraje",
+    "slug.about": "o-nas",
+    "slug.trips": "rodzaje-wycieczek",
+    "form.sending": "Wysyłam...",
+    "slug.countries": "kraje",
+    "form.email": "Adres email",
+    "form.name": "Imię",
+    "nav.contact": "Kontakt",
+    "form.button": "Wyślij wiadomość",
+    "form.message": "Wiadomość",
+    "slug.contact": "kontakt",
+    "form.error": "Błąd podczas wysyłania wiadomości."
   }
 }
