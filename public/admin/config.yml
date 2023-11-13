@@ -8,7 +8,7 @@ logo_url: https://bluestarfishtravel.com/_astro/logo.50778641.svg
 
 collections:
   - name: "countries-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Countries" # Used in the UI
+    label: "Countries in English" # Used in the UI
     label_singular: "Country"
     folder: "src/content/country/en" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
@@ -34,7 +34,7 @@ collections:
       - { label: "Intro", name: "intro", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "countries-pl" # Used in routes, e.g., /admin/collections/blog
-    label: "Kraje" # Used in the UI
+    label: "Kraje po polsku" # Used in the UI
     label_singular: "Kraj"
     folder: "src/content/country/pl" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
@@ -60,7 +60,7 @@ collections:
       - { label: "Intro", name: "intro", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Pages" # Used in the UI
+    label: "Pages in English" # Used in the UI
     label_singular: "Page"
     folder: "src/content/pages/en" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
@@ -117,7 +117,7 @@ collections:
           default: false,
         }
   - name: "pages-pl" # Used in routes, e.g., /admin/collections/blog
-    label: "Strony" # Used in the UI
+    label: "Strony po polsku" # Used in the UI
     label_singular: "Strona"
     folder: "src/content/pages/pl" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
