@@ -50,7 +50,7 @@ const intro =
       {
         intro && (
           <div
-            class="mt-16 lg:mt-24 lg:w-2/3 lg:mx-auto text-center flex flex-col gap-8"
+            class="mt-16 lg:mt-24 w-full md:max-w-2xl lg:max-w-3xl xl:max-w-5xl mx-auto text-center flex flex-col gap-8"
             set:html={intro}
           />
         )
@@ -64,7 +64,7 @@ const intro =
       {
         page.body && (
           <div class="mt-16 lg:mt-24">
-            <div class="text-center w-full lg:w-2/3 lg:mx-auto prose lg:prose-lg">
+            <div class="text-center w-full md:max-w-2xl lg:max-w-3xl xl:max-w-5xl mx-auto prose-lg prose-headings:font-semibold">
               <Content />
             </div>
           </div>
