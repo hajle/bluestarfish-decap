@@ -197,3 +197,113 @@ collections:
               - { label: "City", name: city, widget: string }
               - { label: "Phone", name: phone, widget: string }
               - { label: "Email", name: email, widget: string }
+          - label: "English translations"
+            name: "en"
+            widget: "object"
+            fields:
+              - { label: "Navigation About", name: nav.about, widget: string }
+              - {
+                  label: "Navigation Countries",
+                  name: nav.countries,
+                  widget: string,
+                }
+              - { label: "Navigation Trips", name: nav.trips, widget: string }
+              - {
+                  label: "Navigation Contact",
+                  name: nav.contact,
+                  widget: string,
+                }
+              - { label: "Slug About", name: slug.about, widget: string }
+              - {
+                  label: "Slug Countries",
+                  name: slug.countries,
+                  widget: string,
+                }
+              - { label: "Slug Trips", name: slug.trips, widget: string }
+              - { label: "Slug Contact", name: slug.contact, widget: string }
+              - { label: "Contact Form Name", name: form.name, widget: string }
+              - {
+                  label: "Contact Form Email",
+                  name: form.email,
+                  widget: string,
+                }
+              - {
+                  label: "Contact Form Message",
+                  name: form.message,
+                  widget: string,
+                }
+              - {
+                  label: "Contact Button Text",
+                  name: form.button,
+                  widget: string,
+                }
+              - {
+                  label: "Contact Form Sending Msg",
+                  name: form.sending,
+                  widget: string,
+                }
+              - {
+                  label: "Contact Form Reply Msg",
+                  name: form.reply,
+                  widget: string,
+                }
+              - {
+                  label: "Contact Form Error Msg",
+                  name: form.error,
+                  widget: string,
+                }
+          - label: "Polish translations"
+            name: "pl"
+            widget: "object"
+            fields:
+              - { label: "Navigation About", name: nav.about, widget: string }
+              - {
+                  label: "Navigation Countries",
+                  name: nav.countries,
+                  widget: string,
+                }
+              - { label: "Navigation Trips", name: nav.trips, widget: string }
+              - {
+                  label: "Navigation Contact",
+                  name: nav.contact,
+                  widget: string,
+                }
+              - { label: "Slug About", name: slug.about, widget: string }
+              - {
+                  label: "Slug Countries",
+                  name: slug.countries,
+                  widget: string,
+                }
+              - { label: "Slug Trips", name: slug.trips, widget: string }
+              - { label: "Slug Contact", name: slug.contact, widget: string }
+              - { label: "Contact Form Name", name: form.name, widget: string }
+              - {
+                  label: "Contact Form Email",
+                  name: form.email,
+                  widget: string,
+                }
+              - {
+                  label: "Contact Form Message",
+                  name: form.message,
+                  widget: string,
+                }
+              - {
+                  label: "Contact Button Text",
+                  name: form.button,
+                  widget: string,
+                }
+              - {
+                  label: "Contact Form Sending Msg",
+                  name: form.sending,
+                  widget: string,
+                }
+              - {
+                  label: "Contact Form Reply Msg",
+                  name: form.reply,
+                  widget: string,
+                }
+              - {
+                  label: "Contact Form Error Msg",
+                  name: form.error,
+                  widget: string,
+                }
