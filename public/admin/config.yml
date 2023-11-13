@@ -173,7 +173,7 @@ collections:
     files:
       - name: "general"
         label: "Site Settings"
-        file: "data/settings.json"
+        file: "src/data/settings.json"
         description: "General Site Settings"
         fields:
           - { label: "Global title", name: "site_title", widget: "string" }
