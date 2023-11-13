@@ -19,10 +19,6 @@ Dlaczego warto odwiedzić Laos?
 
 ## Luang Prabang
 
-
-
-![Laos](../../../assets/images/cambodia-angkor-wat.jpg)
-
 Dawniej stolica królewska, dzisiaj jest to urokliwe miasteczko pełne buddyjskich świątyń, francuskich kolonialnych budynków i wspaniałych wodospadów.
 
 ## Rzeka Mekong
