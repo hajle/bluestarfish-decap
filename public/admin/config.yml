@@ -7,58 +7,58 @@ publish_mode: editorial_workflow
 media_folder: "/src/assets/images"
 
 collections:
-  - name: "english"
-    label: "English"
-    - name: "countries-en" # Used in routes, e.g., /admin/collections/blog
-      label: "Countries" # Used in the UI
-      label_singular: "Country"
-      folder: "src/content/country/en" # The path to the folder where the documents are stored
-      create: true # Allow users to create new documents in this collection
-      slug: "{{slug}}"
-      public_folder: "../../../assets/images"
-      fields: # The fields for each document, usually in front matter
-        - {
-            label: "SEO",
-            name: "seo",
-            widget: "object",
-            fields:
-              [
-                { label: "SEO Title", name: "seoTitle", widget: "string" },
-                { label: "SEO Description", name: "seoDesc", widget: "text" },
-              ],
-          }
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "Sort order", name: "sortOrder", widget: "number" }
-        - { label: "Hero Image", name: "cover", widget: "image" }
-        - { label: "Widget Image", name: "image", widget: "image" }
-        - { label: "Intro", name: "intro", widget: "text" }
-        - { label: "Body", name: "body", widget: "markdown" }
-  - name: "polish"
-    label: "Polski"
-    - name: "countries-pl" # Used in routes, e.g., /admin/collections/blog
-      label: "Kraje" # Used in the UI
-      label_singular: "Kraj"
-      folder: "src/content/country/pl" # The path to the folder where the documents are stored
-      create: true # Allow users to create new documents in this collection
-      public_folder: "../../../assets/images"
-      slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-      fields: # The fields for each document, usually in front matter
-        - {
-            label: "SEO",
-            name: "seo",
-            widget: "object",
-            fields:
-              [
-                { label: "SEO Title", name: "seoTitle", widget: "string" },
-                { label: "SEO Description", name: "seoDesc", widget: "text" },
-              ],
-          }
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "Sort order", name: "sortOrder", widget: "number" }
-        - { label: "Hero Image", name: "cover", widget: "image" }
-        - { label: "Widget Image", name: "image", widget: "image" }
-        - { label: "Intro", name: "intro", widget: "text" }
-        - { label: "Body", name: "body", widget: "markdown" }
+  - name: "countries-en" # Used in routes, e.g., /admin/collections/blog
+    label: "Countries" # Used in the UI
+    label_singular: "Country"
+    folder: "src/content/country/en" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    public_folder: "../../../assets/images"
+    editor:
+      preview: false
+    fields: # The fields for each document, usually in front matter
+      - {
+          label: "SEO",
+          name: "seo",
+          widget: "object",
+          fields:
+            [
+              { label: "SEO Title", name: "seoTitle", widget: "string" },
+              { label: "SEO Description", name: "seoDesc", widget: "text" },
+            ],
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sort order", name: "sortOrder", widget: "number" }
+      - { label: "Hero Image", name: "cover", widget: "image" }
+      - { label: "Widget Image", name: "image", widget: "image" }
+      - { label: "Intro", name: "intro", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "countries-pl" # Used in routes, e.g., /admin/collections/blog
+    label: "Kraje" # Used in the UI
+    label_singular: "Kraj"
+    folder: "src/content/country/pl" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    public_folder: "../../../assets/images"
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false
+    fields: # The fields for each document, usually in front matter
+      - {
+          label: "SEO",
+          name: "seo",
+          widget: "object",
+          fields:
+            [
+              { label: "SEO Title", name: "seoTitle", widget: "string" },
+              { label: "SEO Description", name: "seoDesc", widget: "text" },
+            ],
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sort order", name: "sortOrder", widget: "number" }
+      - { label: "Hero Image", name: "cover", widget: "image" }
+      - { label: "Widget Image", name: "image", widget: "image" }
+      - { label: "Intro", name: "intro", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages-en" # Used in routes, e.g., /admin/collections/blog
     label: "Pages" # Used in the UI
     label_singular: "Page"
@@ -67,6 +67,8 @@ collections:
     slug: "{{slug}}"
     public_folder: "../../../assets/images"
     identifier_field: hero.title
+    editor:
+      preview: false
     fields: # The fields for each document, usually in front matter
       - {
           label: "SEO",
@@ -122,6 +124,8 @@ collections:
     slug: "{{slug}}"
     public_folder: "../../../assets/images"
     identifier_field: hero.title
+    editor:
+      preview: false
     fields: # The fields for each document, usually in front matter
       - {
           label: "SEO",
