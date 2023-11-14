@@ -332,7 +332,7 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Text", name: "text", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" },
+              - { label: "Image", name: "image", widget: "image" }
           - name: "trips_pl"
             label: "Type of Trips Polish"
             label_singular: "Trip PL"
@@ -340,4 +340,4 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Text", name: "text", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" },
+              - { label: "Image", name: "image", widget: "image" }
