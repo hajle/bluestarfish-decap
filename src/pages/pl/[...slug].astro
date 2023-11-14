@@ -9,6 +9,7 @@ import chatImg from "../../images/chat-green.svg";
 import Destinations from "../../components/Destinations.astro";
 import ContactForm from "../../components/ContactForm";
 import Skills from "../../components/Skills.astro";
+import Trips from "../../components/Trips.astro";
 
 export async function getStaticPaths() {
   const allPages = await getCollection("pages", ({ id }) => {
@@ -78,6 +79,7 @@ const intro =
           </div>
         )
       }
+      {page.data.tripsWidget && <Trips />}
       {page.data.contactForm ? <ContactForm client:only /> : <ContactUs />}
     </Wrapper>
   </main>

@@ -1,0 +1,16 @@
+---
+import { getLangFromUrl } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+import widgets from "../data/widgets.json";
+const langTrips = `trips_${lang}`;
+---
+
+{
+  widgets[langTrips].map((trip: any) => (
+    <div class="text-center md:text-left flex flex-col gap-4">
+      <h3 class="text-2xl font-semibold">{trip.title}</h3>
+      <p>{trip.text}</p>
+      <img src={trip.image} alt={trip.title} width="500" height="500" />
+    </div>
+  ))
+}

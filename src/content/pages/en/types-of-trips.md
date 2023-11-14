@@ -9,5 +9,6 @@ hero:
   image: ../../../assets/images/trips-hero.jpg
 countriesWidget: false
 skillsWidget: false
+tripsWidget: true
 chatWidget: false
 ---

@@ -23,6 +23,7 @@ const pageCollection = defineCollection({
       intro: z.string().optional(),
       countriesWidget: z.boolean().default(false),
       skillsWidget: z.boolean().default(false),
+      tripsWidget: z.boolean().default(false),
       contactForm: z.boolean().default(false),
       chatWidget: z.boolean().default(false),
     }),
