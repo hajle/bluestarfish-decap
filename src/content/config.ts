@@ -63,7 +63,29 @@ const countryCollection = defineCollection({
     }),
 });
 
+const widgetsCollection = defineCollection({
+  type: "content",
+  schema: ({ image }) =>
+    z.object({
+      sort: z.number(),
+      en: z.object({
+        title: z.string(),
+        text: z.string(),
+      }),
+      pl: z.object({
+        title: z.string(),
+        text: z.string(),
+      }),
+      image: image()
+        .refine((img) => img.width >= 900, {
+          message: "Cover image must be at least 900 pixels wide!",
+        })
+        .optional(),
+    }),
+});
+
 export const collections = {
   pages: pageCollection,
   country: countryCollection,
+  widgets: widgetsCollection,
 };
