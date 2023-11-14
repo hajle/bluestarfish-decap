@@ -33,7 +33,6 @@ collections:
       - { label: "Widget Image", name: "image", widget: "image" }
       - { label: "Intro", name: "intro", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
-
   - name: "pages-en" # Used in routes, e.g., /admin/collections/blog
     label: "Pages in English" # Used in the UI
     label_singular: "Page"
@@ -116,7 +115,6 @@ collections:
           widget: "boolean",
           default: false,
         }
-
   - name: "countries-pl" # Used in routes, e.g., /admin/collections/blog
     label: "Kraje po polsku" # Used in the UI
     label_singular: "Kraj"
@@ -143,7 +141,6 @@ collections:
       - { label: "Widget Image", name: "image", widget: "image" }
       - { label: "Intro", name: "intro", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
-
   - name: "pages-pl" # Used in routes, e.g., /admin/collections/blog
     label: "Strony po polsku" # Used in the UI
     label_singular: "Strona"
