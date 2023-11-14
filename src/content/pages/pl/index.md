@@ -24,6 +24,7 @@ skills:
   - title: Zrównoważona turystyka
     text: Dbamy o odpowiedzialny turystykę. Współpracując z lokalnymi dostawcami i społecznościami, promujemy rozwój regionu, nie wspierając przy tym wielkich korporacji turystycznych. Wybierając nas, inwestujesz w autentyczne doświadczenia i pomagasz lokalnym społecznościom prosperować.
 countriesWidget: true
+skillsWidget: true
 chatWidget: true
 ---
 

@@ -8,6 +8,7 @@ import Chat from "../../components/Chat.astro";
 import chatImg from "../../images/chat-green.svg";
 import Destinations from "../../components/Destinations.astro";
 import ContactForm from "../../components/ContactForm";
+import Skills from "../../components/Skills.astro";
 
 export async function getStaticPaths() {
   const allPages = await getCollection("pages", ({ id }) => {
@@ -67,6 +68,13 @@ const intro =
             <div class="text-center w-full md:max-w-2xl lg:max-w-3xl xl:max-w-5xl mx-auto prose-lg prose-headings:font-semibold">
               <Content />
             </div>
+          </div>
+        )
+      }
+      {
+        page.data.skillsWidget && (
+          <div class="grid md:grid-cols-2 gap-8 lg:gap-16 mt-16 lg:mt-24">
+            <Skills />
           </div>
         )
       }

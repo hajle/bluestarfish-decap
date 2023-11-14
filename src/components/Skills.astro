@@ -1,8 +1,12 @@
 ---
-const { skills } = Astro.props;
+import { getLangFromUrl } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+import widgets from "../data/widgets.json";
+const langSkills = `skills_${lang}`;
 ---
+
 {
-  skills.map((skill: any) => (
+  widgets[langSkills].map((skill: any) => (
     <div class="text-center md:text-left flex flex-col gap-4">
       <h3 class="text-2xl font-semibold">{skill.title}</h3>
       <p>{skill.text}</p>
