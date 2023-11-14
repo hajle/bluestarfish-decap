@@ -391,7 +391,7 @@ collections:
       - name: "trips" # Used in routes, e.g., /admin/collections/blog
         label: "Trips" # Used in the UI
         label_singular: "trip"
-        folder: "src/content/widgets" # The path to the folder where the documents are stored
+        folder: "src/content/widgets/trips" # The path to the folder where the documents are stored
         create: true # Allow users to create new documents in this collection
         slug: "{{slug}}"
         public_folder: "../../../assets/images"
