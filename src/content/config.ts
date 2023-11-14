@@ -24,7 +24,7 @@ const pageCollection = defineCollection({
       countriesWidget: z.boolean().default(false),
       skillsWidget: z.boolean().default(false),
       tripsWidget: z.boolean().default(false),
-      tripsWidgetPictures: z
+      tripsPictures: z
         .object({
           image0: image().optional(),
           image1: image().optional(),
