@@ -92,9 +92,9 @@ collections:
           default: false,
         }
       - {
-          label: "Trips Widget Pictures"
-          name: "tripsPictures"
-          widget: "object"
+          label: "Trips Widget Pictures",
+          name: "tripsPictures",
+          widget: "object",
           fields:
             [
               { label: "Image 1", name: "image", widget: "image0" },
@@ -202,9 +202,9 @@ collections:
           default: false,
         }
       - {
-          label: "Trips Widget Pictures"
-          name: "tripsPictures"
-          widget: "object"
+          label: "Trips Widget Pictures",
+          name: "tripsPictures",
+          widget: "object",
           fields:
             [
               { label: "Image 1", name: "image", widget: "image0" },
