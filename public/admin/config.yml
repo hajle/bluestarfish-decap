@@ -96,11 +96,11 @@ collections:
           widget: "object",
           fields:
             [
-              { label: "Image 1", name: "image", widget: "image0" },
-              { label: "Image 2", name: "image", widget: "image1" },
-              { label: "Image 3", name: "image", widget: "image2" },
-              { label: "Image 4", name: "image", widget: "image3" },
-              { label: "Image 5", name: "image", widget: "image4" },
+              { label: "Image 1", name: "image0", widget: "image" },
+              { label: "Image 2", name: "image1", widget: "image" },
+              { label: "Image 3", name: "image2", widget: "image" },
+              { label: "Image 4", name: "image3", widget: "image" },
+              { label: "Image 5", name: "image4", widget: "image" },
             ],
         }
       - {
@@ -204,11 +204,11 @@ collections:
           widget: "object",
           fields:
             [
-              { label: "Image 1", name: "image", widget: "image0" },
-              { label: "Image 2", name: "image", widget: "image1" },
-              { label: "Image 3", name: "image", widget: "image2" },
-              { label: "Image 4", name: "image", widget: "image3" },
-              { label: "Image 5", name: "image", widget: "image4" },
+              { label: "Image 1", name: "image0", widget: "image" },
+              { label: "Image 2", name: "image1", widget: "image" },
+              { label: "Image 3", name: "image2", widget: "image" },
+              { label: "Image 4", name: "image3", widget: "image" },
+              { label: "Image 5", name: "image4", widget: "image" },
             ],
         }
       - {
