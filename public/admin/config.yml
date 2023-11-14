@@ -101,7 +101,7 @@ collections:
               { label: "Image 3", name: "image", widget: "image2" },
               { label: "Image 4", name: "image", widget: "image3" },
               { label: "Image 5", name: "image", widget: "image4" },
-            ]
+            ],
         }
       - {
           label: "Whatsapp Chat Widget",
@@ -186,7 +186,7 @@ collections:
           widget: "boolean",
           default: false,
         }
-        - {
+      - {
           label: "Skills Widget",
           name: "skillsWidget",
           widget: "boolean",
@@ -209,7 +209,7 @@ collections:
               { label: "Image 3", name: "image", widget: "image2" },
               { label: "Image 4", name: "image", widget: "image3" },
               { label: "Image 5", name: "image", widget: "image4" },
-            ]
+            ],
         }
       - {
           label: "Whatsapp Chat Widget",
