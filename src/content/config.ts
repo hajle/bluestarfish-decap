@@ -24,15 +24,6 @@ const pageCollection = defineCollection({
       countriesWidget: z.boolean().default(false),
       skillsWidget: z.boolean().default(false),
       tripsWidget: z.boolean().default(false),
-      tripsPictures: z
-        .object({
-          image0: image().optional(),
-          image1: image().optional(),
-          image2: image().optional(),
-          image3: image().optional(),
-          image4: image().optional(),
-        })
-        .optional(),
       contactForm: z.boolean().default(false),
       chatWidget: z.boolean().default(false),
     }),
