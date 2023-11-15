@@ -38,7 +38,7 @@ const { image, height, title, desc, bottom, chat = false } = Astro.props;
             <p class="text-xl md:text-xl lg:text-2xl drop-shadow-xl">{desc}</p>
           )
         }
-        {chat && <Chat image={chatImg.src} classes="w-56" />}
+        {chat && <Chat image={chatImg.src} classes="w-56" margin="mt-8" />}
       </div>
     </Wrapper>
   </div>
