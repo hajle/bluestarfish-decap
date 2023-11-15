@@ -395,3 +395,37 @@ collections:
                   name: form.error,
                   widget: string,
                 }
+  - name: "widgets"
+    label: "Widgets"
+    label_singular: "Trip"
+    identifier_field: en.title
+    sortable_fields: ["sort", "en.title"]
+    folder: "src/content/widgets/trips" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    public_folder: "../../../assets/images"
+    editor:
+      preview: false
+    delete: false
+    fields: # The fields for each document, usually in front matter
+      - {
+          label: "English",
+          name: "en",
+          widget: "list",
+          fields:
+            [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Text", name: "text", widget: "text" },
+            ],
+        }
+      - {
+          label: "Polski",
+          name: "pl",
+          widget: "list",
+          fields:
+            [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Text", name: "text", widget: "text" },
+            ],
+        }
+      - { label: "Image", name: "image", widget: "image" }
