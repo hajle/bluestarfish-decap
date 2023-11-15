@@ -58,20 +58,25 @@ const widgetsCollection = defineCollection({
   type: "content",
   schema: ({ image }) =>
     z.object({
-      sort: z.number(),
+      title: z.string(),
       en: z.object({
         title: z.string(),
         text: z.string(),
+        image: image()
+          .refine((img) => img.width >= 900, {
+            message: "Cover image must be at least 900 pixels wide!",
+          })
+          .optional(),
       }),
       pl: z.object({
         title: z.string(),
         text: z.string(),
+        image: image()
+          .refine((img) => img.width >= 900, {
+            message: "Cover image must be at least 900 pixels wide!",
+          })
+          .optional(),
       }),
-      image: image()
-        .refine((img) => img.width >= 900, {
-          message: "Cover image must be at least 900 pixels wide!",
-        })
-        .optional(),
     }),
 });
 
