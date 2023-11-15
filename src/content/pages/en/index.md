@@ -20,7 +20,7 @@ intro: >
 countriesWidget: true
 skillsWidget: true
 tripsWidget: false
-chatWidget: true
+chatWidget: false
 contactForm: false
 ---
 
