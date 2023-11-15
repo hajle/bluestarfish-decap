@@ -13,5 +13,8 @@ intro: >
 
   We want to promote this region and support local communities. We believe that thanks to this we will guarantee you authentic and unforgettable moments in this part of Asia.
 countriesWidget: false
+skillsWidget: false
+tripsWidget: false
 chatWidget: true
+contactForm: false
 ---
