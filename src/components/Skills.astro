@@ -1,15 +1,20 @@
 ---
+import { getCollection } from "astro:content";
 import { getLangFromUrl } from "../i18n/utils";
 const lang = getLangFromUrl(Astro.url);
-import widgets from "../data/widgets.json";
-const langSkills = `skills_${lang}`;
+const allSkills = await getCollection("widgets", ({ id }) => {
+  return id.startsWith("skills");
+});
+const sortedSkills = allSkills.sort((a, b) => a.data.sort - b.data.sort);
 ---
 
 {
-  widgets[langSkills as keyof typeof widgets].map((skill) => (
+  sortedSkills.map((skill) => (
     <div class="text-center md:text-left flex flex-col gap-4">
-      <h3 class="text-2xl font-semibold">{skill.title}</h3>
-      <p>{skill.text}</p>
+      <h3 class="text-2xl font-semibold">
+        {lang === "en" ? skill.data.en.title : skill.data.pl.title}
+      </h3>
+      <p>{lang === "en" ? skill.data.en.text : skill.data.pl.text}</p>
     </div>
   ))
 }
