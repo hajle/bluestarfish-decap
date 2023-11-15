@@ -354,40 +354,6 @@ collections:
                   name: form.error,
                   widget: string,
                 }
-      
-        label: "Custom Widgets"
-        file: "src/data/widgets.json"
-        fields:
-          - name: "skills_en"
-            label: "Skills English"
-            label_singular: "Skill EN"
-            widget: list
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Text", name: "text", widget: "text" }
-          - name: "skills_pl"
-            label: "Skills Polish"
-            label_singular: "Skill PL"
-            widget: list
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Text", name: "text", widget: "text" }
-          - name: "trips_en"
-            label: "Types of Trips English"
-            label_singular: "Trip EN"
-            widget: list
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Text", name: "text", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" }
-          - name: "trips_pl"
-            label: "Types of Trips Polish"
-            label_singular: "Trip PL"
-            widget: list
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Text", name: "text", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" }
   - name: "trips" # Used in routes, e.g., /admin/collections/blog
     label: "Trips" # Used in the UI
     label_singular: "trip"
