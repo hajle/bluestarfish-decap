@@ -16,4 +16,8 @@ intro: >
 
   Skupienie się na tych trzech krajach pozwala nam zaoferować podróżnikom doświadczenia, które łączą przygodę, odkrywanie i zrozumienie lokalnych kultur.
 countriesWidget: true
+skillsWidget: false
+tripsWidget: false
+chatWidget: true
+contactForm: false
 ---
