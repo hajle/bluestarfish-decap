@@ -1,5 +1,5 @@
 ---
-sort: 1
+title: Trips tailored to your needs
 en:
   title: Trips tailored to your needs
   text: Our boutique company focuses on an individual approach. We will listen to your dreams and needs and propose a trip perfectly tailored to you. We are open to suggestions and ready to adapt to meet your expectations.

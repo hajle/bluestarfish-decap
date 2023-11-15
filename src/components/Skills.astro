@@ -5,11 +5,11 @@ const lang = getLangFromUrl(Astro.url);
 const allSkills = await getCollection("widgets", ({ id }) => {
   return id.startsWith("skills");
 });
-const sortedSkills = allSkills.sort((a, b) => a.data.sort - b.data.sort);
+// const sortedSkills = allSkills.sort((a, b) => a.data.sort - b.data.sort);
 ---
 
 {
-  sortedSkills.map((skill) => (
+  allSkills.map((skill) => (
     <div class="text-center md:text-left flex flex-col gap-4">
       <h3 class="text-2xl font-semibold">
         {lang === "en" ? skill.data.en.title : skill.data.pl.title}

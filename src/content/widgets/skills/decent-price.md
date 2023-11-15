@@ -1,8 +1,9 @@
 ---
-sort: 3
+title: Decent price
 en:
   title: Decent price
-  text: As a boutique agency, we do not have high fixed costs, so we can adapt to
+  text:
+    As a boutique agency, we do not have high fixed costs, so we can adapt to
     your budget, offering the best quality at an attractive price. Ask us for a
     proposal - it's free!
 pl:

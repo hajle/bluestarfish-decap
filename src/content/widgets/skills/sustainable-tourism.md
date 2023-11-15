@@ -1,5 +1,5 @@
 ---
-sort: 4
+title: Sustainable tourism
 en:
   title: Sustainable tourism
   text: We care about responsible tourism. By working with local suppliers and
