@@ -1,21 +1,27 @@
 ---
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
 import { getLangFromUrl } from "../i18n/utils";
 const lang = getLangFromUrl(Astro.url);
-import widgets from "../data/widgets.json";
-import { Image } from "astro:assets";
-const langTrips = `trips_${lang}`;
-const props = Astro.props;
+const allTrips = await getCollection("widgets", ({ id }) => {
+  return id.startsWith("trips");
+});
+const sortedTrips = allTrips.sort((a, b) => a.data.sort - b.data.sort);
 ---
 
 {
-  widgets[langTrips as keyof typeof widgets].map((trip: any, index) => (
+  sortedTrips.map((trip, index) => (
     <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8 lg:gap-12">
       <div
         class={`flex-1 ${
           (index === 1 && "md:order-2") || (index === 3 && "md:order-2")
         }`}
       >
-        <Image src={props.images[index]} alt={trip.title} class="rounded-lg" />
+        <Image
+          src={trip.data.image}
+          alt={lang === "en" ? trip.data.en.title : trip.data.pl.title}
+          class="rounded-lg"
+        />
       </div>
       <div
         class={`flex-1 ${
@@ -23,8 +29,10 @@ const props = Astro.props;
         }`}
       >
         <div class="flex flex-col gap-4 md:px-8 lg:px-16">
-          <h3 class="text-2xl font-semibold">{trip.title}</h3>
-          <p>{trip.text}</p>
+          <h3 class="text-2xl font-semibold">
+            {lang === "en" ? trip.data.en.title : trip.data.pl.title}
+          </h3>
+          <p>{lang === "en" ? trip.data.en.text : trip.data.pl.text}</p>
         </div>
       </div>
     </div>

@@ -10,7 +10,6 @@ import Destinations from "../../components/Destinations.astro";
 import ContactForm from "../../components/ContactForm";
 import Skills from "../../components/Skills.astro";
 import Trips from "../../components/Trips.astro";
-import TripsWidget from "../../components/TripsWidget.astro";
 
 export async function getStaticPaths() {
   const allPages = await getCollection("pages", ({ id }) => {
@@ -96,7 +95,6 @@ const intro =
         )
       }
       {page.data.contactForm ? <ContactForm client:only /> : <ContactUs />}
-      <TripsWidget />
     </Wrapper>
   </main>
 </Layout>

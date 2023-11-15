@@ -1,0 +1,32 @@
+---
+import { getLangFromUrl } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+import widgets from "../data/widgets.json";
+import { Image } from "astro:assets";
+const langTrips = `trips_${lang}`;
+const props = Astro.props;
+---
+
+{
+  widgets[langTrips as keyof typeof widgets].map((trip: any, index) => (
+    <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8 lg:gap-12">
+      <div
+        class={`flex-1 ${
+          (index === 1 && "md:order-2") || (index === 3 && "md:order-2")
+        }`}
+      >
+        <Image src={props.images[index]} alt={trip.title} class="rounded-lg" />
+      </div>
+      <div
+        class={`flex-1 ${
+          (index === 1 && "md:order-1") || (index === 3 && "md:order-1")
+        }`}
+      >
+        <div class="flex flex-col gap-4 md:px-8 lg:px-16">
+          <h3 class="text-2xl font-semibold">{trip.title}</h3>
+          <p>{trip.text}</p>
+        </div>
+      </div>
+    </div>
+  ))
+}

@@ -393,10 +393,13 @@ collections:
     label_singular: "trip"
     identifier_field: en.title
     sortable_fields: ["sort", "en.title"]
-    folder: "src/content/widgets/trips" # The path to the folder where the documents are stored
+    folder: "src/content/widgets" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}"
     public_folder: "../../../assets/images"
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: "{{title}}" # optional summary for a tree node, defaults to the inferred title field
     editor:
       preview: false
     fields: # The fields for each document, usually in front matter
