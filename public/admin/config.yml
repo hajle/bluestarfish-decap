@@ -398,12 +398,10 @@ collections:
   - name: "widgets"
     label: "Widgets"
     label_singular: "Widget"
-    identifier_field: title
-    sortable_fields: ["sort", "en.title"]
     folder: "src/content/widgets" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}"
-    public_folder: "../../../assets/images"
+    public_folder: "../../assets/images"
     editor:
       preview: false
     delete: false
