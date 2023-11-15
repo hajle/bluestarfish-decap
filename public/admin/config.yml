@@ -354,7 +354,7 @@ collections:
                   name: form.error,
                   widget: string,
                 }
-      - name: "widgets"
+      
         label: "Custom Widgets"
         file: "src/data/widgets.json"
         fields:
