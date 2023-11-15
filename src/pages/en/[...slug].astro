@@ -82,15 +82,7 @@ const intro =
       {
         page.data.tripsWidget && (
           <div class="mt-16 lg:mt-24 flex flex-col gap-16">
-            <Trips
-              images={[
-                page.data.tripsPictures?.image0,
-                page.data.tripsPictures?.image1,
-                page.data.tripsPictures?.image2,
-                page.data.tripsPictures?.image3,
-                page.data.tripsPictures?.image4,
-              ]}
-            />
+            <Trips />
           </div>
         )
       }

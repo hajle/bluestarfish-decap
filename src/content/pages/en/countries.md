@@ -14,4 +14,8 @@ intro: >
 
   Focusing on these three countries allows us to offer travelers experiences that combine adventure, discovery and understanding of local cultures.
 countriesWidget: true
+skillsWidget: false
+tripsWidget: false
+chatWidget: true
+contactForm: false
 ---
