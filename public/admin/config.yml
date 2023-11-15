@@ -399,6 +399,7 @@ collections:
     public_folder: "../../../assets/images"
     nested:
       depth: 100 # max depth to show in the collection tree
+      summary: "{{en.title}}"
     editor:
       preview: false
     fields: # The fields for each document, usually in front matter
