@@ -197,71 +197,48 @@ collections:
           widget: "boolean",
           default: false,
         }
-  - name: "trips" # Used in routes, e.g., /admin/collections/blog
-    label: "Trips Widget" # Used in the UI
-    label_singular: "Trip"
-    identifier_field: en.title
-    sortable_fields: ["sort", "en.title"]
-    folder: "src/content/widgets/trips" # The path to the folder where the documents are stored
+  - name: "widgets"
+    label: "Widgets"
+    label_singular: "Widget"
+    folder: "src/content/widgets" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}"
-    public_folder: "../../../assets/images"
+    public_folder: "../../assets/images"
     editor:
       preview: false
+    delete: false
     fields: # The fields for each document, usually in front matter
-      - { label: "Sort order", name: "sort", widget: "number" }
+      - { label: "Title", name: "title", widget: "string" }
       - {
           label: "English",
           name: "en",
-          widget: "object",
+          widget: "list",
           fields:
             [
               { label: "Title", name: "title", widget: "string" },
               { label: "Text", name: "text", widget: "text" },
+              {
+                label: "Image",
+                name: "image",
+                widget: "image",
+                required: false,
+              },
             ],
         }
       - {
           label: "Polski",
           name: "pl",
-          widget: "object",
+          widget: "list",
           fields:
             [
               { label: "Title", name: "title", widget: "string" },
               { label: "Text", name: "text", widget: "text" },
-            ],
-        }
-      - { label: "Image", name: "image", widget: "image" }
-  - name: "skills" # Used in routes, e.g., /admin/collections/blog
-    label: "Skills Widget" # Used in the UI
-    label_singular: "Skill"
-    identifier_field: en.title
-    sortable_fields: ["sort", "en.title"]
-    folder: "src/content/widgets/skills" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}"
-    public_folder: "../../../assets/images"
-    editor:
-      preview: false
-    fields: # The fields for each document, usually in front matter
-      - { label: "Sort order", name: "sort", widget: "number" }
-      - {
-          label: "English",
-          name: "en",
-          widget: "object",
-          fields:
-            [
-              { label: "Title", name: "title", widget: "string" },
-              { label: "Text", name: "text", widget: "text" },
-            ],
-        }
-      - {
-          label: "Polski",
-          name: "pl",
-          widget: "object",
-          fields:
-            [
-              { label: "Title", name: "title", widget: "string" },
-              { label: "Text", name: "text", widget: "text" },
+              {
+                label: "Image",
+                name: "image",
+                widget: "image",
+                required: false,
+              },
             ],
         }
   - name: "settings"
@@ -395,47 +372,3 @@ collections:
                   name: form.error,
                   widget: string,
                 }
-  - name: "widgets"
-    label: "Widgets"
-    label_singular: "Widget"
-    folder: "src/content/widgets" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}"
-    public_folder: "../../assets/images"
-    editor:
-      preview: false
-    delete: false
-    fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "English",
-          name: "en",
-          widget: "list",
-          fields:
-            [
-              { label: "Title", name: "title", widget: "string" },
-              { label: "Text", name: "text", widget: "text" },
-              {
-                label: "Image",
-                name: "image",
-                widget: "image",
-                required: false,
-              },
-            ],
-        }
-      - {
-          label: "Polski",
-          name: "pl",
-          widget: "list",
-          fields:
-            [
-              { label: "Title", name: "title", widget: "string" },
-              { label: "Text", name: "text", widget: "text" },
-              {
-                label: "Image",
-                name: "image",
-                widget: "image",
-                required: false,
-              },
-            ],
-        }
