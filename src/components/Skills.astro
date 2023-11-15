@@ -2,7 +2,7 @@
 import { getEntry } from "astro:content";
 import { getLangFromUrl } from "../i18n/utils";
 const lang = getLangFromUrl(Astro.url);
-const allSkills = await getEntry("widgets", "skills");
+const allSkills: any = await getEntry("widgets", "skills");
 ---
 
 {
