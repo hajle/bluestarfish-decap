@@ -4,7 +4,6 @@ import { Image } from "astro:assets";
 import { getLangFromUrl } from "../i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 const allTrips = await getEntry("widgets", "trips");
-console.log(allTrips);
 ---
 
 {
