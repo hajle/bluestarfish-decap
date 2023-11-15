@@ -6,13 +6,16 @@ hero:
   title: Kontakt
   image: ../../../assets/images/contact-hero.jpg
 intro: >
-  Masz pytania dotyczące podróży do Azji Południowo Wschodniej? Z chęcią podzielimy się naszą wiedzą.
+  Masz pytania dotyczące podróży do Azji Południowo Wschodniej? Z chęcią
+  podzielimy się naszą wiedzą.
 
 
   Kliknij aby skontaktowac sie z nami przez WhatsApp
 countriesWidget: false
-contactForm: true
+skillsWidget: false
+tripsWidget: false
 chatWidget: true
+contactForm: true
 ---
 
 Lub wypełnij poniższy formularz kontaktowy. Odezwiemy się niezwłocznie, uwzględniając 6-godzinną różnicę czasu względem Polski.
