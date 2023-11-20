@@ -43,9 +43,10 @@ tripsWidget: false
 chatWidget: false
 contactForm: false
 ---
-
 ## Dlaczego my?
 
 Nie oferujemy szablonowych podróży. Tworzymy wycieczki skrojone dokładnie pod Ciebie, dostosowane do Twoich zainteresowań i preferencji. U nas zyskasz pełną elastyczność - podróżujesz w swoim tempie, a my dopasowujemy program do Twoich potrzeb, a nie odwrotnie.
+
+
 
 Co więcej, gwarantujemy atrakcyjne ceny. Jako butikowa agencja nie obciążamy się zbędnymi kosztami, co przekłada się na konkurencyjne oferty dla Ciebie. Sprawdź nas! Zapytanie nic Cię nie kosztuje.
