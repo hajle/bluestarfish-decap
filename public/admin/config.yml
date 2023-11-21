@@ -236,6 +236,12 @@ collections:
                 required: false,
               },
               {
+                label: "Author",
+                name: "author",
+                widget: "atring",
+                required: false,
+              },
+              {
                 label: "Publishing date",
                 name: "date",
                 widget: "datetime",
@@ -255,6 +261,12 @@ collections:
                 label: "Image",
                 name: "image",
                 widget: "image",
+                required: false,
+              },
+              {
+                label: "Author",
+                name: "author",
+                widget: "atring",
                 required: false,
               },
               {

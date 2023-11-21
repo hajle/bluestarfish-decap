@@ -32,6 +32,9 @@ const allReviews: any = await getEntry("widgets", "reviews");
           >
             <blockquote>
               <p class="italic">"{review.text}"</p>
+              {review.author && (
+                <div class="text-base mt-4">{review.author}</div>
+              )}
             </blockquote>
           </div>
         </div>

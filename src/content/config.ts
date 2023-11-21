@@ -69,6 +69,7 @@ const widgetsCollection = defineCollection({
               message: "Image must be at least 900 pixels wide!",
             })
             .optional(),
+          author: z.string().optional(),
           date: z.date().optional(),
         })
       ),
@@ -81,6 +82,7 @@ const widgetsCollection = defineCollection({
               message: "Image must be at least 900 pixels wide!",
             })
             .optional(),
+          author: z.string().optional(),
           date: z.date().optional(),
         })
       ),
