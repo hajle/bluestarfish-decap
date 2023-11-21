@@ -87,9 +87,12 @@ const textEn =
       }
       {page.data.reviewsWidget && <Reviews />}
       {
-        page.data.contactButtonWidget && page.id === "en/about-us.md" ? (
+        page.data.contactButtonWidget && page.id === "en/about-us.md" && (
           <ContactUsAbout textEn={textEn} />
-        ) : (
+        )
+      }
+      {
+        page.data.contactButtonWidget && page.id !== "en/about-us.md" && (
           <ContactUs textEn={textEn} />
         )
       }

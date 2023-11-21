@@ -89,9 +89,12 @@ const textPl =
       }
       {page.data.reviewsWidget && <Reviews />}
       {
-        page.data.contactButtonWidget && page.id === "pl/o-nas.md" ? (
+        page.data.contactButtonWidget && page.id === "pl/o-nas.md" && (
           <ContactUsAbout textPl={textPl} />
-        ) : (
+        )
+      }
+      {
+        page.data.contactButtonWidget && page.id !== "pl/o-nas.md" && (
           <ContactUs textPl={textPl} />
         )
       }
