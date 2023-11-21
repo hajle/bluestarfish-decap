@@ -6,10 +6,10 @@ hero:
   title: Contact
   image: ../../../assets/images/contact-hero.jpg
 intro: >
-  Have questions about traveling to Southeast Asia? We will be happy to share
-  our knowledge.
+  Have questions about traveling to Southeast Asia? 
 
 
+  We will be happy to share our knowledge.
   Click to contact us via WhatsApp
 countriesWidget: false
 skillsWidget: false
