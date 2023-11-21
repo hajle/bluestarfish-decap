@@ -5,13 +5,15 @@ const lang = getLangFromUrl(Astro.url);
 const allSkills: any = await getEntry("widgets", "skills");
 ---
 
-{
-  allSkills.data[lang as keyof typeof allSkills].map(
-    (skill: { title: string; text: string }) => (
-      <div class="text-center md:text-left flex flex-col gap-4">
-        <h3 class="text-2xl font-semibold">{skill.title}</h3>
-        <p>{skill.text}</p>
-      </div>
+<div class="grid md:grid-cols-2 gap-8 lg:gap-16 mt-24 lg:mt-32">
+  {
+    allSkills.data[lang as keyof typeof allSkills].map(
+      (skill: { title: string; text: string }) => (
+        <div class="text-center md:text-left flex flex-col gap-4">
+          <h3 class="text-2xl font-semibold">{skill.title}</h3>
+          <p>{skill.text}</p>
+        </div>
+      )
     )
-  )
-}
+  }
+</div>

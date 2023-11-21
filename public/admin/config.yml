@@ -91,6 +91,12 @@ collections:
           default: false,
         }
       - {
+          label: "Reviews Widget",
+          name: "reviewsWidget",
+          widget: "boolean",
+          default: false,
+        }
+      - {
           label: "Whatsapp Chat Widget",
           name: "chatWidget",
           widget: "boolean",
@@ -98,7 +104,7 @@ collections:
         }
       - {
           label: "Contact Form Widget",
-          name: "contactForm",
+          name: "contactButtonWidget",
           widget: "boolean",
           default: false,
         }
@@ -186,6 +192,12 @@ collections:
           default: false,
         }
       - {
+          label: "Reviews Widget",
+          name: "reviewsWidget",
+          widget: "boolean",
+          default: false,
+        }
+      - {
           label: "Whatsapp Chat Widget",
           name: "chatWidget",
           widget: "boolean",
@@ -223,6 +235,12 @@ collections:
                 widget: "image",
                 required: false,
               },
+              {
+                label: "Publishing date",
+                name: "date",
+                widget: "datetime",
+                required: false,
+              },
             ],
         }
       - {
@@ -237,6 +255,12 @@ collections:
                 label: "Image",
                 name: "image",
                 widget: "image",
+                required: false,
+              },
+              {
+                label: "Publishing date",
+                name: "date",
+                widget: "datetime",
                 required: false,
               },
             ],

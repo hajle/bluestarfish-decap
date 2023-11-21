@@ -15,7 +15,7 @@ countriesWidget: false
 skillsWidget: false
 tripsWidget: false
 chatWidget: true
-contactForm: true
+contactButtonWidget: false
 ---
 
 Or fill out the contact form below. We will contact you immediately, taking into account the 6-hour time difference from Poland.

@@ -15,7 +15,7 @@ countriesWidget: false
 skillsWidget: false
 tripsWidget: false
 chatWidget: true
-contactForm: true
+contactButtonWidget: false
 ---
 
 Lub wypełnij poniższy formularz kontaktowy. Odezwiemy się niezwłocznie, uwzględniając 6-godzinną różnicę czasu względem Polski.

@@ -10,5 +10,5 @@ countriesWidget: false
 skillsWidget: false
 tripsWidget: true
 chatWidget: false
-contactForm: false
+contactButtonWidget: true
 ---

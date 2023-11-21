@@ -10,6 +10,8 @@ import Destinations from "../../components/Destinations.astro";
 import ContactForm from "../../components/ContactForm";
 import Skills from "../../components/Skills.astro";
 import Trips from "../../components/Trips.astro";
+import Reviews from "../../components/Reviews.astro";
+import ContactUsAbout from "../../components/ContactUsAbout.astro";
 
 export async function getStaticPaths() {
   const allPages = await getCollection("pages", ({ id }) => {
@@ -34,6 +36,11 @@ const intro =
     .split(`\n\n`)
     .map((paragraph: any) => `<p>${paragraph}</p>`)
     .join(``);
+
+const textPl =
+  page.id === "pl/o-nas.md"
+    ? "Chcesz wiedzieć więcej?"
+    : "Skontaktuj się z nami";
 ---
 
 <Layout title={page.data.seo.seoTitle} description={page.data.seo.seoDesc}>
@@ -52,7 +59,7 @@ const intro =
       {
         intro && (
           <div
-            class="mt-16 lg:mt-24 w-full md:max-w-2xl lg:max-w-3xl xl:max-w-5xl mx-auto text-center flex flex-col gap-8"
+            class="mt-24 lg:mt-32 w-full md:max-w-2xl lg:max-w-3xl xl:max-w-5xl mx-auto text-center flex flex-col gap-8"
             set:html={intro}
           />
         )
@@ -65,28 +72,30 @@ const intro =
       {page.data.countriesWidget && <Destinations />}
       {
         page.body && (
-          <div class="mt-16 lg:mt-24">
+          <div class="mt-24 lg:mt-32">
             <div class="text-center w-full md:max-w-2xl lg:max-w-3xl xl:max-w-5xl mx-auto prose-lg prose-headings:font-semibold">
               <Content />
             </div>
           </div>
         )
       }
-      {
-        page.data.skillsWidget && (
-          <div class="grid md:grid-cols-2 gap-8 lg:gap-16 mt-16 lg:mt-24">
-            <Skills />
-          </div>
-        )
-      }
+      {page.data.skillsWidget && <Skills />}
       {
         page.data.tripsWidget && (
-          <div class="mt-16 lg:mt-24 flex flex-col gap-16">
+          <div class="mt-24 lg:mt-32 flex flex-col gap-16">
             <Trips />
           </div>
         )
       }
-      {page.data.contactForm ? <ContactForm client:only /> : <ContactUs />}
+      {page.data.reviewsWidget && <Reviews />}
+      {
+        page.data.contactButtonWidget && page.id === "pl/o-nas.md" ? (
+          <ContactUsAbout textPl={textPl} />
+        ) : (
+          <ContactUs textPl={textPl} />
+        )
+      }
+      {page.id === "pl/kontakt.md" && <ContactForm client:only />}
     </Wrapper>
   </main>
 </Layout>

@@ -23,7 +23,8 @@ countriesWidget: true
 skillsWidget: true
 tripsWidget: false
 chatWidget: false
-contactForm: false
+contactButtonWidget: true
+reviewsWidget: true
 ---
 
 ## Why us?

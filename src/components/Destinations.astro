@@ -1,11 +1,11 @@
 ---
 import { getCollection } from "astro:content";
 import { Image } from "astro:assets";
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const allCountries = await getCollection('country', ({ id }) => {
+const allCountries = await getCollection("country", ({ id }) => {
   return id.startsWith(lang);
 });
 const sortedCountries = allCountries.sort(
@@ -14,18 +14,20 @@ const sortedCountries = allCountries.sort(
 ---
 
 <div
-  class="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-4 sm:gap-x-4 lg:gap-x-8 mt-16 lg:mt-24"
+  class="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-4 sm:gap-x-4 lg:gap-x-8 mt-24 lg:mt-32"
 >
   {
     sortedCountries.map((country) => (
       <a
-        href={`/${lang}/${t('slug.countries')}/${country.slug.split("/").slice(1)}`}
+        href={`/${lang}/${t("slug.countries")}/${country.slug
+          .split("/")
+          .slice(1)}`}
         class="relative hover:-translate-y-2 hover:brightness-90 transition duration-300"
       >
         <Image
           src={country.data.image}
           alt={country.data.title}
-          class="rounded-lg"
+          class="rounded-lg shadow-lg"
           width={700}
           height={700}
         />

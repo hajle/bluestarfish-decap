@@ -1,0 +1,28 @@
+---
+import chatImg from "../../src/images/chat-green.svg";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import Chat from "./Chat.astro";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+interface Props {
+  textEn?: string;
+  textPl?: string;
+}
+const { textPl, textEn } = Astro.props;
+---
+
+<div
+  class="flex flex-col gap-8 items-center mt-24 lg:mt-32 border-t-[1px] border-gray-200 pt-16"
+>
+  <div class="text-xl text-center">{lang === "en" ? textEn : textPl}</div><div
+    class="flex gap-8"
+  >
+    <a
+      href={`/${lang}/${t("slug.contact")}`}
+      class="bg-rose-500 hover:bg-emerald-500 transition-colors px-4 py-3 rounded-2xl text-white"
+      >{lang === "en" ? "Write to Us" : "Napisz do nas"}</a
+    >
+    <Chat image={chatImg.src} classes="w-56" />
+  </div>
+</div>

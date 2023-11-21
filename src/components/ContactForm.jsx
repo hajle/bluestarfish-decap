@@ -38,7 +38,7 @@ const ContactForm = () => {
   return (
     <>
       <p
-        className={`mt-16 lg:mt-24 text-center text-xl w-full max-w-xl mx-auto ${
+        className={`mt-24 lg:mt-32 text-center text-xl w-full max-w-xl mx-auto ${
           (statusMessage === 1 &&
             " text-green-500 mb-16 bg-green-100 py-8 px-2 rounded border-[1px] border-green-500") ||
           (statusMessage === 2 &&

@@ -24,8 +24,9 @@ const pageCollection = defineCollection({
       countriesWidget: z.boolean().default(false),
       skillsWidget: z.boolean().default(false),
       tripsWidget: z.boolean().default(false),
-      contactForm: z.boolean().default(false),
+      contactButtonWidget: z.boolean().default(false),
       chatWidget: z.boolean().default(false),
+      reviewsWidget: z.boolean().default(false),
     }),
 });
 
@@ -68,6 +69,7 @@ const widgetsCollection = defineCollection({
               message: "Image must be at least 900 pixels wide!",
             })
             .optional(),
+          date: z.date().optional(),
         })
       ),
       pl: z.array(
@@ -79,6 +81,7 @@ const widgetsCollection = defineCollection({
               message: "Image must be at least 900 pixels wide!",
             })
             .optional(),
+          date: z.date().optional(),
         })
       ),
     }),

@@ -1,0 +1,41 @@
+---
+import { getEntry } from "astro:content";
+import { Image } from "astro:assets";
+import { getLangFromUrl } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const allReviews: any = await getEntry("widgets", "reviews");
+---
+
+<div class="mt-24 lg:mt-32 flex flex-col gap-8">
+  <h2 class="text-3xl font-semibold text-center">
+    {lang === "en" ? "What do our customers say?" : "Co mówią nasi klienci?"}
+  </h2>
+  {
+    allReviews.data[lang as keyof typeof allReviews].map(
+      (review: any, index: number) => (
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 lg:gap-16 items-center bg-gray-200 p-8 lg:p-12 shadow-lg rounded-xl">
+          <div
+            class={`md:col-span-1 ${
+              (index === 1 && "md:order-2") || (index === 3 && "md:order-2")
+            }`}
+          >
+            <Image
+              src={review.image}
+              alt={review.title}
+              class="rounded-full aspect-square object-cover"
+            />
+          </div>
+          <div
+            class={`col-span-2 sm:col-span-3 md:col-span-3 lg:col-span-4 ${
+              (index === 1 && "md:order-1") || (index === 3 && "md:order-1")
+            }`}
+          >
+            <blockquote>
+              <p class="italic">"{review.text}"</p>
+            </blockquote>
+          </div>
+        </div>
+      )
+    )
+  }
+</div>
