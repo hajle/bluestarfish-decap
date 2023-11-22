@@ -238,7 +238,7 @@ collections:
               {
                 label: "Author",
                 name: "author",
-                widget: "atring",
+                widget: "string",
                 required: false,
               },
               {
@@ -266,7 +266,7 @@ collections:
               {
                 label: "Author",
                 name: "author",
-                widget: "atring",
+                widget: "string",
                 required: false,
               },
               {
