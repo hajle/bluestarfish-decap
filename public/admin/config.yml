@@ -103,7 +103,7 @@ collections:
           default: false,
         }
       - {
-          label: "Contact Form Widget",
+          label: "Contact Widget",
           name: "contactButtonWidget",
           widget: "boolean",
           default: false,
@@ -204,7 +204,7 @@ collections:
           default: false,
         }
       - {
-          label: "Contact Form Widget",
+          label: "Contact Widget",
           name: "contactForm",
           widget: "boolean",
           default: false,
