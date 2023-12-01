@@ -20,15 +20,11 @@ Why is it worth visiting Cambodia?
 
 ## Temples of Angkor
 
-
-
-![asasd](../../../assets/images/calendar-winter.jpg)
-
 A legendary temple complex that is a testament to the power and splendor of the Khmer Empire.
 
 ![Angkor Wat](../../../assets/images/cambodia-angkor-wat.jpg)
 
-## The capital of Phnom Penhhhh
+## The capital of Phnom Penh
 
 A place where history meets modernity, offering travelers a fascinating insight into Cambodian urban life.
 
