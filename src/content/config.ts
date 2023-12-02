@@ -78,8 +78,6 @@ const blogCollection = defineCollection({
         160,
         "For best SEO results, please keep the description under 160 characters."
       ),
-    draft: z.boolean().default(false),
-    category: z.enum(["CSS", "Reference Docs", "Astro", "General"]),
   }),
 });
 

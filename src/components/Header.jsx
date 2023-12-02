@@ -45,7 +45,7 @@ const Header = ({ children }) => {
           </a>
           <nav>
             <button
-              className="lg:hidden cursor-pointer"
+              className="xl:hidden cursor-pointer"
               onClick={() => setOpen(true)}
             >
               <img

@@ -3,6 +3,7 @@ import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 import Hero from "../../../components/Hero.astro";
 import Wrapper from "../../../components/Wrapper.astro";
+import ContactUs from "../../../components/ContactUs.astro";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("blog", ({ id }) => {
@@ -35,10 +36,14 @@ const { Content } = await post.render();
       desc={post.data.description}
     />
     <Wrapper>
-      <div class="mt-16 prose mx-auto">
-        <div class="mb-16">{post.data.date.toDateString()}</div>
+      <div
+        class="mt-16 prose-lg w-full md:max-w-2xl lg:max-w-3xl xl:max-w-5xl mx-auto"
+      >
+        <div class="mb-16">{post.data.date.toISOString().slice(0, 10)}</div>
         <Content />
       </div>
+      <div></div>
+      <ContactUs textPl="Skontaktuj się z nami" />
     </Wrapper>
   </main>
 </Layout>

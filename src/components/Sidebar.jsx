@@ -70,6 +70,18 @@ const Sidebar = ({ open = false, setOpen }) => {
               </li>
               <li>
                 <a
+                  href={`/${lang}/${t("slug.blog")}`}
+                  className={`font-medium tracking-wide drop-shadow-sm ${
+                    currentPath.indexOf(`/${lang}/${t("slug.blog")}`) > -1
+                      ? "text-rose-500"
+                      : ""
+                  }`}
+                >
+                  {t("nav.blog")}
+                </a>
+              </li>
+              <li>
+                <a
                   href={`/${lang}/${t("slug.contact")}`}
                   className={`font-medium tracking-wide drop-shadow-sm ${
                     currentPath.indexOf(`/${lang}/${t("slug.contact")}`) > -1
