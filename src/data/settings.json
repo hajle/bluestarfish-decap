@@ -18,9 +18,11 @@
     "slug.countries": "countries",
     "form.email": "Email address",
     "form.name": "Name",
+    "nav.blog": "Blog",    
     "nav.contact": "Contact",
     "form.button": "Send message",
     "form.message": "Message",
+    "slug.blog": "blog",
     "slug.contact": "contact",
     "form.error": "Error sending message."
   },
@@ -35,9 +37,11 @@
     "slug.countries": "kraje",
     "form.email": "Adres email",
     "form.name": "Imię",
+    "nav.blog": "Blog",
     "nav.contact": "Kontakt",
     "form.button": "Wyślij wiadomość",
     "form.message": "Wiadomość",
+    "slug.blog": "blog",
     "slug.contact": "kontakt",
     "form.error": "Błąd podczas wysyłania wiadomości."
   }

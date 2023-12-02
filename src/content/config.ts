@@ -55,6 +55,34 @@ const countryCollection = defineCollection({
     }),
 });
 
+const blogCollection = defineCollection({
+  type: 'content',
+  schema: ({ image }) => z.object({
+    seo: z.object({
+      seoTitle: z.string(),
+      seoDesc: z
+        .string()
+        .max(
+          160,
+          "For best SEO results, please keep the description under 160 characters."
+        ),
+    }),
+    title: z.string(),
+    date: z.date(),
+    cover: image().refine((img) => img.width >= 300, {
+      message: "Cover image must be at least 300 pixels wide!",
+    }),
+    description: z
+      .string()
+      .max(
+        160,
+        "For best SEO results, please keep the description under 160 characters."
+      ),
+    draft: z.boolean().default(false),
+    category: z.enum(["CSS", "Reference Docs", "Astro", "General"]),
+  }),
+});
+
 const widgetsCollection = defineCollection({
   type: "content",
   schema: ({ image }) =>
@@ -93,4 +121,5 @@ export const collections = {
   pages: pageCollection,
   country: countryCollection,
   widgets: widgetsCollection,
+  blog: blogCollection,
 };

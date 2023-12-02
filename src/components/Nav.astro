@@ -1,36 +1,68 @@
 ---
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = "/" + pathname.slice(1);
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
-import { languages } from '../i18n/ui';
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import { languages } from "../i18n/ui";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
 <ul class="lg:flex items-center gap-6 hidden">
   <li>
-    <a href={`/${lang}/${t('slug.about')}`} class={`font-medium tracking-wide drop-shadow-sm ${
-            currentPath.indexOf(`/${lang}/${t('slug.about')}`) > -1 ? "text-rose-500" : ""
-          }`}>{t('nav.about')}</a>
-  </li>
-   <li>
-    <a href={`/${lang}/${t('slug.countries')}`} class={`font-medium tracking-wide drop-shadow-sm ${
-            currentPath.indexOf(`/${lang}/${t('slug.countries')}`) > -1 ? "text-rose-500" : ""
-          }`}>{t('nav.countries')}</a>
-  </li>
-  <li>
-    <a href={`/${lang}/${t('slug.trips')}`} class={`font-medium tracking-wide drop-shadow-sm ${
-            currentPath.indexOf(`/${lang}/${t('slug.trips')}`) > -1 ? "text-rose-500" : ""
-          }`}>{t('nav.trips')}</a>
+    <a
+      href={`/${lang}/${t("slug.about")}`}
+      class={`font-medium tracking-wide drop-shadow-sm ${
+        currentPath.indexOf(`/${lang}/${t("slug.about")}`) > -1
+          ? "text-rose-500"
+          : ""
+      }`}>{t("nav.about")}</a
+    >
   </li>
   <li>
-    <a href={`/${lang}/${t('slug.contact')}`} class={`font-medium tracking-wide drop-shadow-sm ${
-            currentPath.indexOf(`/${lang}/${t('slug.contact')}`) > -1 ? "text-rose-500" : ""
-          }`}>{t('nav.contact')}</a>
+    <a
+      href={`/${lang}/${t("slug.countries")}`}
+      class={`font-medium tracking-wide drop-shadow-sm ${
+        currentPath.indexOf(`/${lang}/${t("slug.countries")}`) > -1
+          ? "text-rose-500"
+          : ""
+      }`}>{t("nav.countries")}</a
+    >
   </li>
-  {Object.entries(languages).map(([language, label]) => (
-    <li class={language === lang ? "hidden" : "ml-16"}>
-      <a href={`/${language}`}>{label}</a>
-    </li>
-  ))}
+  <li>
+    <a
+      href={`/${lang}/${t("slug.trips")}`}
+      class={`font-medium tracking-wide drop-shadow-sm ${
+        currentPath.indexOf(`/${lang}/${t("slug.trips")}`) > -1
+          ? "text-rose-500"
+          : ""
+      }`}>{t("nav.trips")}</a
+    >
+  </li>
+  <li>
+    <a
+      href={`/${lang}/${t("slug.blog")}`}
+      class={`font-medium tracking-wide drop-shadow-sm ${
+        currentPath.indexOf(`/${lang}/${t("slug.blog")}`) > -1
+          ? "text-rose-500"
+          : ""
+      }`}>{t("nav.blog")}</a
+    >
+  </li>
+  <li>
+    <a
+      href={`/${lang}/${t("slug.contact")}`}
+      class={`font-medium tracking-wide drop-shadow-sm ${
+        currentPath.indexOf(`/${lang}/${t("slug.contact")}`) > -1
+          ? "text-rose-500"
+          : ""
+      }`}>{t("nav.contact")}</a
+    >
+  </li>
+  {
+    Object.entries(languages).map(([language, label]) => (
+      <li class={language === lang ? "hidden" : "ml-16"}>
+        <a href={`/${language}`}>{label}</a>
+      </li>
+    ))
+  }
 </ul>
