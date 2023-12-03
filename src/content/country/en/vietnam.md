@@ -1,42 +1,31 @@
 ---
 seo:
   seoTitle: Vietnam
-  seoDesc: Vietnam, located on the eastern shores of the Asian continent,
-    it is a country full of contrasts, rich history and amazing landscapes.
-sortOrder: 1
+  seoDesc: Vietnam, located on the eastern shores of the Asian continent, it is a
+    country full of contrasts, rich history and amazing landscapes.
 title: Vietnam
+sortOrder: 1
 cover: ../../../assets/images/vietnam-hero.jpg
 image: ../../../assets/images/dest-vietnam.jpg
-intro: Vietnam, located on the eastern shores of the Asian continent,
-  it is a country full of contrasts, rich history and amazing landscapes.
+intro: Vietnam, located on the eastern shores of the Asian continent, it is a
+  country full of contrasts, rich history and amazing landscapes.
 ---
-
-For years, Vietnam has developed in the shadow of its larger neighbors, but today it is definitely coming to light as one of the most fascinating places in Southeast Asia. With a unique blend of traditional culture and modernity, Vietnam offers travelers a rich experience.
+For years, Vietnam has developed in the shadow of its larger neighbor - China, but today it is definitely coming to light as one of the most fascinating places in Southeast Asia. With a unique blend of traditional culture and modernity, Vietnam offers travelers a rich experience.
 
 &nbsp;
 
-Why is it worth visiting Vietnam?
+Why is visit Vietnam?
 
-## Ha Long Bay
-
-Crystal clear waters, limestone cliffs and peaceful fishing villages make it one of the most beautiful places in the world.
+**Ha Long Bay:** This stunning natural wonder is known for its crystal-clear waters, dramatic limestone cliffs, and serene fishing villages.
 
 ![Zatoka Ha-Long](../../../assets/images/vietnam-ha-long.jpg)
 
-## Vietnamese cuisine
+**Vietnamese Cuisine**: A delight for food lovers, offering everything from street food favorites like pho to unique specialties such as egg coffee.
 
-From fried dumplings, through pho, to coffee with eggs - culinary enthusiasts will be in seventh heaven.
+**Historic Hoi An and Hue**: Wander through these cities where time seems to slow down, amidst colorful streets, traditional lanterns, and heritage-rich architecture.
 
-## The historic cities of Hoi An and Hue
+Vibrant **Ho Chi Minh City** and **Hanoi**: Dive into the energetic atmosphere of these cities, where historic charm seamlessly blends with modern vibrancy.
 
-Colorful streets, traditional lanterns and historic palaces make time seem to pass slower here.
-
-## Dynamic Ho Chi Minh and Hanoi
-
-Modernity intertwines with tradition here, and city life pulsates with energy.
-
-## Sapa's rural and mountainous regions
-
-Lush green rice terraces and traditional ethnic communities offer a break from the hustle and bustle of the city.
+**Sapa’s Natural Beauty**: The perfect retreat for nature lovers, Sapa offers lush green terraces and a glimpse into the life of local ethnic communities.
 
 ![Rice fields](../../../assets/images/vietnam-rice-fields.jpg)
