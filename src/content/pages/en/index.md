@@ -1,30 +1,28 @@
 ---
 seo:
-  seoTitle: We create your Unforgettable Trips
-  seoDesc:
-    We will organize a holiday for you in Vietnam, Cambodia and Laos. Just
-    how you like it. On your terms.
+  seoTitle: Unforgettable Trips, Your Way
+  seoDesc: Vietnam, Cambodia, Laos – Personalized Holidays, Tailored for You.
 hero:
-  title: We create your Unforgettable Trips
-  subtitle:
-    We will organize a holiday for you in Vietnam, Cambodia and Laos. Just
-    how you like it. On your terms.
+  title: Custom Vietnam, Cambodia, Laos Holidays – Personalized Travel Experiences
+  subtitle: Tailor-Made Adventures in Vietnam, Cambodia, and Laos – Experience
+    Personalized Travel
   image: ../../../assets/images/home-hero.jpg
-intro: >
-  We are passionate about traveling and want to share our love for Vietnam,
-  Cambodia and Laos with you.
+intro: >+
+  Passionate about travel, we're dedicated to sharing the beauty of Vietnam,
+  Cambodia, and Laos with you. 
 
 
-  Our boutique travel agency offers trips that are fully tailored to your needs, exceeding the standards of what is available in mass travel agencies.
+  Our boutique agency crafts trips tailored to your desires, offering unique experiences beyond typical travel options.
 
 
-  With us, you will enter the world of fascinating corners of Southeast Asia, where you will experience true local culture and experience unforgettable adventures.
+  With us, you can discover the hidden gems of Southeast Asia, where genuine culture and memorable adventures come alive.
+
 countriesWidget: true
 skillsWidget: true
 tripsWidget: false
+reviewsWidget: true
 chatWidget: false
 contactButtonWidget: true
-reviewsWidget: true
 ---
 
 ## Why us?
