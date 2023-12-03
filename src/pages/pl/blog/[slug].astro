@@ -11,7 +11,7 @@ export async function getStaticPaths() {
   });
 
   return allPosts.map((post) => ({
-    params: { slug: post.slug },
+    params: { slug: post.slug.split("/").slice(1).toString() },
     props: {
       post,
     },

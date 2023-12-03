@@ -3,9 +3,7 @@ seo:
   seoTitle: Post o ważnych sprawach życia
   seoDesc: Post o ważnych sprawach życia
 title: Post o ważnych sprawach życia
-slug: post-o-waznych-sprawach-zycia
 date: 2022-11-20
-author: Darnell McClure
 cover: "../../../assets/images/family.jpg"
 coverAlt: "Rodzina na wakacjach"
 description: Have you ever wondered what the most important items of life are? Well, wonder no more!

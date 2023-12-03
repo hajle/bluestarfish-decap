@@ -10,11 +10,11 @@ const allBlogPosts = await getCollection("blog", ({ id }) => {
   return id.startsWith("en/");
 });
 const sortedPosts = allBlogPosts.sort((a, b) =>
-  a.data.date < b.data.date ? 1 : -1
+  a.data?.date < b.data?.date ? 1 : -1
 );
 ---
 
-<Layout title="Blog - " description="dd">
+<Layout title="a" description="dd">
   <main>
     <Hero
       image={image}
@@ -28,13 +28,13 @@ const sortedPosts = allBlogPosts.sort((a, b) =>
         {
           sortedPosts.map((post) => (
             <li class="flex flex-col gap-4">
-              <a href={`/en/blog/${post.slug}`}>
+              <a href={`/en/blog/${post.slug.split("/").slice(1)}`}>
                 <Image
                   src={post.data.cover}
                   alt={post.data.title}
                   width={600}
                   height={600}
-                  class="hover:brightness-90 transition duration-300 rounded-lg"
+                  class="hover:brightness-90 transition duration-300 rounded-lg h-[400px] object-cover"
                 />
               </a>
               <h2 class="text-3xl font-semibold pl-2">{post.data.title}</h2>
@@ -42,7 +42,10 @@ const sortedPosts = allBlogPosts.sort((a, b) =>
                 {post.data.date.toISOString().slice(0, 10)}
               </div>
               <div class="max-w-[500px] pl-2">{post.data.description}</div>
-              <a href={`/en/blog/${post.slug}`} class="text-rose-500 pl-2">
+              <a
+                href={`/en/blog/${post.slug.split("/").slice(1)}`}
+                class="text-rose-500 pl-2"
+              >
                 Read more
               </a>
             </li>

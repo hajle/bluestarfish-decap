@@ -3,9 +3,7 @@ seo:
   seoTitle: Dlaczego ten CSS jest taki dziwny?
   seoDesc: Dlaczego ten CSS jest taki dziwny?
 title: Dlaczego ten CSS jest taki dziwny?
-slug: dlaczego-ten-css-jest-taki-dziwny
 date: 2022-12-09
-author: Anna Dixon
 cover: "../../../assets/images/incentive.jpg"
 coverAlt: "A picture of a coder"
 description: The global css file for this site is a bit different than I’d write things normally, but I’m trying to keep you from having to write a bunch of random classes.

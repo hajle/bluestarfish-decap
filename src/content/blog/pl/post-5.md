@@ -3,9 +3,7 @@ seo:
   seoTitle: JavaScript SchmavaScript
   seoDesc: JavaScript SchmavaScript
 title: JavaScript SchmavaScript
-slug: javascript-dziwnyskrypt
 date: 2022-12-05
-author: Victoria Greenfelder
 cover: "../../../assets/images/solo.jpg"
 coverAlt: "A picture of a coder"
 description: This is a blog post about the JavaScript programming language. Like it, love it, hate it, it's here to stay.

@@ -11,7 +11,7 @@ export async function getStaticPaths() {
   });
 
   return allPosts.map((post) => ({
-    params: { slug: post.slug },
+    params: { slug: post.slug.split("/").slice(1).toString() },
     props: {
       post,
     },
@@ -24,12 +24,13 @@ interface Props {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
+console.log(post);
 ---
 
-<Layout title={`${post.data.title} - `} description="">
+<Layout title={`${post.data?.title} - `} description="">
   <main>
     <Hero
-      image={post.data.cover}
+      image={post.data?.cover}
       height="h-[300px] md:h-[550px]"
       bottom="bottom-1/2 translate-y-1/2"
       title={post.data.title}

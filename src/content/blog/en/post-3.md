@@ -3,9 +3,7 @@ seo:
   seoTitle: Beginning with CSS
   seoDesc: Beginning with CSS
 title: Beginning with CSS
-slug: beginning-with-css
 date: 2022-12-03
-author: Darnell McClure
 cover: "../../../assets/images/honeymoon.jpg"
 coverAlt: "A picture of a coder"
 description: CSS is a great way to style your website. In fact, there are no alternatives! Learn how to use it here.

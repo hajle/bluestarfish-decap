@@ -3,9 +3,7 @@ seo:
   seoTitle: Skończyły się pomysły na przykładowe posty
   seoDesc: Skończyły się pomysły na przykładowe posty
 title: Skończyły się pomysły na przykładowe posty
-slug: skonczyly-sie-pomysly-na-przykladowe-posty
 date: 2022-11-25
-author: Victoria Greenfelder
 cover: "../../../assets/images/group.jpg"
 coverAlt: "A picture of a coder"
 description: Sometimes you just run out of ideas for sample blog posts. It’s no one’s fault, it’s just the way it is.

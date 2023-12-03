@@ -69,7 +69,7 @@ const blogCollection = defineCollection({
     }),
     title: z.string(),
     date: z.date(),
-    cover: image().refine((img) => img.width >= 300, {
+    cover: image().refine((img) => img.width >= 500, {
       message: "Cover image must be at least 300 pixels wide!",
     }),
     description: z
@@ -77,7 +77,7 @@ const blogCollection = defineCollection({
       .max(
         160,
         "For best SEO results, please keep the description under 160 characters."
-      ),
+      ).optional(),
   }),
 });
 

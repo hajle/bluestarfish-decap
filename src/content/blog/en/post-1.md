@@ -3,9 +3,7 @@ seo:
   seoTitle: A Post about Important Items Of Life
   seoDesc: A Post about Important Items Of Life
 title: A Post about Important Items Of Life
-slug: a-post-about-important-items-of-life
 date: 2022-11-20
-author: Darnell McClure
 cover: "../../../assets/images/family.jpg"
 coverAlt: "Rodzina na wakacjach"
 description: Have you ever wondered what the most important items of life are? Well, wonder no more!
