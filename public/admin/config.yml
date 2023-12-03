@@ -108,6 +108,46 @@ collections:
           widget: "boolean",
           default: false,
         }
+  - name: "blog-en" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog in English" # Used in the UI
+    label_singular: "Post"
+    folder: "src/content/blog/en" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    public_folder: "../../../assets/images"
+    identifier_field: title
+    editor:
+      preview: false
+    fields: # The fields for each document, usually in front matter
+      - {
+          label: "SEO",
+          name: "seo",
+          widget: "object",
+          fields:
+            [
+              { label: "SEO Title", name: "seoTitle", widget: "string" },
+              { label: "SEO Description", name: "seoDesc", widget: "text" },
+            ],
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Intro", name: "description", widget: "text", required: false }
+      - { label: "Cover Image", name: "cover", widget: "image" }
+      - { label: "Cover Image Alt", name: "coverAlt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Publishing date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", required: false }
+      - {
+          label: "Whatsapp Chat Widget",
+          name: "chatWidget",
+          widget: "boolean",
+          default: false,
+        }
+      - {
+          label: "Contact Widget",
+          name: "contactButtonWidget",
+          widget: "boolean",
+          default: false,
+        }
   - name: "countries-pl" # Used in routes, e.g., /admin/collections/blog
     label: "Kraje po polsku" # Used in the UI
     label_singular: "Kraj"
@@ -206,6 +246,46 @@ collections:
       - {
           label: "Contact Widget",
           name: "contactForm",
+          widget: "boolean",
+          default: false,
+        }
+  - name: "blog-pl" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog po polsku" # Used in the UI
+    label_singular: "Post"
+    folder: "src/content/blog/pl" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    public_folder: "../../../assets/images"
+    identifier_field: title
+    editor:
+      preview: false
+    fields: # The fields for each document, usually in front matter
+      - {
+          label: "SEO",
+          name: "seo",
+          widget: "object",
+          fields:
+            [
+              { label: "SEO Title", name: "seoTitle", widget: "string" },
+              { label: "SEO Description", name: "seoDesc", widget: "text" },
+            ],
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Intro", name: "description", widget: "text", required: false }
+      - { label: "Cover Image", name: "cover", widget: "image" }
+      - { label: "Cover Image Alt", name: "coverAlt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Publishing date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", required: false }
+      - {
+          label: "Whatsapp Chat Widget",
+          name: "chatWidget",
+          widget: "boolean",
+          default: false,
+        }
+      - {
+          label: "Contact Widget",
+          name: "contactButtonWidget",
           widget: "boolean",
           default: false,
         }
