@@ -2,8 +2,7 @@
 title: Reviews
 en:
   - title: Opinion title
-    text:
-      The trip with Blue Starfish Travel Boutique to Vietnam was exactly what we
+    text: The trip with Blue Starfish Travel Boutique to Vietnam was exactly what we
       expected. Thanks to their careful planning and taking into account our
       preferences, each day of our trip was well thought out and tailored to our
       interests. Blue Starfish provided us with a comfortable and hassle-free
@@ -14,15 +13,15 @@ en:
       takes care of its clients and provides satisfying travel experiences.
     image: ../../assets/images/review01.jpg
     date: 2023-11-21T05:31:13.183Z
+    author: Tom
   - title: Second opinion title
-    text:
-      It's not the first time we've been to Asia, but it's the first time we met
+    text: It's not the first time we've been to Asia, but it's the first time we met
       such a professional travel agency as Blue Starfish, which thoroughly
       analyzed our needs and tailored the trip. It exceeded our expectations!
       See for yourself, we fully recommend Blue Starfish Travel Boutique. Best
       regards to the entire team.
     image: ../../assets/images/review02.jpg
-    author: Justyna, Ania i Artur
+    author: Justine, Anne and Arthur
     date: 2023-11-21T05:31:13.197Z
 pl:
   - title: Tytuł opinii
@@ -39,8 +38,7 @@ pl:
     image: ../../assets/images/review01.jpg
     date: 2023-11-21T05:31:13.205Z
   - title: Tytuł drugiej opinii
-    text:
-      Nie po raz pierwszy jesteśmy w Azji, natomiast pierwszy raz spotkaliśmy
+    text: Nie po raz pierwszy jesteśmy w Azji, natomiast pierwszy raz spotkaliśmy
       się z tak profesjonalnym biurem podróży jakim jest Blue Starfish, które
       Dokładnie przeanalizowało nasze potrzeby i Uszyło podróż na miarę.
       Przerosło to nasze oczekiwania! Przekonajcie się sami, z pełną
