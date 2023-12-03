@@ -24,23 +24,22 @@ interface Props {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
-console.log(post);
 ---
 
-<Layout title={`${post.data?.title} - `} description="">
+<Layout title={post.data.seo.seoTitle} description={post.data.seo.seoDesc}>
   <main>
     <Hero
-      image={post.data?.cover}
+      image={post.data.cover}
       height="h-[300px] md:h-[550px]"
       bottom="bottom-1/2 translate-y-1/2"
       title={post.data.title}
-      desc={post.data.description}
     />
     <Wrapper>
       <div
-        class="mt-16 prose-lg w-full md:max-w-2xl lg:max-w-3xl xl:max-w-5xl mx-auto"
+        class="mt-16 prose-lg prose-headings:font-semibold w-full md:max-w-2xl lg:max-w-3xl xl:max-w-5xl mx-auto"
       >
         <div class="mb-16">{post.data.date.toISOString().slice(0, 10)}</div>
+        {post.data.description && <h2>{post.data.description}</h2>}
         <Content />
       </div>
       <ContactUs textEn="Contact Us" />
