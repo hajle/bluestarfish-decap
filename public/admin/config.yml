@@ -147,7 +147,7 @@ collections:
           label: "Contact Widget",
           name: "contactButtonWidget",
           widget: "boolean",
-          default: false,
+          default: true,
         }
   - name: "countries-pl" # Used in routes, e.g., /admin/collections/blog
     label: "Kraje po polsku" # Used in the UI
@@ -289,7 +289,7 @@ collections:
           label: "Contact Widget",
           name: "contactButtonWidget",
           widget: "boolean",
-          default: false,
+          default: true,
         }
   - name: "widgets"
     label: "Widgets"
