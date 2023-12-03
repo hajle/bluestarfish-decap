@@ -1,14 +1,16 @@
 ---
+author: ""
+slug: why-is-this-css-so-weird
 seo:
   seoTitle: Why is this CSS so weird?
   seoDesc: Why is this CSS so weird?
 title: Why is this CSS so weird?
-slug: why-is-this-css-so-weird
+description: The global css file for this site is a bit different than I’d write
+  things normally, but I’m trying to keep you from having to write a bunch of
+  random classes.
+cover: ../../../assets/images/incentive.jpg
+coverAlt: A picture of a coder
 date: 2022-12-09
-author: Anna Dixon
-cover: "../../../assets/images/incentive.jpg"
-coverAlt: "A picture of a coder"
-description: The global css file for this site is a bit different than I’d write things normally, but I’m trying to keep you from having to write a bunch of random classes.
 chatWidget: false
 contactButtonWidget: true
 ---
