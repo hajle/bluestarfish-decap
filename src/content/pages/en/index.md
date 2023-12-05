@@ -3,7 +3,7 @@ seo:
   seoTitle: Unforgettable Trips, Your Way
   seoDesc: Vietnam, Cambodia, Laos – Personalized Holidays, Tailored for You.
 hero:
-  title: Custom Vietnam, Cambodia, Laos Holidays – Personalized Travel Experiences
+  title: Vietnam, Cambodia, Laos – Custom Travel Experiences
   subtitle: Tailor-Made Adventures in Vietnam, Cambodia, and Laos – Experience
     Personalized Travel
   image: ../../../assets/images/home-hero.jpg
