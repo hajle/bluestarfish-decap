@@ -34,6 +34,18 @@ const lang = getLangFromUrl(Astro.url);
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"
     ></script>
     <ViewTransitions />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="“https://www.googletagmanager.com/gtag/js?id=G-10NKTL5XZN”"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-10NKTL5XZN");
+    </script>
   </head>
   <body class="subpixel-antialiased bg-white text-gray-950 font-normal text-lg">
     <div class="grid grid-flow-row auto-rows-[auto_1fr_auto] h-screen">
