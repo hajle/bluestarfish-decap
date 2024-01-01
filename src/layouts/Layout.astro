@@ -25,6 +25,16 @@ const lang = getLangFromUrl(Astro.url);
 <!doctype html>
 <html lang={lang}>
   <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-10NKTL5XZN"
+    ></script><script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-10NKTL5XZN");
+    </script>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
@@ -34,18 +44,8 @@ const lang = getLangFromUrl(Astro.url);
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"
     ></script>
     <ViewTransitions />
-    <script
-      async
-      src="“https://www.googletagmanager.com/gtag/js?id=G-10NKTL5XZN”"
-    ></script><script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-10NKTL5XZN");
-    </script></head
-  >
+  </head>
+
   <!-- Google tag (gtag.js) -->
 
   <body class="subpixel-antialiased bg-white text-gray-950 font-normal text-lg">
