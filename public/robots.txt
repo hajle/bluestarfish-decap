@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bluestarfishtravel.com/sitemap-index.xml
