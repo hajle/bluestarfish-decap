@@ -6,9 +6,9 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  redirects: {
-    "/": "/en",
-  },
+  // redirects: {
+  //   "/": "/en",
+  // },
   site: "https://bluestarfishtravel.com",
   integrations: [tailwind(), react(), sitemap()],
 });
