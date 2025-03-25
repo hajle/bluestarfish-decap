@@ -5,7 +5,7 @@
     "address": "94 Xuân Thủy, Phường Thảo Điền, Thành phố Thủ Đức",
     "city": "Thành phố Hồ Chí Minh, Việt Nam",
     "phone": "+84 368 318 072",
-    "email": "info@bluestarfish.travel"
+    "email": "booking@bluestarfish.travel"
   },
   "en": {
     "form.reply": "Thank you for contacting us! We will respond to your message soon.",
@@ -18,7 +18,7 @@
     "slug.countries": "countries",
     "form.email": "Email address",
     "form.name": "Name",
-    "nav.blog": "Blog",    
+    "nav.blog": "Blog",
     "nav.contact": "Contact",
     "form.button": "Send message",
     "form.message": "Message",
