@@ -1,15 +1,19 @@
 ---
 seo:
-  seoTitle: Types of Trips
-  seoDesc:
-    We will organize a holiday for you in Vietnam, Cambodia and Laos. Just
-    how you like it. On your terms.
+  seoTitle: Room 1
+  seoDesc: Meeting Room
 hero:
-  title: Types of Trips
+  title: Meeting Room
   image: ../../../assets/images/trips-hero.jpg
 countriesWidget: false
 skillsWidget: false
-tripsWidget: true
+tripsWidget: false
+reviewsWidget: true
 chatWidget: false
 contactButtonWidget: true
 ---
+<iframe
+  src="https://whereby.com/blue-starfish"
+  allow="camera; microphone; fullscreen; speaker"
+  style="width:100%; height:100vh; border:0;">
+</iframe>
