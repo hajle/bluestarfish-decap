@@ -8,7 +8,7 @@ hero:
 countriesWidget: false
 skillsWidget: false
 tripsWidget: false
-reviewsWidget: true
+reviewsWidget: false
 chatWidget: false
 contactButtonWidget: true
 ---
