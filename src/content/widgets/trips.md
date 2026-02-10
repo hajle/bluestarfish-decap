@@ -1,34 +1,6 @@
 ---
 title: Trips
-en:
-  - title: Trips with friends
-    text: Enjoy hassle-free travel with friends, tailored to suit every preference
-      and budget. We handle the details, so you can focus on fun and relaxation.
-    image: ../../assets/images/group.jpg
-    date: 2023-12-03T08:51:23.988Z
-  - title: Family trips
-    text: Create lifelong memories on family holidays crafted to engage every age.
-      Our personal experiences ensure your trip is filled with joy, not
-      challenges.
-    image: ../../assets/images/family.jpg
-    date: 2023-12-03T08:51:24.036Z
-  - title: Solo travel
-    text: Embark on a solo journey at your pace, filled with authentic encounters
-      and hidden gems across Vietnam, Cambodia, and Laos.
-    image: ../../assets/images/solo.jpg
-    date: 2023-12-03T08:51:24.070Z
-  - title: Honeymoon trips
-    text: Begin your shared journey amidst Southeast Asia's enchanting landscapes.
-      Our honeymoons blend romance with adventure for an unforgettable start
-      together.
-    image: ../../assets/images/honeymoon.jpg
-    date: 2023-12-03T08:51:24.108Z
-  - title: Incentive trips
-    text: Reward your team with a trip that mixes business with pleasure. Strengthen
-      bonds and ignite inspiration against the backdrop of Southeast Asia's
-      marvels.
-    image: ../../assets/images/incentive.jpg
-    date: 2023-12-03T08:51:24.146Z
+en: []
 pl:
   - title: Wycieczki z przyjaciółmi
     text: Wakacje z przyjaciółmi to gwarancja doskonałej zabawy. Niekiedy problemem
